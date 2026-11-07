@@ -1,7 +1,7 @@
 ---
-title: 'Concepções e Princípios'
-description: 'Documento Técnico 1 do Modelo Pedagógico Senac: concepções e princípios que orientam a educação profissional.'
-date: '2026-11-05'
+title: '1 Princípios Educacionais'
+description: 'Fator de desenvolvimento humano e inclusão social, cultural e produtiva, a educação profissional, neste século, transcende a finalidade de estrita preparação de mão de obra e consolida o seu papel na…'
+date: '2026-11-07'
 draft: false
 tags:
   - didatica
@@ -159,7 +159,7 @@ A proposta de modelos curriculares, estruturada a partir de competências, apres
 
 ### 3.1 Cursos Técnicos, Qualificações Profissionais e Aprendizagens
 
-> ⁶ A definição de competência é apresentada em detalhe no Documento Técnico Competência, integrante da Coleção de Documentos Técnicos – Modelo Pedagógico Senac.
+> 6 A definição de competência é apresentada em detalhe no Documento Técnico Competência, integrante da Coleção de Documentos Técnicos – Modelo Pedagógico Senac.
 
 Os desenhos curriculares desses cursos apresentam dois tipos de Unidades Curriculares: I) as Unidades Curriculares que desenvolvem competências e; II) as Unidades Curriculares de Natureza Diferenciada, que visam à articulação das competências do curso – Projeto Integrador, Estágio Profissional Supervisionado, Prática Profissional Supervisionada, Prática Profissional da Aprendizagem, a Prática Integrada das Competências (apenas para os Cursos Técnicos do segmento de Saúde e Beleza) e Laboratório Juventudes. Essa última está presente somente nos cursos de Aprendizagem que adotam a abordagem STEAM em sua proposta curricular. Além das Unidades Curriculares mencionadas, encontram-se também, em caráter de exceção, somente na organização curricular dessas Aprendizagens, Unidades Curriculares que não desenvolvem competências.
 
@@ -471,4 +471,4 @@ SENAC. Departamento Nacional. **Referenciais para a educação profissional do S
 
 TRINDADE, Rui. Competências e educação: contributo para uma reflexão de caráter pedagógico. **Boletim Técnico do Senac** , Rio de Janeiro, v. 39, n. 1, p. 55-71, jan./abr. 2013. Disponível em: <https://www.bts.senac.br/bts/article/view/143/128>. Acesso em: 24 out. 2013.
 
-VARELA, Hélder Alexandre Flores; MOTA, Carlos Alberto Magalhães Gomes. Falar de modelos em educação: procurando clarificar conceitos. **Saberes Interdisciplinares** , São João Del-Rei, ano 4, n. 8, jul./dez. 2011. Disponível em: <http://www.iptan.edu.br/publicacoes/saberes_> interdisciplinares/pdf/revista08/ARTIGO_FALAR_DE_MODELOS_EM_ EDUCACAO.pdf. Acesso em: 7 dez. 2015.
+VARELA, Hélder Alexandre Flores; MOTA, Carlos Alberto Magalhães Gomes. Falar de modelos em educação: procurando clarificar conceitos. **Saberes Interdisciplinares** , São João Del-Rei, ano 4, n. 8, jul./dez. 2011. Disponível em: <http://www.iptan.edu.br/publicacoes/saberes_interdisciplinares/pdf/revista08/ARTIGO_FALAR_DE_MODELOS_EM_EDUCACAO.pdf>. Acesso em: 7 dez. 2015.

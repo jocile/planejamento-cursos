@@ -21,12 +21,14 @@ import logging
 import os
 import re
 import sys
+from collections import Counter
 
 # No Windows, subprocessos internos do pymupdf podem emitir cp1252 e quebrar a
 # leitura em UTF-8. Forçar UTF-8 aqui, antes dos imports pesados, evita isso.
 os.environ.setdefault("PYTHONUTF8", "1")
 os.environ.setdefault("PYTHONIOENCODING", "utf-8")
 from datetime import date
+from itertools import pairwise
 from pathlib import Path
 
 import pymupdf
@@ -102,8 +104,11 @@ def extract_title(markdown: str, metadata: dict[str, str], fallback: str) -> str
         return meta_title
     heading = re.search(r"^#{1,2}\s+(.+)$", markdown, flags=re.MULTILINE)
     if heading:
-        return heading.group(1).strip("*_ ").strip()
-    return fallback
+        candidate = heading.group(1).strip("*_ ").strip()
+        if candidate.lower() not in GENERIC_TITLES:
+            return candidate
+    pretty = re.sub(r"[-_]+", " ", fallback).strip()
+    return pretty[:1].upper() + pretty[1:]
 
 
 def extract_description(markdown: str, max_chars: int = 200) -> str:
@@ -124,7 +129,17 @@ PICTURE_BLOCK = re.compile(
     r"<!-- Start of picture text -->(.*?)<!-- End of picture text -->", re.DOTALL
 )
 BR_TAG = re.compile(r"<br\s*/?>", re.IGNORECASE)
-PAGE_NUMBER_LINE = re.compile(r"^\*\*\d{1,3}\*\*\s*$", re.MULTILINE)
+PAGE_NUMBER_LINE = re.compile(r"^(?:\*\*|~~)\d{1,3}(?:\*\*|~~)[ \t]*$", re.MULTILINE)
+GLUED_PAGE_NUMBER = re.compile(r"^~~\d{1,3}~~[ \t]+(?=\S)", re.MULTILINE)
+SENTINEL = "\x01"
+STYLE_NOISE = re.compile(r"</?mark>|</?u>|~~", re.IGNORECASE)
+PUA_CHARS = re.compile("[\ue000-\uf8ff]")
+BULLET_GLYPH = re.compile(r"^(\s*)(?:- )?\x01?Î\x01? ", re.MULTILINE)
+WORD = re.compile(r"[a-zà-ÿ]{2,}")
+ONE_LETTER_WORDS = frozenset("aeoàáéó")
+GENERIC_TITLES = frozenset(
+    {"introdução", "apresentação", "sumário", "prefácio", "resumo", "índice"}
+)
 DROP_CAP = re.compile(
     r"^(?:\*\*)?([A-ZÀ-Ý])(?:\*\*)?[ \t]*\n\n([a-zà-ÿ])", re.MULTILINE
 )
@@ -133,36 +148,12 @@ BOLD_ONLY_LINE = re.compile(r"^\*\*([^*\n]+)\*\*[ \t]*$", re.MULTILINE)
 HEADING_LINE = re.compile(r"^(#{1,6})[ \t]+(.*?)[ \t#]*$")
 FENCE = re.compile(r"^\s*(```|~~~)")
 LIST_ITEM = re.compile(r"^( *)[-*+] (.*)$")
-SPLIT_URL = re.compile(r"((?:https?://|www\.)\S*[./\-])[ \t]+(?=[a-z0-9])")
+SPLIT_URL = re.compile(
+    r"((?:https?://|www\.)(?:\S*[./\-])?)[ \t]+(?!https?://|www\.)(?=[a-z0-9])"
+)
+SPLIT_URL_UNDERSCORE = re.compile(r"((?:https?://|www\.)\S*_)[ \t]+(?=\w)")
 WWW_URL = re.compile(r"(?<![<(\[/\w.@])(www\.[^\s<>\]\)]+)")
 BARE_URL = re.compile(r"(?<![<(\[\"'=])(https?://[^\s<>\]\)]+)")
-
-
-def convert_sup_tags(markdown: str) -> str:
-    """Troca <sup>a</sup>/<sup>1</sup> por ª, º e dígitos sobrescritos (sem HTML)."""
-
-    def replace(match: re.Match[str]) -> str:
-        raw = match.group(1).replace("*", "").strip()
-        return "".join(SUPERSCRIPTS.get(char, char) for char in raw)
-
-    return SUP_TAG.sub(replace, markdown)
-
-
-def convert_picture_blocks(markdown: str) -> str:
-    """Transforma o "texto de figura" extraído do PDF em um callout dobrável."""
-
-    def replace(match: re.Match[str]) -> str:
-        lines = [
-            part.strip()
-            for part in re.split(r"<br\s*/?>|\n", match.group(1))
-            if part.strip()
-        ]
-        if not lines:
-            return ""
-        body = "\n".join(f"> {line}" for line in lines)
-        return "> [!note]- Texto extraído de figura\n" + body
-
-    return PICTURE_BLOCK.sub(replace, markdown)
 
 
 def normalize_headings(markdown: str) -> str:
@@ -195,23 +186,12 @@ def normalize_headings(markdown: str) -> str:
             result.append(line)
             continue
         text = match.group(2).replace("**", "").replace("__", "").strip()
+        text = re.sub(r"^(\d+(?:\.\d+)*\.?)(?=[A-Za-zÀ-ÿ])", r"\1 ", text)
         if not text:
             continue  # título vazio vindo de lixo do PDF
         level = min(mapping[len(match.group(1))], previous + 1)
         previous = level
         result.append(f"{'#' * level} {text}")
-    return "\n".join(result)
-
-
-def normalize_lists(markdown: str) -> str:
-    """Usa "-" como marcador e recuos de 2 espaços (padrão do markdownlint)."""
-    result: list[str] = []
-    for line in markdown.split("\n"):
-        match = LIST_ITEM.match(line)
-        if match and not line.startswith("**"):
-            indent = len(match.group(1))
-            line = " " * (indent // 3 * 2 + indent % 3) + "- " + match.group(2)
-        result.append(line)
     return "\n".join(result)
 
 
@@ -221,6 +201,7 @@ def fix_and_wrap_urls(markdown: str) -> str:
     while previous != markdown:
         previous = markdown
         markdown = SPLIT_URL.sub(r"\1", markdown)
+        markdown = SPLIT_URL_UNDERSCORE.sub(r"\1", markdown)
 
     def wrap(match: re.Match[str]) -> str:
         url, trailing = match.group(1), ""
@@ -268,6 +249,168 @@ def merge_split_paragraphs(markdown: str) -> str:
     return "\n\n".join(merged)
 
 
+def convert_sup_tags(markdown: str) -> str:
+    """Converte <sup> conforme o contexto, sem estragar palavras.
+
+    * ordinais ("1<sup>a</sup>", "2<sup>o</sup>") viram 1ª e 2º;
+    * números de nota após uma palavra ("texto<sup>1</sup>") viram "texto¹";
+    * qualquer outro caso (letras soltas em títulos, numeração "2.1") vira texto
+      simples, porque alguns PDFs marcam letras comuns como sobrescritas.
+    """
+    result: list[str] = []
+    for line in markdown.split("\n"):
+        if "<sup" not in line.lower():
+            result.append(line)
+            continue
+        head = ""
+        numbering = re.match(r"^(#{1,6}[ \t]+)((?:<sup>[^<]*</sup>|\d|\.)+)", line)
+        if numbering:  # numeração de título: "2.1" com partes sobrescritas
+            head = numbering.group(1) + re.sub(r"</?sup>", "", numbering.group(2))
+            line = line[numbering.end() :]
+
+        def replace(match: re.Match[str], text: str = line) -> str:
+            raw = match.group(1).replace("*", "").strip()
+            previous = text[match.start() - 1] if match.start() > 0 else ""
+            if raw in ("a", "o") and previous.isdigit():
+                return SUPERSCRIPTS[raw]
+            if raw.isdigit() and previous and not previous.isspace():
+                return "".join(SUPERSCRIPTS[char] for char in raw)
+            return raw
+
+        result.append(head + SUP_TAG.sub(replace, line))
+    return "\n".join(result)
+
+
+def convert_picture_blocks(markdown: str) -> str:
+    """Transforma o "texto de figura" extraído do PDF em um callout dobrável.
+
+    Blocos que contêm só um número (número de página) são descartados.
+    """
+
+    def replace(match: re.Match[str]) -> str:
+        lines = [
+            part.strip()
+            for part in re.split(r"<br\s*/?>|\n", match.group(1))
+            if part.strip()
+        ]
+        if not lines or all(re.fullmatch(r"\d{1,3}", line) for line in lines):
+            return ""
+        body = "\n".join(f"> {line}" for line in lines)
+        return "> [!note]- Texto extraído de figura\n" + body
+
+    return PICTURE_BLOCK.sub(replace, markdown)
+
+
+def normalize_lists(markdown: str) -> str:
+    """Usa "-" como marcador e recuos de 2 espaços (padrão do markdownlint).
+
+    Itens recuados sem item "pai" acima são levados para o nível 0.
+    """
+    result: list[str] = []
+    previous_is_list = False
+    previous_indent = 0
+    for line in markdown.split("\n"):
+        match = LIST_ITEM.match(line)
+        if match and not line.startswith("**"):
+            raw = len(match.group(1))
+            indent = raw // 3 * 2 + raw % 3
+            indent = min(indent, previous_indent + 2) if previous_is_list else 0
+            result.append(" " * indent + "- " + match.group(2))
+            previous_is_list, previous_indent = True, indent
+            continue
+        if line.strip():
+            previous_is_list = False
+        result.append(line)
+    return "\n".join(result)
+
+
+def _letters(token: str) -> str:
+    """Só as letras do token, em minúsculas (para consulta ao vocabulário)."""
+    return re.sub(r"[^A-Za-zÀ-ÿ]", "", token.replace(SENTINEL, "")).lower()
+
+
+def _repair_line(line: str, vocab: Counter[str]) -> str:
+    """Reconecta fragmentos de palavra separados por mudança de estilo.
+
+    O pymupdf4llm coloca um espaço em toda fronteira de estilo, mesmo no meio de
+    uma palavra ("ferra <mark>ment</mark> as"). Aqui cada fronteira é testada
+    com o vocabulário do próprio documento e só é unida quando isso reduz o
+    número de palavras desconhecidas.
+    """
+    if line.lstrip().startswith("|"):  # tabela: não reorganizar células
+        return line.replace(SENTINEL, "")
+    line = BULLET_GLYPH.sub(r"\1- ", line)
+    indent = line[: len(line) - len(line.lstrip())]
+    tokens = line.split()
+    count = len(tokens)
+
+    def single_cost(token: str) -> int:
+        word = _letters(token)
+        if not word:
+            return 0
+        if len(word) == 1:
+            return 0 if word in ONE_LETTER_WORDS else 1
+        return 0 if word in vocab else 1
+
+    def group_cost(start: int, end: int) -> float:
+        group = tokens[start:end]
+        for left, right in pairwise(group):
+            facing = left.rstrip("*_").endswith(SENTINEL) or right.lstrip(
+                "*_"
+            ).startswith(SENTINEL)
+            left_char = left.replace(SENTINEL, "")[-1:]
+            right_char = right.replace(SENTINEL, "")[:1]
+            if not (facing and left_char.isalpha() and right_char.isalpha()):
+                return float("inf")
+        if _letters("".join(group)) in vocab:
+            return 0
+        if all(single_cost(token) == 1 for token in group):
+            return 1
+        return float("inf")
+
+    best: list[tuple[float, int, int]] = [(0, 0, 0)] + [(float("inf"), 0, 0)] * count
+    for end in range(1, count + 1):
+        for start in range(max(0, end - 4), end):
+            cost = (
+                single_cost(tokens[start])
+                if end - start == 1
+                else group_cost(start, end)
+            )
+            previous = best[start]
+            candidate = (previous[0] + cost, previous[1] - 1, start)
+            if candidate[:2] < best[end][:2]:
+                best[end] = candidate
+
+    groups: list[str] = []
+    end = count
+    while end > 0:
+        start = best[end][2]
+        groups.append("".join(tokens[start:end]))
+        end = start
+    text = " ".join(reversed(groups)).replace(SENTINEL, "")
+    text = re.sub(r"\s+([,.;:!?])", r"\1", text)
+    return indent + text
+
+
+def repair_style_splits(markdown: str) -> str:
+    """Remove <mark>, ~~ e <u> (artefatos de gráficos do PDF) e conserta palavras."""
+    markdown = PUA_CHARS.sub("", markdown)
+    if not STYLE_NOISE.search(markdown) and not BULLET_GLYPH.search(markdown):
+        return markdown
+    marked = STYLE_NOISE.sub(SENTINEL, markdown)
+    lines = marked.split("\n")
+    vocab: Counter[str] = Counter()
+    for line in lines:
+        if SENTINEL not in line:
+            vocab.update(WORD.findall(line.lower()))
+    return "\n".join(
+        _repair_line(line, vocab)
+        if SENTINEL in line or BULLET_GLYPH.search(line)
+        else line
+        for line in lines
+    )
+
+
 def clean_markdown(markdown: str) -> str:
     """Limpa ruídos típicos de PDF e deixa o Markdown "linter-friendly"."""
     markdown = markdown.replace("\r\n", "\n").replace("\r", "\n")
@@ -278,8 +421,10 @@ def clean_markdown(markdown: str) -> str:
     markdown = convert_sup_tags(markdown)
     markdown = BR_TAG.sub(" ", markdown)
     markdown = PAGE_NUMBER_LINE.sub("", markdown)  # **12** isolado = nº de página
+    markdown = GLUED_PAGE_NUMBER.sub("", markdown)  # ~~5~~ colado ao texto
     markdown = DROP_CAP.sub(r"\1\2", markdown)  # "**F**\n\nator" -> "Fator"
     markdown = STRAY_CAP.sub("", markdown)
+    markdown = repair_style_splits(markdown)
     markdown = normalize_headings(markdown)
     markdown = BOLD_ONLY_LINE.sub(r"\1", markdown)  # negrito usado como "título"
     markdown = normalize_lists(markdown)
