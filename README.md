@@ -60,18 +60,19 @@ O código de saída é `0` quando todos os PDFs foram convertidos e `1` se algum
 
 ## Opções
 
-| Opção                 | Padrão                 | Descrição                                                                              |
-| :-------------------- | :--------------------- | :------------------------------------------------------------------------------------- |
-| `source`              | —                      | PDF ou pasta com PDFs (busca recursiva).                                               |
-| `-o`, `--output`      | `notas`                | Pasta onde as notas `.md` serão gravadas.                                              |
-| `-a`, `--attachments` | `<output>/attachments` | Pasta das imagens extraídas.                                                           |
-| `-t`, `--tags`        | `didatica`             | Tags do frontmatter, separadas por espaço.                                             |
-| `--draft`             | desligado              | Grava `draft: true` no frontmatter.                                                    |
-| `--title`             | automático             | Título fixo. Com uma pasta, vale para todos os PDFs.                                   |
-| `--description`       | automática             | Descrição fixa. Com uma pasta, vale para todos os PDFs.                                |
-| `--skip-pages`        | nenhuma                | Páginas a ignorar, contadas a partir de 1: `"1-4"`, `"1-4,10"` ou `"60-"` (até o fim). |
-| `--no-images`         | desligado              | Não extrai imagens.                                                                    |
-| `--ocr`               | desligado              | Liga o OCR, só para PDFs escaneados.                                                   |
+| Opção                  | Padrão                 | Descrição                                                                              |
+| :--------------------- | :--------------------- | :------------------------------------------------------------------------------------- |
+| `source`               | —                      | PDF ou pasta com PDFs (busca recursiva).                                               |
+| `-o`, `--output`       | `notas`                | Pasta onde as notas `.md` serão gravadas.                                              |
+| `-a`, `--attachments`  | `<output>/attachments` | Pasta das imagens extraídas.                                                           |
+| `-t`, `--tags`         | `didatica`             | Tags do frontmatter, separadas por espaço.                                             |
+| `--draft`              | desligado              | Grava `draft: true` no frontmatter.                                                    |
+| `--title`              | automático             | Título fixo. Com uma pasta, vale para todos os PDFs.                                   |
+| `--description`        | automática             | Descrição fixa. Com uma pasta, vale para todos os PDFs.                                |
+| `--skip-pages`         | nenhuma                | Páginas a ignorar, contadas a partir de 1: `"1-4"`, `"1-4,10"` ou `"60-"` (até o fim). |
+| `--duplicate-headings` | `callout`              | `callout` troca títulos repetidos por callouts; `keep` mantém todos como títulos.      |
+| `--no-images`          | desligado              | Não extrai imagens.                                                                    |
+| `--ocr`                | desligado              | Liga o OCR, só para PDFs escaneados.                                                   |
 
 ## O que o script faz
 
@@ -96,21 +97,23 @@ tags:
 
 ### Limpeza do texto
 
-| Problema no PDF                                                | Resultado na nota                                                        |
-| :------------------------------------------------------------- | :----------------------------------------------------------------------- |
-| Palavras hifenizadas na quebra de linha (`apren-` / `dizagem`) | `aprendizagem`                                                           |
-| Parágrafo cortado por troca de página                          | Parágrafos unidos                                                        |
-| Número de página solto (`**12**`)                              | Removido                                                                 |
-| Letra capitular (`**F**` / `ator`)                             | `Fator`                                                                  |
-| Títulos com níveis embaralhados (H6, H5, saltos)               | Hierarquia H2, H3, H4 sem saltos. O H1 fica com o `title` do frontmatter |
-| Negrito usado no lugar de título                               | Texto simples                                                            |
-| `<sup>a</sup>`, `<sup>1</sup>`                                 | `ª`, `¹`                                                                 |
-| `<br>` fora de tabelas e blocos                                | Espaço                                                                   |
-| "Texto de figura" extraído como HTML                           | Callout dobrável `> [!note]- Texto extraído de figura`                   |
-| URLs quebradas por espaço (`https://site.org/ pagina`)         | URL reconectada                                                          |
-| URLs soltas                                                    | `<https://...>` ou `[www.site.br](https://www.site.br)`                  |
-| Listas com `*` e recuo de 3 espaços                            | `-` e recuo de 2 espaços                                                 |
-| Quebras de linha do Windows (CRLF)                             | LF                                                                       |
+| Problema no PDF                                                                  | Resultado na nota                                                                                    |
+| :------------------------------------------------------------------------------- | :--------------------------------------------------------------------------------------------------- |
+| Palavras hifenizadas na quebra de linha (`apren-` / `dizagem`)                   | `aprendizagem`                                                                                       |
+| Parágrafo cortado por troca de página                                            | Parágrafos unidos                                                                                    |
+| Número de página solto (`**12**`)                                                | Removido                                                                                             |
+| Letra capitular (`**F**` / `ator`)                                               | `Fator`                                                                                              |
+| Títulos com níveis embaralhados (H6, H5, saltos)                                 | Hierarquia H2, H3, H4 sem saltos. O H1 fica com o `title` do frontmatter                             |
+| Negrito usado no lugar de título                                                 | Texto simples                                                                                        |
+| `<sup>a</sup>`, `<sup>1</sup>`                                                   | `ª`, `¹`                                                                                             |
+| `<br>` fora de tabelas e blocos                                                  | Espaço                                                                                               |
+| "Texto de figura" extraído como HTML                                             | Callout dobrável `> [!note]- Texto extraído de figura`                                               |
+| URLs quebradas por espaço (`https://site.org/ pagina`)                           | URL reconectada                                                                                      |
+| URLs soltas                                                                      | `<https://...>` ou `[www.site.br](https://www.site.br)`                                              |
+| Título repetido várias vezes (ex.: "Possibilidades de uso" sob cada ferramenta)  | Callout `> [!info] Possibilidades de uso` com o conteúdo dentro. Evita o aviso MD024 do markdownlint |
+| Texto riscado ou destacado que o PDF gera sem querer (`~~x~~`, `<mark>x</mark>`) | Marcadores removidos e palavras partidas reconectadas                                                |
+| Listas com `*` e recuo de 3 espaços                                              | `-` e recuo de 2 espaços                                                                             |
+| Quebras de linha do Windows (CRLF)                                               | LF                                                                                                   |
 
 ### Imagens
 
@@ -156,6 +159,8 @@ PDFs institucionais costumam ter capa, ficha catalográfica e metadados ruins. C
 ## Limitações
 
 - **Wikilinks:** o script não cria links internos como `[[Aprendizagem]]`.
+- **Títulos repetidos:** só viram callout os títulos sem subtítulos. Um título repetido que tenha subtítulos abaixo continua como título e ainda gera o aviso MD024.
+- **Callouts consecutivos:** dois callouts separados por uma linha em branco geram o aviso MD028 (linha em branco dentro de citação).
 - **Letras capitulares no meio da palavra:** quando o PDF coloca a capitular na posição errada (`eduO cacionais`), o erro vai para a nota. Vale buscar maiúsculas coladas no meio de palavras.
 - **Junção de parágrafos:** é heurística. Parágrafos que começam em minúscula e seguem um bloco sem pontuação final são unidos, o que pode errar em listas sem marcador.
 - **URLs quebradas:** a reconexão também é heurística. Confira as URLs da bibliografia.
