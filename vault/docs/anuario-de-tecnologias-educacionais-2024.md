@@ -205,15 +205,15 @@ A inteligência artificial desenvolvida pela Google, focada em otimizar interaç
 
 _Site_: <https://gemini.google.com/appCanal>: <https://www.youtube.com/watch?v=b5Fh7TaTkEU> Licença: gratuita
 
-##### Possibilidades de uso
-
-- **Tutoria interativa**: funciona como um tutor interativo, esclarecendo dúvidas dos estudantes em tempo real e fornecendo explicações detalhadas e recursos adicionais para aprofundamento do conhecimento. Permite um aprendizado
-
-personalizado e adaptativo, atendendo às necessidades específicas de cada estudante sem especificar um curso ou área de estudo.
-
-- **Otimização de pesquisa**: utilizando sua capacidade de processar grandes volumes de dados rapidamente, pode ajudar estudantes a localizar e acessar informações relevantes com eficiência, potencializando a pesquisa acadêmica e profissional. Isso inclui a habilidade de filtrar e sintetizar dados complexos, facilitando o acesso a conhecimentos que seriam trabalhosos de compilar manualmente.
-
-- **Organização pessoal**: como assistente pessoal, pode ajudar na gestão do tempo e na organização de tarefas relacionadas ao estudo e desenvolvimento profissional. Isso inclui agendar compromissos, definir lembretes para prazos de projetos ou tarefas e sugerir pausas estratégicas, contribuindo para o bemestar e a eficácia no aprendizado.
+> [!info] Possibilidades de uso
+>
+> - **Tutoria interativa**: funciona como um tutor interativo, esclarecendo dúvidas dos estudantes em tempo real e fornecendo explicações detalhadas e recursos adicionais para aprofundamento do conhecimento. Permite um aprendizado
+>
+> personalizado e adaptativo, atendendo às necessidades específicas de cada estudante sem especificar um curso ou área de estudo.
+>
+> - **Otimização de pesquisa**: utilizando sua capacidade de processar grandes volumes de dados rapidamente, pode ajudar estudantes a localizar e acessar informações relevantes com eficiência, potencializando a pesquisa acadêmica e profissional. Isso inclui a habilidade de filtrar e sintetizar dados complexos, facilitando o acesso a conhecimentos que seriam trabalhosos de compilar manualmente.
+>
+> - **Organização pessoal**: como assistente pessoal, pode ajudar na gestão do tempo e na organização de tarefas relacionadas ao estudo e desenvolvimento profissional. Isso inclui agendar compromissos, definir lembretes para prazos de projetos ou tarefas e sugerir pausas estratégicas, contribuindo para o bemestar e a eficácia no aprendizado.
 
 #### ChatGPT
 
@@ -221,17 +221,17 @@ O ChatGPT é uma aplicação de conversação desenvolvida pela OpenAI que utili
 
 _Site_: <https://chat.openai.com/> Canal: <https://www.youtube.com/openai> Licença: gratuita e paga
 
-##### Possibilidades de uso
-
-- **Educação e tutoria**: pode servir como um tutor virtual, ajudando alunos com dúvidas em diversas disciplinas com explicações e exemplos.
-
-- **Assistência virtual**: integrável a _sites_, aplicativos e sistemas de atendimento ao cliente. Essa ferramenta fornece suporte e assistência instantânea, respondendo a perguntas comuns e orientando sobre produtos ou serviços.
-
-- **Cocriação de conteúdo**: facilita para os criadores de conteúdo a geração de ideias, esboços ou textos completos, contribuindo para o processo de escrita e fomentando a criatividade.
-
-- **Teste de linguagem e conversação**: funciona como uma ferramenta de teste para avaliar a fluência e a coerência textual de modelos de linguagem, além de ser útil no treinamento e aprimoramento de sistemas de conversação baseados em inteligência artificial.
-
-- **Pesquisa e exploração de ideias**: a uxilia pesquisadores e profissionais a explorarem e expandirem ideias através de conversas virtuais, promovendo a geração de insights e descobertas em vários campos do conhecimento.
+> [!info] Possibilidades de uso
+>
+> - **Educação e tutoria**: pode servir como um tutor virtual, ajudando alunos com dúvidas em diversas disciplinas com explicações e exemplos.
+>
+> - **Assistência virtual**: integrável a _sites_, aplicativos e sistemas de atendimento ao cliente. Essa ferramenta fornece suporte e assistência instantânea, respondendo a perguntas comuns e orientando sobre produtos ou serviços.
+>
+> - **Cocriação de conteúdo**: facilita para os criadores de conteúdo a geração de ideias, esboços ou textos completos, contribuindo para o processo de escrita e fomentando a criatividade.
+>
+> - **Teste de linguagem e conversação**: funciona como uma ferramenta de teste para avaliar a fluência e a coerência textual de modelos de linguagem, além de ser útil no treinamento e aprimoramento de sistemas de conversação baseados em inteligência artificial.
+>
+> - **Pesquisa e exploração de ideias**: a uxilia pesquisadores e profissionais a explorarem e expandirem ideias através de conversas virtuais, promovendo a geração de insights e descobertas em vários campos do conhecimento.
 
 #### Microsoft Copilot
 
@@ -239,17 +239,17 @@ Ferramenta de assistência alimentada por IA, integrada ao ecossistema Microsoft
 
 _Site_: <https://copilot.microsoft.com/> Canal: <https://www.youtube.com/user/microsoft> Licença: requer uma assinatura Microsoft para utilização.
 
-##### Possibilidades de uso
-
-- **Aumento de produtividade no gerenciamento de** **_e-mails_**: utilizando o Outlook, o Copilot pode ajudar na organização de e-mails, priorização de mensagens importantes e agendamento de reuniões, economizando um tempo precioso.
-
-- **Estímulo à criatividade em documentos e apresentações**: no Word e no PowerPoint, o Copilot transforma ideias iniciais em documentos e apresentações visualmente atraentes, o que impulsiona a criatividade.
-
-- **Assistência avançada na escrita**: oferece suporte na redação, edição e resumo de textos no Word, permitindo aos usuários melhorarem a qualidade de seus documentos com menos esforço.
-
-- **Análise de dados aprimorada**: no Excel, o Copilot ajuda na interpretação de dados complexos, facilitando a identificação de tendências e a realização de previsões precisas para apoiar a tomada de decisões estratégicas.
-
-- **Personalização do atendimento ao cliente**: em ambientes corporativos, o Copilot pode ser utilizado para personalizar a comunicação com clientes, oferecendo respostas rápidas e relevantes, de modo a melhorar a satisfação do cliente e a eficiência operacional.
+> [!info] Possibilidades de uso
+>
+> - **Aumento de produtividade no gerenciamento de** **_e-mails_**: utilizando o Outlook, o Copilot pode ajudar na organização de e-mails, priorização de mensagens importantes e agendamento de reuniões, economizando um tempo precioso.
+>
+> - **Estímulo à criatividade em documentos e apresentações**: no Word e no PowerPoint, o Copilot transforma ideias iniciais em documentos e apresentações visualmente atraentes, o que impulsiona a criatividade.
+>
+> - **Assistência avançada na escrita**: oferece suporte na redação, edição e resumo de textos no Word, permitindo aos usuários melhorarem a qualidade de seus documentos com menos esforço.
+>
+> - **Análise de dados aprimorada**: no Excel, o Copilot ajuda na interpretação de dados complexos, facilitando a identificação de tendências e a realização de previsões precisas para apoiar a tomada de decisões estratégicas.
+>
+> - **Personalização do atendimento ao cliente**: em ambientes corporativos, o Copilot pode ser utilizado para personalizar a comunicação com clientes, oferecendo respostas rápidas e relevantes, de modo a melhorar a satisfação do cliente e a eficiência operacional.
 
 #### Perplexity
 
@@ -259,15 +259,15 @@ _Site_: <https://www.perplexity.ai>
 
 Licença: gratuita e paga
 
-##### Possibilidades de uso
-
-- **Pesquisa e acesso a informações**: pode ser utilizada por estudantes e professores como ferramenta de pesquisa para acessar rapidamente informações confiáveis sobre uma ampla gama de tópicos, facilitando o desenvolvimento de projetos de pesquisa e estudos independentes.
-
-- **Desenvolvimento de habilidades de pesquisa**: a plataforma ajuda os alunos a desenvolverem habilidades críticas de pesquisa, ensinando-os a formular perguntas eficazes e a avaliar a qualidade das fontes de informação.
-
-- **Suporte para escrita acadêmica**: a uxilia na redação de trabalhos acadêmicos e artigos, fornecendo informações e citações que os alunos podem usar para embasar seus argumentos e análises.
-
-- **Enriquecimento da aprendizagem baseada em projetos**: a ferramenta pode ser utilizada em projetos baseados em pesquisa, em que os alunos precisam buscar e integrar informações de diversas fontes, promovendo uma aprendizagem mais ativa e engajada.
+> [!info] Possibilidades de uso
+>
+> - **Pesquisa e acesso a informações**: pode ser utilizada por estudantes e professores como ferramenta de pesquisa para acessar rapidamente informações confiáveis sobre uma ampla gama de tópicos, facilitando o desenvolvimento de projetos de pesquisa e estudos independentes.
+>
+> - **Desenvolvimento de habilidades de pesquisa**: a plataforma ajuda os alunos a desenvolverem habilidades críticas de pesquisa, ensinando-os a formular perguntas eficazes e a avaliar a qualidade das fontes de informação.
+>
+> - **Suporte para escrita acadêmica**: a uxilia na redação de trabalhos acadêmicos e artigos, fornecendo informações e citações que os alunos podem usar para embasar seus argumentos e análises.
+>
+> - **Enriquecimento da aprendizagem baseada em projetos**: a ferramenta pode ser utilizada em projetos baseados em pesquisa, em que os alunos precisam buscar e integrar informações de diversas fontes, promovendo uma aprendizagem mais ativa e engajada.
 
 #### Luzia
 
@@ -275,19 +275,19 @@ Assistente inteligente baseada em inteligência artificial, projetada para ajuda
 
 _Site_: <https://www.luzia.com/br>
 
-##### Possibilidades de uso
-
-- **Suporte em tarefas de pesquisa**: pesquisas rápidas para trabalhos escolares, oferecendo informações e facilitando o entendimento de conceitos.
-
-- **Apoio em projetos de linguagem**: pode ser usada para traduzir textos e melhorar habilidades linguísticas, o que é útil para estudantes aprendendo novos idiomas.
-
-- **Ferramenta de aprendizado interativo**: a capacidade de interagir em tempo real e receber feedback instantâneo pode aumentar o engajamento dos alunos e proporcionar um aprendizado mais dinâmico.
-
-- **Assistência na organização de atividades acadêmicas**: ajuda na organização de cronogramas de estudos, preparação para exames e gerenciamento de tarefas escolares.
-
-- **Estímulo à criatividade**: por meio de sugestões de atividades e projetos, pode inspirar os alunos a explorarem novas áreas de conhecimento e a expressarem sua criatividade.
-
-c. IA para áudio
+> [!info] Possibilidades de uso
+>
+> - **Suporte em tarefas de pesquisa**: pesquisas rápidas para trabalhos escolares, oferecendo informações e facilitando o entendimento de conceitos.
+>
+> - **Apoio em projetos de linguagem**: pode ser usada para traduzir textos e melhorar habilidades linguísticas, o que é útil para estudantes aprendendo novos idiomas.
+>
+> - **Ferramenta de aprendizado interativo**: a capacidade de interagir em tempo real e receber feedback instantâneo pode aumentar o engajamento dos alunos e proporcionar um aprendizado mais dinâmico.
+>
+> - **Assistência na organização de atividades acadêmicas**: ajuda na organização de cronogramas de estudos, preparação para exames e gerenciamento de tarefas escolares.
+>
+> - **Estímulo à criatividade**: por meio de sugestões de atividades e projetos, pode inspirar os alunos a explorarem novas áreas de conhecimento e a expressarem sua criatividade.
+>
+> c. IA para áudio
 
 #### Mubert
 
@@ -295,17 +295,17 @@ Plataforma de inteligência artificial que gera música sob medida para diversos
 
 _Site_: <https://mubert.com/> Canal: [www.youtube.com/@Mubert](https://www.youtube.com/@Mubert) Licença: gratuita e paga
 
-##### Possibilidades de uso
-
-- **Criação de trilhas sonoras para projetos multimídia**: usuários podem personalizar trilhas sonoras para seus projetos, melhorando a narrativa visual e a experiência do espectador com música que se ajusta ao estilo desejado.
-
-- **Ambientes de aprendizagem melhorados**: música de fundo personalizada pode tornar o ambiente educacional mais agradável, potencialmente aumentando a concentração e reduzindo o estresse, de forma a criar um espaço propício ao aprendizado.
-
-- **Desenvolvimento de jogos**: a utilização de APIs para música dinâmica e adaptativa em jogos enriquece a experiência do usuário, com trilhas sonoras que reagem ao comportamento do jogador.
-
-- **Desenvolvimento** **_web_** **e de apps**: integrar dimensões sonoras nos projetos _web_ e de aplicativos pode tornar a experiência mais imersiva, permitindo a criação de ambientes _on-line_ envolventes.
-
-- **Produção musical e engenharia de som**: a exploração da inteligência artificial na música abre novas possibilidades na produção musical, fornecendo ferramentas inovadoras para criadores e ampliando o espectro de inovação na música generativa.
+> [!info] Possibilidades de uso
+>
+> - **Criação de trilhas sonoras para projetos multimídia**: usuários podem personalizar trilhas sonoras para seus projetos, melhorando a narrativa visual e a experiência do espectador com música que se ajusta ao estilo desejado.
+>
+> - **Ambientes de aprendizagem melhorados**: música de fundo personalizada pode tornar o ambiente educacional mais agradável, potencialmente aumentando a concentração e reduzindo o estresse, de forma a criar um espaço propício ao aprendizado.
+>
+> - **Desenvolvimento de jogos**: a utilização de APIs para música dinâmica e adaptativa em jogos enriquece a experiência do usuário, com trilhas sonoras que reagem ao comportamento do jogador.
+>
+> - **Desenvolvimento** **_web_** **e de apps**: integrar dimensões sonoras nos projetos _web_ e de aplicativos pode tornar a experiência mais imersiva, permitindo a criação de ambientes _on-line_ envolventes.
+>
+> - **Produção musical e engenharia de som**: a exploração da inteligência artificial na música abre novas possibilidades na produção musical, fornecendo ferramentas inovadoras para criadores e ampliando o espectro de inovação na música generativa.
 
 #### Moises Studio
 
@@ -313,17 +313,17 @@ Plataforma avançada projetada para músicos, o Moises Studio utiliza inteligên
 
 _Site_: <https://studio.moises.aiCanal>: [www.youtube.com/MoisesApp](https://www.youtube.com/MoisesApp) Licença: gratuita e paga
 
-##### Possibilidades de uso
-
-- **Paródias**: permite que professores criem versões de músicas famosas com letras sobre os conteúdos da aula. Por sua vez, as letras das paródias podem ser geradas pelo ChatGPT.
-
-- **Prática musical personalizada**: possibilita que músicos isolem instrumentos ou vocais para praticar individualmente, ajustando o acompanhamento conforme suas necessidades específicas.
-
-- **Aprendizado e ensino de música**: facilita o ensino de música ao permitir que educadores destaquem partes específicas das músicas para instruções detalhadas.
-
-- **Produção musical**: oferece suporte a produtores na criação de remixes e arranjos, com ferramentas avançadas para a manipulação de faixas musicais.
-
-- **Desenvolvimento de habilidades auditivas**: ajuda músicos a desenvolverem um ouvido mais apurado para diferentes componentes musicais por meio do isolamento de faixas.
+> [!info] Possibilidades de uso
+>
+> - **Paródias**: permite que professores criem versões de músicas famosas com letras sobre os conteúdos da aula. Por sua vez, as letras das paródias podem ser geradas pelo ChatGPT.
+>
+> - **Prática musical personalizada**: possibilita que músicos isolem instrumentos ou vocais para praticar individualmente, ajustando o acompanhamento conforme suas necessidades específicas.
+>
+> - **Aprendizado e ensino de música**: facilita o ensino de música ao permitir que educadores destaquem partes específicas das músicas para instruções detalhadas.
+>
+> - **Produção musical**: oferece suporte a produtores na criação de remixes e arranjos, com ferramentas avançadas para a manipulação de faixas musicais.
+>
+> - **Desenvolvimento de habilidades auditivas**: ajuda músicos a desenvolverem um ouvido mais apurado para diferentes componentes musicais por meio do isolamento de faixas.
 
 #### FADR
 
@@ -331,17 +331,17 @@ Plataforma de criação musical que emprega inteligência artificial para facili
 
 _Site_: <https://www.fadr.com> Licença: gratuita e paga
 
-##### Possibilidades de uso
-
-- **Educação musical e tecnologia**: pode ser integrado ao currículo de educação musical para ensinar conceitos de produção musical, edição e remixagem, permitindo que os estudantes apliquem teoria musical de forma prática utilizando ferramentas tecnológicas avançadas.
-
-- **Projetos de arte e multimídia**: estudantes de áreas criativas podem usar a ferramenta para explorar a interseção entre música, tecnologia e artes visuais, criando trilhas sonoras para projetos de vídeo ou apresentações artísticas.
-
-- **Desenvolvimento de habilidades criativas e técnicas**: a o trabalhar com a plataforma, os alunos desenvolvem habilidades técnicas em software musical e habilidades criativas na composição e arranjo musical, essenciais para carreiras contemporâneas em música e mídia.
-
-- **Colaboração interdisciplinar**: pode ser usado em projetos colaborativos que combinam música, dança, teatro e outras disciplinas, incentivando os alunos a trabalhar em equipe e a integrar diversas formas de arte.
-
-- **Acesso ampliado à produção musical**: permite que estudantes sem experiência prévia em produção musical possam criar e experimentar, tornando o aprendizado de música mais inclusivo e engajador.
+> [!info] Possibilidades de uso
+>
+> - **Educação musical e tecnologia**: pode ser integrado ao currículo de educação musical para ensinar conceitos de produção musical, edição e remixagem, permitindo que os estudantes apliquem teoria musical de forma prática utilizando ferramentas tecnológicas avançadas.
+>
+> - **Projetos de arte e multimídia**: estudantes de áreas criativas podem usar a ferramenta para explorar a interseção entre música, tecnologia e artes visuais, criando trilhas sonoras para projetos de vídeo ou apresentações artísticas.
+>
+> - **Desenvolvimento de habilidades criativas e técnicas**: a o trabalhar com a plataforma, os alunos desenvolvem habilidades técnicas em software musical e habilidades criativas na composição e arranjo musical, essenciais para carreiras contemporâneas em música e mídia.
+>
+> - **Colaboração interdisciplinar**: pode ser usado em projetos colaborativos que combinam música, dança, teatro e outras disciplinas, incentivando os alunos a trabalhar em equipe e a integrar diversas formas de arte.
+>
+> - **Acesso ampliado à produção musical**: permite que estudantes sem experiência prévia em produção musical possam criar e experimentar, tornando o aprendizado de música mais inclusivo e engajador.
 
 #### ElevenLabs
 
@@ -349,17 +349,17 @@ Plataforma avançada de geração de voz por inteligência artificial que transf
 
 _Site_: <https://elevenlabs.io/>
 
-##### Possibilidades de uso
-
-- **Ferramenta de acessibilidade**: pode ser usada para converter materiais didáticos escritos em áudio, auxiliando estudantes com deficiências visuais ou dificuldades de leitura.
-
-- **Aprimoramento de idiomas**: a o oferecer suporte em várias línguas, pode ser útil para o ensino de idiomas, permitindo que os alunos escutem e pratiquem as pronúncias corretas.
-
-- **Engajamento e inclusão**: a capacidade de personalizar a voz e o idioma pode ajudar a criar conteúdos mais inclusivos e engajadores para estudantes de diversas origens culturais e linguísticas.
-
-- **Produção de conteúdo educacional**: cria narrações e tutoriais em vídeo, economizando tempo e recursos que seriam gastos com gravações de áudio profissionais.
-
-- **Inovação em projetos estudantis**: estudantes podem explorar a ferramenta em projetos criativos, como podcasts educacionais ou apresentações multimídia, utilizando a geração de voz e som para enriquecer seus trabalhos.
+> [!info] Possibilidades de uso
+>
+> - **Ferramenta de acessibilidade**: pode ser usada para converter materiais didáticos escritos em áudio, auxiliando estudantes com deficiências visuais ou dificuldades de leitura.
+>
+> - **Aprimoramento de idiomas**: a o oferecer suporte em várias línguas, pode ser útil para o ensino de idiomas, permitindo que os alunos escutem e pratiquem as pronúncias corretas.
+>
+> - **Engajamento e inclusão**: a capacidade de personalizar a voz e o idioma pode ajudar a criar conteúdos mais inclusivos e engajadores para estudantes de diversas origens culturais e linguísticas.
+>
+> - **Produção de conteúdo educacional**: cria narrações e tutoriais em vídeo, economizando tempo e recursos que seriam gastos com gravações de áudio profissionais.
+>
+> - **Inovação em projetos estudantis**: estudantes podem explorar a ferramenta em projetos criativos, como podcasts educacionais ou apresentações multimídia, utilizando a geração de voz e som para enriquecer seus trabalhos.
 
 ##### d. IA para texto
 
@@ -369,17 +369,17 @@ Grammarly é um _software_ de aprimoramento de escrita guiado por IA, projetado 
 
 _Site_: <https://www.grammarly.com/signin?allowUtmParams=trueCanal>: <https://www.youtube.com/@grammarly> Licença: gratuita e paga
 
-##### Possibilidades de uso
-
-- **Correção automática de erros**: a utomatiza a revisão gramatical, ortográfica e de pontuação, reduzindo significativamente erros comuns na escrita.
-
-- **Sugestões de estilo e tom**: personaliza a escrita para se adequar a público-alvo e contexto, útil para comunicações profissionais e acadêmicas.
-
-- **Análise de clareza e coerência**: melhora a legibilidade do texto, garantindo que as ideias sejam apresentadas de forma clara e lógica.
-
-- **Plágio e referências**: verifica a originalidade do texto e auxilia na correta citação de fontes, importante para trabalhos acadêmicos e profissionais.
-
-- **Redação acadêmica e profi** **ssional**: a primora a qualidade de documentos acadêmicos e profissionais, o que contribui para promover uma imagem de competência e confiabilidade.
+> [!info] Possibilidades de uso
+>
+> - **Correção automática de erros**: a utomatiza a revisão gramatical, ortográfica e de pontuação, reduzindo significativamente erros comuns na escrita.
+>
+> - **Sugestões de estilo e tom**: personaliza a escrita para se adequar a público-alvo e contexto, útil para comunicações profissionais e acadêmicas.
+>
+> - **Análise de clareza e coerência**: melhora a legibilidade do texto, garantindo que as ideias sejam apresentadas de forma clara e lógica.
+>
+> - **Plágio e referências**: verifica a originalidade do texto e auxilia na correta citação de fontes, importante para trabalhos acadêmicos e profissionais.
+>
+> - **Redação acadêmica e profi** **ssional**: a primora a qualidade de documentos acadêmicos e profissionais, o que contribui para promover uma imagem de competência e confiabilidade.
 
 #### Clarice.AI
 
@@ -387,19 +387,19 @@ Ferramenta de assistência à escrita baseada em inteligência artificial, proje
 
 _Site_: <https://app.clarice.ai/> Canal: <https://www.linkedin.com/company/clarice-ai/?originalSubdomain=br> Licença: gratuita e paga
 
-##### Possibilidades de uso
-
-- **Apoio à escrita**: oferece correções gramaticais e ortográficas, além de sugestões de estilo para aprimorar clareza, concisão, força e originalidade dos textos.
-
-- **Criação de conteúdo**: geração de textos originais em diversos formatos, como artigos de _blog_, mídias sociais, anúncios, e-mails e conteúdo para _websites_.
-
-- **Produtividade e colaboração**: a celera a produção de conteúdo, permitindo colaboração em equipe com atualizações em tempo real. Adequada para criadores individuais ou equipes de conteúdo.
-
-- **Aprimoramento contínuo**: a ferramenta aprende com os hábitos de escrita do usuário, oferecendo dicas cada vez mais personalizadas para melhorar a escrita.
-
-- **Integração e compatibilidade**: planeja-se a integração com o Google Docs, ampliando sua acessibilidade e facilidade de uso em diferentes plataformas.
-
-**e. IA para i** **magens**
+> [!info] Possibilidades de uso
+>
+> - **Apoio à escrita**: oferece correções gramaticais e ortográficas, além de sugestões de estilo para aprimorar clareza, concisão, força e originalidade dos textos.
+>
+> - **Criação de conteúdo**: geração de textos originais em diversos formatos, como artigos de _blog_, mídias sociais, anúncios, e-mails e conteúdo para _websites_.
+>
+> - **Produtividade e colaboração**: a celera a produção de conteúdo, permitindo colaboração em equipe com atualizações em tempo real. Adequada para criadores individuais ou equipes de conteúdo.
+>
+> - **Aprimoramento contínuo**: a ferramenta aprende com os hábitos de escrita do usuário, oferecendo dicas cada vez mais personalizadas para melhorar a escrita.
+>
+> - **Integração e compatibilidade**: planeja-se a integração com o Google Docs, ampliando sua acessibilidade e facilidade de uso em diferentes plataformas.
+>
+> **e. IA para i** **magens**
 
 #### DALL-E / Microsoft Designer
 
@@ -407,19 +407,19 @@ O DALL-E é um modelo de inteligência artificial desenvolvido pela OpenAI, base
 
 _Site_: <https://copilot.microsoft.com/images/create> Licença: gratuita e paga
 
-##### Possibilidades de uso
-
-- **Criação de imagens ilustrativas**: a IA gera ilustrações e imagens realísticas para complementar apresentações e textos educativos.
-
-- **Desenvolvimento de material didático visual**: professores podem criar imagens customizadas para livros didáticos, folhetos e recursos de aprendizagem digital, adaptados às necessidades específicas de seus alunos.
-
-- **Apoio a estudantes com necessidades especiais**: imagens visualmente ricas podem ajudar no aprendizado de alunos com dificuldades de leitura ou desafios cognitivos, facilitando a compreensão de conceitos complexos.
-
-- **Estímulo à criatividade e à expressão artística**: alunos podem usar a ferramenta para explorar a arte digital, desenvolvendo projetos criativos e expressando ideias por meio de imagens únicas.
-
-- **Ferramenta para aulas de história e cultura**: imagens históricas ou culturais podem ser recriadas ou adaptadas para ajudar na visualização de períodos históricos, eventos significativos e tradições culturais.
-
-- **Engajamento em projetos interdisciplinares**: o DALL-E pode ser utilizado em projetos que integram diversas áreas do conhecimento, criando ilustrações que representam dados ou conceitos de forma interativa e envolvente.
+> [!info] Possibilidades de uso
+>
+> - **Criação de imagens ilustrativas**: a IA gera ilustrações e imagens realísticas para complementar apresentações e textos educativos.
+>
+> - **Desenvolvimento de material didático visual**: professores podem criar imagens customizadas para livros didáticos, folhetos e recursos de aprendizagem digital, adaptados às necessidades específicas de seus alunos.
+>
+> - **Apoio a estudantes com necessidades especiais**: imagens visualmente ricas podem ajudar no aprendizado de alunos com dificuldades de leitura ou desafios cognitivos, facilitando a compreensão de conceitos complexos.
+>
+> - **Estímulo à criatividade e à expressão artística**: alunos podem usar a ferramenta para explorar a arte digital, desenvolvendo projetos criativos e expressando ideias por meio de imagens únicas.
+>
+> - **Ferramenta para aulas de história e cultura**: imagens históricas ou culturais podem ser recriadas ou adaptadas para ajudar na visualização de períodos históricos, eventos significativos e tradições culturais.
+>
+> - **Engajamento em projetos interdisciplinares**: o DALL-E pode ser utilizado em projetos que integram diversas áreas do conhecimento, criando ilustrações que representam dados ou conceitos de forma interativa e envolvente.
 
 #### Leonardo AI
 
@@ -427,17 +427,17 @@ Plataforma inovadora que emprega inteligência artificial para permitir a criaç
 
 _Site_: <https://leonardo.ai/> Canal: <https://www.linkedin.com/company/leonardo-ai/?originalSubdomain=au> Licença: gratuita e paga
 
-##### Possibilidades de uso
-
-- **Produção de material didático**: podem gerar ilustrações e visuais para enriquecer materiais de ensino, a fim de tornar o aprendizado mais atraente e compreensível.
-
-- **Apoio à prototipagem de produtos**: _designers_ e desenvolvedores de produtos podem usar a plataforma para visualizar rapidamente conceitos de produtos ou embalagens.
-
-- **Estímulo à exploração artística**: artistas podem experimentar diferentes estilos e técnicas sem a necessidade de materiais físicos, explorando novas formas de expressão artística.
-
-- **Criação de conteúdo para mídias sociais**: criadores de conteúdo podem gerar imagens únicas para campanhas ou posts em redes sociais, de modo a otimizar o engajamento.
-
-- **Visualização de dados e informações**: a ferramenta pode ser empregada para criar representações visuais de dados complexos, a fim de facilitar a compreensão e a apresentação de informações.
+> [!info] Possibilidades de uso
+>
+> - **Produção de material didático**: podem gerar ilustrações e visuais para enriquecer materiais de ensino, a fim de tornar o aprendizado mais atraente e compreensível.
+>
+> - **Apoio à prototipagem de produtos**: _designers_ e desenvolvedores de produtos podem usar a plataforma para visualizar rapidamente conceitos de produtos ou embalagens.
+>
+> - **Estímulo à exploração artística**: artistas podem experimentar diferentes estilos e técnicas sem a necessidade de materiais físicos, explorando novas formas de expressão artística.
+>
+> - **Criação de conteúdo para mídias sociais**: criadores de conteúdo podem gerar imagens únicas para campanhas ou posts em redes sociais, de modo a otimizar o engajamento.
+>
+> - **Visualização de dados e informações**: a ferramenta pode ser empregada para criar representações visuais de dados complexos, a fim de facilitar a compreensão e a apresentação de informações.
 
 #### Sketch.IO
 
@@ -447,15 +447,15 @@ _Site_: <https://sketch.io/>
 
 Licença: gratuita e paga
 
-##### Possibilidades de uso
-
-- **Educação artística**: ideal para ambientes educacionais, em que professores podem incorporar o Sketch.IO em lições de arte e _design_, enriquecendo o currículo com práticas de desenho e pintura digital.
-
-- **Ilustração digital**: artistas podem usar a plataforma para criar ilustrações detalhadas para publicações digitais ou impressas, como livros, revistas e quadrinhos.
-
-- **_Design_** **gráfi** **co**: oferece ferramentas robustas para o desenvolvimento de elementos gráficos, logotipos e ícones, apoiando projetos de _design_ tanto digitais quanto impressos.
-
-- **Passatempo criativo**: serve como uma excelente ferramenta para indivíduos que desejam explorar a arte digital como um _hobby_, experimentando com diferentes estilos e técnicas.
+> [!info] Possibilidades de uso
+>
+> - **Educação artística**: ideal para ambientes educacionais, em que professores podem incorporar o Sketch.IO em lições de arte e _design_, enriquecendo o currículo com práticas de desenho e pintura digital.
+>
+> - **Ilustração digital**: artistas podem usar a plataforma para criar ilustrações detalhadas para publicações digitais ou impressas, como livros, revistas e quadrinhos.
+>
+> - **_Design_** **gráfi** **co**: oferece ferramentas robustas para o desenvolvimento de elementos gráficos, logotipos e ícones, apoiando projetos de _design_ tanto digitais quanto impressos.
+>
+> - **Passatempo criativo**: serve como uma excelente ferramenta para indivíduos que desejam explorar a arte digital como um _hobby_, experimentando com diferentes estilos e técnicas.
 
 #### Adobe Firefyl
 
@@ -463,19 +463,19 @@ Licença: gratuita e paga
 
 _Site_: <https://www.adobe.com/products/firefly.htmlCanal>: <https://www.youtube.com/adobe> Licença: gratuita e paga
 
-##### Possibilidades de uso
-
-- **Visualização de conceitos**: pode ser utilizado por educadores para transformar conceitos abstratos em ilustrações concretas, facilitando a compreensão dos estudantes. Por exemplo, conceitos complexos de ciências ou matemática podem ser visualizados por meio de ilustrações detalhadas.
-
-- **Desenvolvimento de material didático**: professores podem criar rapidamente materiais visuais personalizados que atendam às necessidades específicas de suas turmas, enriquecendo o material de ensino.
-
-- **Projetos de arte e design**: estudantes de áreas relacionadas à arte e ao design podem utilizar a ferramenta para explorar novas técnicas e estilos em seus projetos, experimentando com diferentes texturas, cores e formas de uma maneira intuitiva e inovadora.
-
-- **Colaboração em projetos**: a ferramenta permite que alunos e professores colaborem na criação de projetos visuais, mesmo que não tenham habilidades avançadas de design gráfico. Isso democratiza o acesso à criação de conteúdo visual de alta qualidade.
-
-- **Engajamento e interatividade**: a o integrar o Adobe Firefly a atividades educacionais, professores podem tornar as aulas mais interativas e
-
-envolventes, incentivando a participação ativa dos alunos na criação de conteúdo visual relacionado ao conteúdo aprendido.
+> [!info] Possibilidades de uso
+>
+> - **Visualização de conceitos**: pode ser utilizado por educadores para transformar conceitos abstratos em ilustrações concretas, facilitando a compreensão dos estudantes. Por exemplo, conceitos complexos de ciências ou matemática podem ser visualizados por meio de ilustrações detalhadas.
+>
+> - **Desenvolvimento de material didático**: professores podem criar rapidamente materiais visuais personalizados que atendam às necessidades específicas de suas turmas, enriquecendo o material de ensino.
+>
+> - **Projetos de arte e design**: estudantes de áreas relacionadas à arte e ao design podem utilizar a ferramenta para explorar novas técnicas e estilos em seus projetos, experimentando com diferentes texturas, cores e formas de uma maneira intuitiva e inovadora.
+>
+> - **Colaboração em projetos**: a ferramenta permite que alunos e professores colaborem na criação de projetos visuais, mesmo que não tenham habilidades avançadas de design gráfico. Isso democratiza o acesso à criação de conteúdo visual de alta qualidade.
+>
+> - **Engajamento e interatividade**: a o integrar o Adobe Firefly a atividades educacionais, professores podem tornar as aulas mais interativas e
+>
+> envolventes, incentivando a participação ativa dos alunos na criação de conteúdo visual relacionado ao conteúdo aprendido.
 
 #### Midjourney
 
@@ -485,19 +485,19 @@ _Site_: <https://www.midjourney.com>
 
 Licença: paga
 
-##### Possibilidades de uso
-
-- **Estímulo à criatividade e inovação**: pode ser utilizado para incentivar a criatividade dos alunos, permitindo que transformem ideias textuais em representações visuais. Isso pode ser particularmente útil em disciplinas como artes, literatura e ciências sociais, em que a visualização de conceitos pode enriquecer a compreensão e a interpretação dos alunos.
-
-- **Apoio no ensino de arte e** **_design_**: demonstrar técnicas de composição visual, teoria das cores e design gráfico, proporcionando aos alunos uma ferramenta prática para experimentar e aprender esses conceitos de forma dinâmica.
-
-- **Desenvolvimento de projetos interdisciplinares**: a capacidade de criar imagens complexas e detalhadas pode ser utilizada em projetos interdisciplinares, em que estudantes de diferentes áreas colaboram para criar apresentações, infográficos ou mesmo narrativas visuais que combinam elementos de várias disciplinas.
-
-- **Ferramenta de apresentação visual**: criação de materiais de apoio visualmente atraentes para as aulas, ajudando a captar e manter a atenção dos alunos, além de facilitar a compreensão de temas complexos através de ilustrações claras e relevantes.
-
-- **Promoção de pensamento crítico**: a o desafiar os alunos a converterem descrições textuais em imagens, os educadores podem promover habilidades de análise crítica e interpretação, essenciais para o desenvolvimento acadêmico e profissional dos estudantes.
-
-A Midjourney, portanto, não serve apenas ao campo profissional de artistas e designers, também se apresenta como ferramenta educacional valiosa, capaz de transformar o ambiente de aprendizagem ao integrar a visualização criativa no processo educativo.
+> [!info] Possibilidades de uso
+>
+> - **Estímulo à criatividade e inovação**: pode ser utilizado para incentivar a criatividade dos alunos, permitindo que transformem ideias textuais em representações visuais. Isso pode ser particularmente útil em disciplinas como artes, literatura e ciências sociais, em que a visualização de conceitos pode enriquecer a compreensão e a interpretação dos alunos.
+>
+> - **Apoio no ensino de arte e** **_design_**: demonstrar técnicas de composição visual, teoria das cores e design gráfico, proporcionando aos alunos uma ferramenta prática para experimentar e aprender esses conceitos de forma dinâmica.
+>
+> - **Desenvolvimento de projetos interdisciplinares**: a capacidade de criar imagens complexas e detalhadas pode ser utilizada em projetos interdisciplinares, em que estudantes de diferentes áreas colaboram para criar apresentações, infográficos ou mesmo narrativas visuais que combinam elementos de várias disciplinas.
+>
+> - **Ferramenta de apresentação visual**: criação de materiais de apoio visualmente atraentes para as aulas, ajudando a captar e manter a atenção dos alunos, além de facilitar a compreensão de temas complexos através de ilustrações claras e relevantes.
+>
+> - **Promoção de pensamento crítico**: a o desafiar os alunos a converterem descrições textuais em imagens, os educadores podem promover habilidades de análise crítica e interpretação, essenciais para o desenvolvimento acadêmico e profissional dos estudantes.
+>
+> A Midjourney, portanto, não serve apenas ao campo profissional de artistas e designers, também se apresenta como ferramenta educacional valiosa, capaz de transformar o ambiente de aprendizagem ao integrar a visualização criativa no processo educativo.
 
 #### Gencraft
 
@@ -505,15 +505,15 @@ A Midjourney, portanto, não serve apenas ao campo profissional de artistas e de
 
 _Site_: <https://www.gencraft.com>
 
-##### Possibilidades de uso
-
-- **Ferramenta de ensino de arte digital**: pode ser integrado ao currículo de artes visuais para ensinar técnicas de arte digital, oferecendo aos alunos uma plataforma para experimentar diferentes estilos artísticos.
-
-- **Desenvolvimento de habilidades criativas**: incentiva os alunos a pensarem de forma criativa e inovadora, utilizando a IA para visualizar e materializar suas ideias.
-
-- **Apoio a projetos multidisciplinares**: pode ser usado em projetos que combinem arte, tecnologia e outras disciplinas, ajudando os alunos a criarem apresentações visuais impactantes para seus trabalhos.
-
-- **Engajamento estudantil**: a interface interativa e a capacidade de produzir resultados visuais impressionantes podem aumentar rapidamente o engajamento dos alunos, especialmente aqueles interessados em mídias digitais e arte.
+> [!info] Possibilidades de uso
+>
+> - **Ferramenta de ensino de arte digital**: pode ser integrado ao currículo de artes visuais para ensinar técnicas de arte digital, oferecendo aos alunos uma plataforma para experimentar diferentes estilos artísticos.
+>
+> - **Desenvolvimento de habilidades criativas**: incentiva os alunos a pensarem de forma criativa e inovadora, utilizando a IA para visualizar e materializar suas ideias.
+>
+> - **Apoio a projetos multidisciplinares**: pode ser usado em projetos que combinem arte, tecnologia e outras disciplinas, ajudando os alunos a criarem apresentações visuais impactantes para seus trabalhos.
+>
+> - **Engajamento estudantil**: a interface interativa e a capacidade de produzir resultados visuais impressionantes podem aumentar rapidamente o engajamento dos alunos, especialmente aqueles interessados em mídias digitais e arte.
 
 ##### f. IA para vídeos
 
@@ -523,15 +523,15 @@ Plataforma de criação de vídeos que transforma _scripts_ em conteúdos audiov
 
 _Site_: <https://pictory.aiCanal>: <https://www.youtube.com/pictory> Licença: período de teste e paga
 
-##### Possibilidades de uso
-
-- **Desenvolvimento de material didático**: facilita a criação de vídeos educativos a partir de _scripts_, transformando conteúdos textuais complexos em materiais visuais atraentes que podem melhorar a retenção de conhecimento dos alunos.
-
-- **Capacitação corporativa**: transforma manuais e procedimentos longos em vídeos curtos e instrutivos, o que facilita o treinamento e a disseminação de informações dentro das organizações.
-
-- **Engajamento em redes sociais**: gera automaticamente clipes curtos a partir de gravações de Zoom, Teams, _webinars_ e podcasts, possibilitando a criação de conteúdo atrativo para campanhas em redes sociais.
-
-- **Acessibilidade**: a umenta o alcance e o tempo de visualização, adicionando automaticamente legendas a vídeos, o que os torna acessíveis a um público mais amplo, incluindo pessoas com deficiência auditiva ou que assistem vídeos no modo mudo.
+> [!info] Possibilidades de uso
+>
+> - **Desenvolvimento de material didático**: facilita a criação de vídeos educativos a partir de _scripts_, transformando conteúdos textuais complexos em materiais visuais atraentes que podem melhorar a retenção de conhecimento dos alunos.
+>
+> - **Capacitação corporativa**: transforma manuais e procedimentos longos em vídeos curtos e instrutivos, o que facilita o treinamento e a disseminação de informações dentro das organizações.
+>
+> - **Engajamento em redes sociais**: gera automaticamente clipes curtos a partir de gravações de Zoom, Teams, _webinars_ e podcasts, possibilitando a criação de conteúdo atrativo para campanhas em redes sociais.
+>
+> - **Acessibilidade**: a umenta o alcance e o tempo de visualização, adicionando automaticamente legendas a vídeos, o que os torna acessíveis a um público mais amplo, incluindo pessoas com deficiência auditiva ou que assistem vídeos no modo mudo.
 
 #### Invideo
 
@@ -539,17 +539,17 @@ Plataforma de edição de vídeo _on-line_ para criação de conteúdo audiovisu
 
 _Site_: <https://invideo.io/studioCanal>: <https://www.youtube.com/@InVideoOfficial> Licença: gratuita e paga
 
-##### Possibilidades de uso
-
-- **Desenvolvimento de material didático**: transformar _scripts_ e textos em vídeos educativos de alta qualidade, de forma a enriquecer o processo de ensino e aprendizagem.
-
-- **Marketing e comunicação corporativa**: criar vídeos promocionais e conteúdo de marca visualmente impactantes, que cativam e envolvem o público-alvo.
-
-- **Produção de conteúdo para redes sociais**: e laborar clipes curtos e engajadores para plataformas sociais, aumentando a visibilidade e interação da marca.
-
-- **Aprendizagem personalizada**: utilizar vídeos para oferecer conteúdo adaptado aos diferentes estilos de aprendizagem, a fim de promover uma experiência de aprendizado mais eficaz e envolvente.
-
-- **Formação e desenvolvimento profi** **ssional**: produzir materiais de treinamento dinâmicos e informativos para equipes e indivíduos, impulsionando o crescimento e aprimoramento profissional.
+> [!info] Possibilidades de uso
+>
+> - **Desenvolvimento de material didático**: transformar _scripts_ e textos em vídeos educativos de alta qualidade, de forma a enriquecer o processo de ensino e aprendizagem.
+>
+> - **Marketing e comunicação corporativa**: criar vídeos promocionais e conteúdo de marca visualmente impactantes, que cativam e envolvem o público-alvo.
+>
+> - **Produção de conteúdo para redes sociais**: e laborar clipes curtos e engajadores para plataformas sociais, aumentando a visibilidade e interação da marca.
+>
+> - **Aprendizagem personalizada**: utilizar vídeos para oferecer conteúdo adaptado aos diferentes estilos de aprendizagem, a fim de promover uma experiência de aprendizado mais eficaz e envolvente.
+>
+> - **Formação e desenvolvimento profi** **ssional**: produzir materiais de treinamento dinâmicos e informativos para equipes e indivíduos, impulsionando o crescimento e aprimoramento profissional.
 
 #### Pika
 
@@ -557,17 +557,17 @@ Plataforma de criação de vídeos assistida por inteligência artificial, proje
 
 _Site_: <https://pika.art/> Canal: <https://discord.com/invite/pika> Licença: paga
 
-##### Possibilidades de uso
-
-- **Animação de conceitos educacionais**: transforme descrições textuais em animações vívidas para ilustrar teorias e processos educativos, facilitando a compreensão de conceitos complexos.
-
-- **Enriquecimento do material didático**: u se fotos e desenhos para criar vídeos imersivos que complementem o ensino, em aulas mais dinâmicas e engajadoras.
-
-- **Adaptação personalizada de vídeos**: personalize vídeos existentes para atender especificidades curriculares, ajustando o conteúdo para se alinhar melhor aos objetivos pedagógicos.
-
-- **Estímulo à criatividade dos alunos**: e ncoraje estudantes a explorar a criação de conteúdo visual como forma de expressar conhecimento e ideias, apoiando habilidades de pensamento crítico e criativo.
-
-- **Desenvolvimento de projetos interdisciplinares**: utilize a ferramenta para criar narrativas digitais ou projetos que cruzem fronteiras disciplinares, a fim de promover a colaboração e a integração de conhecimentos.
+> [!info] Possibilidades de uso
+>
+> - **Animação de conceitos educacionais**: transforme descrições textuais em animações vívidas para ilustrar teorias e processos educativos, facilitando a compreensão de conceitos complexos.
+>
+> - **Enriquecimento do material didático**: u se fotos e desenhos para criar vídeos imersivos que complementem o ensino, em aulas mais dinâmicas e engajadoras.
+>
+> - **Adaptação personalizada de vídeos**: personalize vídeos existentes para atender especificidades curriculares, ajustando o conteúdo para se alinhar melhor aos objetivos pedagógicos.
+>
+> - **Estímulo à criatividade dos alunos**: e ncoraje estudantes a explorar a criação de conteúdo visual como forma de expressar conhecimento e ideias, apoiando habilidades de pensamento crítico e criativo.
+>
+> - **Desenvolvimento de projetos interdisciplinares**: utilize a ferramenta para criar narrativas digitais ou projetos que cruzem fronteiras disciplinares, a fim de promover a colaboração e a integração de conhecimentos.
 
 #### Powerdirector
 
@@ -575,15 +575,15 @@ Ferramenta de edição de vídeo que integra funcionalidades avançadas de intel
 
 _Site_: <https://www.cyberlink.com/products/powerdirector-video-editing-software/features_en_US.html>
 
-##### Possibilidades de uso
-
-- **Produção de conteúdo multimídia**: pode ser utilizado por estudantes e professores para criar vídeos educacionais, apresentações e projetos multimídia.
-
-- **Aprendizado de habilidades de edição de vídeo**: a plataforma oferece uma excelente oportunidade para os alunos aprenderem técnicas de edição de vídeo, habilidade valiosa em muitos campos profissionais.
-
-- **Desenvolvimento de projetos criativos**: incentiva a criatividade dos alunos, permitindo-lhes experimentar diferentes estilos visuais e técnicas de narrativa.
-
-- **Colaboração em projetos de grupo**: facilita a colaboração em projetos de vídeo, permitindo que os alunos trabalhem juntos na criação de conteúdo.
+> [!info] Possibilidades de uso
+>
+> - **Produção de conteúdo multimídia**: pode ser utilizado por estudantes e professores para criar vídeos educacionais, apresentações e projetos multimídia.
+>
+> - **Aprendizado de habilidades de edição de vídeo**: a plataforma oferece uma excelente oportunidade para os alunos aprenderem técnicas de edição de vídeo, habilidade valiosa em muitos campos profissionais.
+>
+> - **Desenvolvimento de projetos criativos**: incentiva a criatividade dos alunos, permitindo-lhes experimentar diferentes estilos visuais e técnicas de narrativa.
+>
+> - **Colaboração em projetos de grupo**: facilita a colaboração em projetos de vídeo, permitindo que os alunos trabalhem juntos na criação de conteúdo.
 
 #### D-ID
 
@@ -591,19 +591,19 @@ Plataforma de ponta para geração de audiovisual com inteligência artificial q
 
 _Site_: <https://www.d-id.com/>
 
-##### Possibilidades de uso
-
-- **Produção de conteúdo didático**: educadores podem usar a ferramenta para criar vídeos de aula com avatares que explicam o conteúdo de forma clara e interativa, captando melhor a atenção dos alunos.
-
-- **Ferramentas de aprendizado de idiomas**: a capacidade de gerar falas em diversos idiomas com pronúncia correta torna a ferramenta útil para a prática de línguas estrangeiras.
-
-- **Engajamento em** **_e-learning_**: vídeos criados com avatares podem tornar o aprendizado on-line mais pessoal e menos monótono, incentivando maior interação dos estudantes.
-
-- **Personalização de ensino**: professores podem personalizar os vídeos para atender às necessidades específicas de diferentes grupos de alunos, adaptando o conteúdo ao nível de compreensão e interesse de cada um.
-
-- **Acessibilidade**: vídeos animados podem ser uma excelente ferramenta para estudantes com dificuldades de leitura ou deficiências visuais, oferecendo conteúdo educacional em formato mais acessível.
-
-g. IA para apresentações
+> [!info] Possibilidades de uso
+>
+> - **Produção de conteúdo didático**: educadores podem usar a ferramenta para criar vídeos de aula com avatares que explicam o conteúdo de forma clara e interativa, captando melhor a atenção dos alunos.
+>
+> - **Ferramentas de aprendizado de idiomas**: a capacidade de gerar falas em diversos idiomas com pronúncia correta torna a ferramenta útil para a prática de línguas estrangeiras.
+>
+> - **Engajamento em** **_e-learning_**: vídeos criados com avatares podem tornar o aprendizado on-line mais pessoal e menos monótono, incentivando maior interação dos estudantes.
+>
+> - **Personalização de ensino**: professores podem personalizar os vídeos para atender às necessidades específicas de diferentes grupos de alunos, adaptando o conteúdo ao nível de compreensão e interesse de cada um.
+>
+> - **Acessibilidade**: vídeos animados podem ser uma excelente ferramenta para estudantes com dificuldades de leitura ou deficiências visuais, oferecendo conteúdo educacional em formato mais acessível.
+>
+> g. IA para apresentações
 
 #### Gamma
 
@@ -611,17 +611,17 @@ Plataforma de inteligência artificial para criar apresentações, documentos e 
 
 _Site_: <https://gamma.app/> Canal: <https://www.linkedin.com/company/gamma-app/> Licença: gratuita e paga
 
-##### Possibilidades de uso
-
-- **Comunicação e apresentação**: a uxilia na criação rápida de apresentações atraentes, permitindo que os usuários foquem o desenvolvimento e a articulação clara de suas ideias.
-
-- **Criação de conteúdo adaptativo**: educadores podem utilizar o Gamma para produzir material didático visualmente engajante e adaptado ao ritmo e estilo de aprendizagem, a fim de promover uma experiência educativa mais personalizada e eficaz.
-
-- **_Feedback_** **visual e interativo**: com a capacidade de integrar diversos tipos de mídia, facilita a oferta de _feedback_ visual e interativo, enriquecendo o processo de aprendizado com comentários construtivos e sugestões de melhorias de forma mais dinâmica e envolvente.
-
-- **Capacitação e desenvolvimento profi** **ssional**: o rganizações podem adotar o Gamma para facilitar a criação de módulos de treinamento e desenvolvimento profissional, o que economiza tempo na preparação de materiais e permite maior foco no conteúdo e na entrega.
-
-- **Exploração de estratégias criativas de aprendizado**: a o oferecer uma plataforma para a criação de apresentações, documentos e páginas _web_, o Gamma incentiva estudantes e profissionais a explorarem diferentes formas de apresentar e assimilar conhecimento, adaptando-se a diversos contextos educacionais e profissionais.
+> [!info] Possibilidades de uso
+>
+> - **Comunicação e apresentação**: a uxilia na criação rápida de apresentações atraentes, permitindo que os usuários foquem o desenvolvimento e a articulação clara de suas ideias.
+>
+> - **Criação de conteúdo adaptativo**: educadores podem utilizar o Gamma para produzir material didático visualmente engajante e adaptado ao ritmo e estilo de aprendizagem, a fim de promover uma experiência educativa mais personalizada e eficaz.
+>
+> - **_Feedback_** **visual e interativo**: com a capacidade de integrar diversos tipos de mídia, facilita a oferta de _feedback_ visual e interativo, enriquecendo o processo de aprendizado com comentários construtivos e sugestões de melhorias de forma mais dinâmica e envolvente.
+>
+> - **Capacitação e desenvolvimento profi** **ssional**: o rganizações podem adotar o Gamma para facilitar a criação de módulos de treinamento e desenvolvimento profissional, o que economiza tempo na preparação de materiais e permite maior foco no conteúdo e na entrega.
+>
+> - **Exploração de estratégias criativas de aprendizado**: a o oferecer uma plataforma para a criação de apresentações, documentos e páginas _web_, o Gamma incentiva estudantes e profissionais a explorarem diferentes formas de apresentar e assimilar conhecimento, adaptando-se a diversos contextos educacionais e profissionais.
 
 #### Decktopus AI
 
@@ -629,39 +629,39 @@ Plataforma inovadora de criação de apresentações para facilitar e agilizar o
 
 _Site_: <https://www.decktopus.com/>
 
-##### Possibilidades de uso
+> [!info] Possibilidades de uso
+>
+> - **Criação rápida de apresentações**: professores e alunos podem criar apresentações de alta qualidade rapidamente, utilizando templates prédesenhados que são automaticamente ajustados pela IA com base no conteúdo inserido.
+>
+> - **Personalização e** **_branding_**: permite personalizar apresentações para alinhar com a identidade visual de uma escola ou projeto educacional, reforçando a consistência visual através de _layouts_ personalizados.
+>
+> - **Colaboração efi** **ciente**: facilita a colaboração em grupo, permitindo que os alunos trabalhem juntos em apresentações em tempo real, ideal para projetos de equipe ou tarefas colaborativas.
+>
+> - **Engajamento do aluno**: com recursos interativos como _quizzes_, pesquisas e elementos visuais dinâmicos, os educadores podem criar apresentações que incentivam a participação ativa dos alunos, melhorando a experiência de aprendizado.
+>
+> - **_Feedback_** **em tempo real**: a plataforma pode ser usada para coletar _feedback_ instantâneo durante apresentações, permitindo ajustes em tempo real e proporcionando uma forma de avaliação imediata do entendimento dos alunos.
+>
+> - **Acessibilidade e inclusão**: permite a criação de apresentações acessíveis, facilitando a inclusão de alunos com diferentes necessidades educacionais.
 
-- **Criação rápida de apresentações**: professores e alunos podem criar apresentações de alta qualidade rapidamente, utilizando templates prédesenhados que são automaticamente ajustados pela IA com base no conteúdo inserido.
-
-- **Personalização e** **_branding_**: permite personalizar apresentações para alinhar com a identidade visual de uma escola ou projeto educacional, reforçando a consistência visual através de _layouts_ personalizados.
-
-- **Colaboração efi** **ciente**: facilita a colaboração em grupo, permitindo que os alunos trabalhem juntos em apresentações em tempo real, ideal para projetos de equipe ou tarefas colaborativas.
-
-- **Engajamento do aluno**: com recursos interativos como _quizzes_, pesquisas e elementos visuais dinâmicos, os educadores podem criar apresentações que incentivam a participação ativa dos alunos, melhorando a experiência de aprendizado.
-
-- **_Feedback_** **em tempo real**: a plataforma pode ser usada para coletar _feedback_ instantâneo durante apresentações, permitindo ajustes em tempo real e proporcionando uma forma de avaliação imediata do entendimento dos alunos.
-
-- **Acessibilidade e inclusão**: permite a criação de apresentações acessíveis, facilitando a inclusão de alunos com diferentes necessidades educacionais.
-
-#### Decktopus AI
+#### Decktopus AI -
 
 Plataforma inovadora de criação de apresentações para facilitar e agilizar o processo de design de slides. A ferramenta oferece uma série de funcionalidades que permitem aos usuários gerarem apresentações visualmente atraentes com pouco esforço, economizando tempo significativo na preparação de slides. _Site_: <https://www.decktopus.com/>
 
-##### Possibilidades de uso
-
-- **Criação rápida de apresentações**: professores e alunos podem criar apresentações de alta qualidade rapidamente, utilizando templates prédesenhados que são automaticamente ajustados pela IA com base no conteúdo inserido.
-
-  - **Personalização e** **_branding_**: permite personalizar apresentações para alinhar com a identidade visual de uma escola ou projeto educacional, reforçando a consistência visual através de _layouts_ personalizados.
-
-  - **Colaboração efi** **ciente**: facilita a colaboração em grupo, permitindo que os alunos trabalhem juntos em apresentações em tempo real, ideal para projetos de equipe ou tarefas colaborativas.
-
-  - **Engajamento do aluno**: com recursos interativos como _quizzes_, pesquisas e elementos visuais dinâmicos, os educadores podem criar apresentações que incentivam a participação ativa dos alunos, melhorando a experiência de aprendizado.
-
-  - **_Feedback_** **em tempo real**: a plataforma pode ser usada para coletar _feedback_ instantâneo durante apresentações, permitindo ajustes em tempo real e proporcionando uma forma de avaliação imediata do entendimento dos alunos.
-
-  - Acessibilidade e inclusão: permite a criação de apresentações acessíveis, facilitando a inclusão de alunos com diferentes necessidades educacionais.
-
-- **h. Plataformas de AI**
+> [!info] Possibilidades de uso
+>
+> - **Criação rápida de apresentações**: professores e alunos podem criar apresentações de alta qualidade rapidamente, utilizando templates prédesenhados que são automaticamente ajustados pela IA com base no conteúdo inserido.
+>
+>   - **Personalização e** **_branding_**: permite personalizar apresentações para alinhar com a identidade visual de uma escola ou projeto educacional, reforçando a consistência visual através de _layouts_ personalizados.
+>
+>   - **Colaboração efi** **ciente**: facilita a colaboração em grupo, permitindo que os alunos trabalhem juntos em apresentações em tempo real, ideal para projetos de equipe ou tarefas colaborativas.
+>
+>   - **Engajamento do aluno**: com recursos interativos como _quizzes_, pesquisas e elementos visuais dinâmicos, os educadores podem criar apresentações que incentivam a participação ativa dos alunos, melhorando a experiência de aprendizado.
+>
+>   - **_Feedback_** **em tempo real**: a plataforma pode ser usada para coletar _feedback_ instantâneo durante apresentações, permitindo ajustes em tempo real e proporcionando uma forma de avaliação imediata do entendimento dos alunos.
+>
+>   - Acessibilidade e inclusão: permite a criação de apresentações acessíveis, facilitando a inclusão de alunos com diferentes necessidades educacionais.
+>
+> - **h. Plataformas de AI**
 
 #### Learning Studio AI
 
@@ -671,15 +671,15 @@ _Site_: <https://learningstudioai.com/> Canal: <https://www.youtube.com/@Learnin
 
 Licença: gratuito e paga
 
-##### Possibilidades de uso
-
-- **Especialistas no assunto**: a utores e educadores podem converter sua expertise em cursos _on-line_.
-
-- **Instituições educacionais**: escolas e universidades podem escalar seu currículo e oferecer materiais de aprendizado acessíveis em uma variedade de dispositivos.
-
-- **Treinamento corporativo**: empresas podem criar módulos de treinamento personalizados para seus funcionários, integrando-se com sistemas LMS existentes para acompanhar e analisar o progresso.
-
-- **Esboço de aula**: a Learning Studio AI permite a criação de protótipos de cursos _on-line_, oferecendo aos educadores um ponto de partida para a elaboração de aulas. Esse recurso é particularmente valioso para superar desafios iniciais de planejamento e geração de ideias, estimulando a criatividade e a inovação no processo de ensino.
+> [!info] Possibilidades de uso
+>
+> - **Especialistas no assunto**: a utores e educadores podem converter sua expertise em cursos _on-line_.
+>
+> - **Instituições educacionais**: escolas e universidades podem escalar seu currículo e oferecer materiais de aprendizado acessíveis em uma variedade de dispositivos.
+>
+> - **Treinamento corporativo**: empresas podem criar módulos de treinamento personalizados para seus funcionários, integrando-se com sistemas LMS existentes para acompanhar e analisar o progresso.
+>
+> - **Esboço de aula**: a Learning Studio AI permite a criação de protótipos de cursos _on-line_, oferecendo aos educadores um ponto de partida para a elaboração de aulas. Esse recurso é particularmente valioso para superar desafios iniciais de planejamento e geração de ideias, estimulando a criatividade e a inovação no processo de ensino.
 
 #### AI Companion para Zoom
 
@@ -687,15 +687,15 @@ Assistência digital baseada em IA generativa, projetada para aprimorar a produt
 
 _Site_: <https://explore.zoom.us/pt/ai-assistant/> Canal: <https://www.youtube.com/watch?v=Zm5DC-vxaYk> Licença: a ferramenta é incluída sem custo adicional para clientes com serviços pagos do Zoom.
 
-##### Possibilidades de uso
-
-- **Composição de mensagens**: facilita a redação de e-mails e respostas de _chat_ com tom e comprimento apropriados, economizando tempo um significativo gasto em comunicação.
-
-- **Sumarização de informações**: permite a rápida compreensão de longas cadeias de mensagens de _chat_ e fornece resumos de reuniões, ajudando os usuários a se atualizarem sem necessidade de gravações.
-
-- **Auxílio antes, durante e após aulas**: desde responder perguntas sobre o conteúdo discutido até organizar gravações em nuvem de forma inteligente, aprimorando o acesso e a revisão do material discutido.
-
-- **Melhoria da qualidade do trabalho em grupo**: a poia a geração de ideias em quadros brancos digitais e promove uma interação futura por meio de interfaces conversacionais para assistência em uma ampla gama de tarefas.
+> [!info] Possibilidades de uso
+>
+> - **Composição de mensagens**: facilita a redação de e-mails e respostas de _chat_ com tom e comprimento apropriados, economizando tempo um significativo gasto em comunicação.
+>
+> - **Sumarização de informações**: permite a rápida compreensão de longas cadeias de mensagens de _chat_ e fornece resumos de reuniões, ajudando os usuários a se atualizarem sem necessidade de gravações.
+>
+> - **Auxílio antes, durante e após aulas**: desde responder perguntas sobre o conteúdo discutido até organizar gravações em nuvem de forma inteligente, aprimorando o acesso e a revisão do material discutido.
+>
+> - **Melhoria da qualidade do trabalho em grupo**: a poia a geração de ideias em quadros brancos digitais e promove uma interação futura por meio de interfaces conversacionais para assistência em uma ampla gama de tarefas.
 
 #### Figma
 
@@ -705,17 +705,17 @@ _Site_: [www.figma.com](https://www.figma.com)
 
 Canais: <https://www.figma.com/community> e <https://www.youtube.com/@Figma> Licença: gratuita e paga
 
-##### Possibilidades de uso
-
-- **Colaboração em tempo real**: facilita a colaboração entre equipes de _design_ e desenvolvimento, permitindo o trabalho simultâneo em projetos.
-
-- **Prototipagem interativa**: criação de protótipos dinâmicos e interativos para testes de usabilidade e apresentações.
-
-- **_Design_** **responsivo**: desenvolvimento de _designs_ que se adaptam a diferentes tamanhos de tela, melhorando a experiência do usuário em diversas plataformas.
-
-- **Integração de ferramentas**: permite integrar com outras ferramentas de desenvolvimento e gestão de projetos, otimizando o fluxo de trabalho.
-
-- **_Feedback_** **e revisões**: facilita a coleta de _feedbacks_ de clientes e _stakeholders_, o que agiliza o processo de iteração do _design_.
+> [!info] Possibilidades de uso
+>
+> - **Colaboração em tempo real**: facilita a colaboração entre equipes de _design_ e desenvolvimento, permitindo o trabalho simultâneo em projetos.
+>
+> - **Prototipagem interativa**: criação de protótipos dinâmicos e interativos para testes de usabilidade e apresentações.
+>
+> - **_Design_** **responsivo**: desenvolvimento de _designs_ que se adaptam a diferentes tamanhos de tela, melhorando a experiência do usuário em diversas plataformas.
+>
+> - **Integração de ferramentas**: permite integrar com outras ferramentas de desenvolvimento e gestão de projetos, otimizando o fluxo de trabalho.
+>
+> - **_Feedback_** **e revisões**: facilita a coleta de _feedbacks_ de clientes e _stakeholders_, o que agiliza o processo de iteração do _design_.
 
 #### Invision
 
@@ -725,15 +725,15 @@ _Site_: <https://www.invisionapp.com/>
 
 Licença: gratuita e paga
 
-##### Possibilidades de uso
-
-- **Prototipagem interativa**: permite que os _designers_ criem protótipos interativos de alta fidelidade que simulam o comportamento de um produto digital, o que facilita a visualização e a avaliação do _design_ antes da implementação.
-
-- **Compartilhamento e** **_feedback_**: oferece ferramentas para compartilhar _designs_ com colegas de equipe, clientes e partes interessadas, permitindo que visualizem e forneçam _feedback_ diretamente no protótipo, o que agiliza o processo de revisão e iteração do _design_.
-
-- **Colaboração em tempo real**: facilita a colaboração em tempo real entre membros da equipe e permite que eles trabalhem juntos em projetos de _design_, visualizem as alterações em tempo real e coordenem suas atividades de forma eficiente.
-
-- **Integração com outras ferramentas**: oferece integrações com uma variedade de outras ferramentas e plataformas, incluindo ferramentas de _design_, gerenciamento de projetos e desenvolvimento, permitindo que os usuários incorporem o Invision em seus fluxos de trabalho existentes.
+> [!info] Possibilidades de uso
+>
+> - **Prototipagem interativa**: permite que os _designers_ criem protótipos interativos de alta fidelidade que simulam o comportamento de um produto digital, o que facilita a visualização e a avaliação do _design_ antes da implementação.
+>
+> - **Compartilhamento e** **_feedback_**: oferece ferramentas para compartilhar _designs_ com colegas de equipe, clientes e partes interessadas, permitindo que visualizem e forneçam _feedback_ diretamente no protótipo, o que agiliza o processo de revisão e iteração do _design_.
+>
+> - **Colaboração em tempo real**: facilita a colaboração em tempo real entre membros da equipe e permite que eles trabalhem juntos em projetos de _design_, visualizem as alterações em tempo real e coordenem suas atividades de forma eficiente.
+>
+> - **Integração com outras ferramentas**: oferece integrações com uma variedade de outras ferramentas e plataformas, incluindo ferramentas de _design_, gerenciamento de projetos e desenvolvimento, permitindo que os usuários incorporem o Invision em seus fluxos de trabalho existentes.
 
 ##### Outras aplicações
 
@@ -743,13 +743,13 @@ Usa a inteligência artificial para transformar a interação com conteúdo em P
 
 _Site_: <https://www.chatpdf.com/> Canal: <https://www.linkedin.com/company/chatpdf/> Licença: gratuita e paga
 
-##### Possibilidades de uso
-
-- **Sumarização**: facilita o estudo e a revisão ao permitir que os usuários ajustem o nível de detalhamento dos resumos gerados, adaptando-se às necessidades individuais de aprendizado.
-
-- **Busca semântica**: transforma a maneira de encontrar informações específicas dentro de documentos, permitindo buscas baseadas em perguntas formuladas em linguagem natural, o que torna a busca mais intuitiva e eficiente.
-
-- **Diálogo interativo**: oferece a possibilidade de uma interação direta e personalizada com o documento, permitindo que os usuários “conversem” com o texto para esclarecer dúvidas e aprofundar o entendimento sobre os conteúdos abordados.
+> [!info] Possibilidades de uso
+>
+> - **Sumarização**: facilita o estudo e a revisão ao permitir que os usuários ajustem o nível de detalhamento dos resumos gerados, adaptando-se às necessidades individuais de aprendizado.
+>
+> - **Busca semântica**: transforma a maneira de encontrar informações específicas dentro de documentos, permitindo buscas baseadas em perguntas formuladas em linguagem natural, o que torna a busca mais intuitiva e eficiente.
+>
+> - **Diálogo interativo**: oferece a possibilidade de uma interação direta e personalizada com o documento, permitindo que os usuários “conversem” com o texto para esclarecer dúvidas e aprofundar o entendimento sobre os conteúdos abordados.
 
 #### Character.AI
 
@@ -757,15 +757,15 @@ Oferece serviços relacionados à geração e à manipulação de personagens di
 
 _Site_: <https://character.ai/> Canal: <https://discord.com/channels/1017072750386483332/@home> Licença: paga e gratuita
 
-##### Possibilidades de uso
-
-- **Desenvolvimento de jogos**: desenvolvedores de jogos podem utilizar o Character.AI para criar personagens cativantes e realistas, a fim de enriquecer a experiência do jogador e adicionar profundidade às histórias e aos cenários do jogo.
-
-- **Aplicações educacionais**: o Character.AI pode ser empregado para criar personagens virtuais que auxiliem no ensino e na aprendizagem, tornando os conteúdos mais envolventes e interativos.
-
-- **Simulações e treinamento**: empresas podem utilizá-lo para desenvolver simulações e treinamentos virtuais, com personagens digitais para representar cenários do mundo real e facilitar o aprendizado de habilidades práticas.
-
-- **Entretenimento e narrativas interativa** s: criadores de conteúdo podem explorar o potencial do Character.AI na produção de narrativas interativas, como vídeos, animações e histórias em quadrinhos, utilizando personagens digitais personalizados para contar suas histórias de forma única e envolvente.
+> [!info] Possibilidades de uso
+>
+> - **Desenvolvimento de jogos**: desenvolvedores de jogos podem utilizar o Character.AI para criar personagens cativantes e realistas, a fim de enriquecer a experiência do jogador e adicionar profundidade às histórias e aos cenários do jogo.
+>
+> - **Aplicações educacionais**: o Character.AI pode ser empregado para criar personagens virtuais que auxiliem no ensino e na aprendizagem, tornando os conteúdos mais envolventes e interativos.
+>
+> - **Simulações e treinamento**: empresas podem utilizá-lo para desenvolver simulações e treinamentos virtuais, com personagens digitais para representar cenários do mundo real e facilitar o aprendizado de habilidades práticas.
+>
+> - **Entretenimento e narrativas interativa** s: criadores de conteúdo podem explorar o potencial do Character.AI na produção de narrativas interativas, como vídeos, animações e histórias em quadrinhos, utilizando personagens digitais personalizados para contar suas histórias de forma única e envolvente.
 
 #### Synthesia
 
@@ -775,15 +775,15 @@ _Site_: [www.synthesia.ioCanal](https://www.synthesia.ioCanal): <https://www.you
 
 Licença: paga
 
-##### Possibilidades de uso
-
-- **Criação de vídeos com avatares digitais**: criar vídeos explicativos sobre tópicos complexos, facilitando o entendimento e aprimoramento de habilidades analíticas e de resolução de problemas.
-
-- **Apoio à aprendizagem personalizada**: produção de conteúdo sob medida para atender às necessidades individuais dos alunos, promovendo um ensino mais adaptativo e personalizado.
-
-- **_Feedback_** **imediato e sensível ao contexto**: utilização de vídeos para oferecer correções e dicas, o que melhora a compreensão e a aceleração do processo de aprendizagem.
-
-- **Treinamento e desenvolvimento profi** **ssional**: utilização em contextos corporativos para o treinamento e o desenvolvimento contínuo de competências profissionais.
+> [!info] Possibilidades de uso
+>
+> - **Criação de vídeos com avatares digitais**: criar vídeos explicativos sobre tópicos complexos, facilitando o entendimento e aprimoramento de habilidades analíticas e de resolução de problemas.
+>
+> - **Apoio à aprendizagem personalizada**: produção de conteúdo sob medida para atender às necessidades individuais dos alunos, promovendo um ensino mais adaptativo e personalizado.
+>
+> - **_Feedback_** **imediato e sensível ao contexto**: utilização de vídeos para oferecer correções e dicas, o que melhora a compreensão e a aceleração do processo de aprendizagem.
+>
+> - **Treinamento e desenvolvimento profi** **ssional**: utilização em contextos corporativos para o treinamento e o desenvolvimento contínuo de competências profissionais.
 
 #### Buffer
 
@@ -791,19 +791,19 @@ Plataforma intuitiva projetada para auxiliar o gerenciamento eficiente das mídi
 
 _Site_: <https://buffer.com/> Canal: <https://www.linkedin.com/company/bufferapp/> Licença: gratuita e paga
 
-##### Possibilidades de uso
-
-- **Agendamento de postagens**: permite a criação de um calendário de mídia social coerente e estratégico, a fim de assegurar que o conteúdo seja compartilhado nos melhores momentos para maximizar o alcance e a interação.
-
-- **Análise de desempenho**: e quipa os usuários com dados analíticos e possibilita uma compreensão da eficácia de suas estratégias de mídia social. Isso inclui _insights_ sobre engajamento, alcance e muito mais.
-
-- **Interação com o público**: centraliza a gestão de comunicação com o público, permitindo respostas a comentários e mensagens.
-
-- **Assistente de IA**: utiliza inteligência artificial para sugerir conteúdo, _hashtags_ e emojis que podem aumentar o engajamento, de modo a tornar as postagens mais atraentes para o público-alvo.
-
-- **Marketing digital**: ferramenta para campanhas de marketing digital que ajuda marcas a ampliarem sua presença _on-line_ e a engajarem efetivamente seus públicos-alvo nas mídias sociais.
-
-- **Gestão de conteúdo**: oferece uma solução eficiente para o planejamento e o agendamento de conteúdo diversificado, o que inclui postagens em _blog_, vídeos e mais, garantindo uma presença constante nas plataformas de mídia social.
+> [!info] Possibilidades de uso
+>
+> - **Agendamento de postagens**: permite a criação de um calendário de mídia social coerente e estratégico, a fim de assegurar que o conteúdo seja compartilhado nos melhores momentos para maximizar o alcance e a interação.
+>
+> - **Análise de desempenho**: e quipa os usuários com dados analíticos e possibilita uma compreensão da eficácia de suas estratégias de mídia social. Isso inclui _insights_ sobre engajamento, alcance e muito mais.
+>
+> - **Interação com o público**: centraliza a gestão de comunicação com o público, permitindo respostas a comentários e mensagens.
+>
+> - **Assistente de IA**: utiliza inteligência artificial para sugerir conteúdo, _hashtags_ e emojis que podem aumentar o engajamento, de modo a tornar as postagens mais atraentes para o público-alvo.
+>
+> - **Marketing digital**: ferramenta para campanhas de marketing digital que ajuda marcas a ampliarem sua presença _on-line_ e a engajarem efetivamente seus públicos-alvo nas mídias sociais.
+>
+> - **Gestão de conteúdo**: oferece uma solução eficiente para o planejamento e o agendamento de conteúdo diversificado, o que inclui postagens em _blog_, vídeos e mais, garantindo uma presença constante nas plataformas de mídia social.
 
 #### Futurepedia
 
@@ -811,17 +811,17 @@ Plataforma de recursos de inteligência artificial dedicada a capacitar profissi
 
 _Site_: <https://www.futurepedia.io/> Canal: <https://www.youtube.com/@futurepedia_io> Licença: gratuita
 
-##### Possibilidades de uso
-
-- **Personalização da aprendizagem em ambientes educacionais**: ferramentas de IA podem analisar o desempenho e o estilo de aprendizagem de cada aluno para personalizar o conteúdo educacional, ajustando-se ao ritmo e às necessidades individuais. Isso pode incluir a adaptação de materiais didáticos, a sugestão de recursos adicionais e a personalização de atividades de revisão para melhorar a compreensão e a retenção de conhecimento.
-
-- **Otimização de processos**: as ferramentas de IA podem ser utilizadas para automatizar e otimizar processos de negócios, da gestão de relações com clientes (CRM) a cadeias de suprimentos. Algoritmos de IA podem prever demandas de mercado, otimizar estoques e oferecer suporte à decisão baseado em análises profundas de grandes volumes de dados.
-
-- **Desenvolvimento sustentável**: ferramentas de IA podem ser aplicadas na gestão de recursos naturais e na mitigação de impactos ambientais, o
-
-que inclui a otimização do uso de água e energia em processos industriais, monitoramento da qualidade do ar e da água e até mesmo na previsão e no gerenciamento de desastres naturais, contribuindo para esforços de sustentabilidade e conservação.
-
-- **Inovação e entretenimento**: a IA está transformando as indústrias criativas, possibilitando novas formas de criação artística e de entretenimento. Isso inclui a geração de música, textos e artes visuais por meio de algoritmos, bem como a criação de experiências de entretenimento imersivas e personalizadas, desde jogos eletrônicos até recomendações personalizadas de filmes e música.
+> [!info] Possibilidades de uso
+>
+> - **Personalização da aprendizagem em ambientes educacionais**: ferramentas de IA podem analisar o desempenho e o estilo de aprendizagem de cada aluno para personalizar o conteúdo educacional, ajustando-se ao ritmo e às necessidades individuais. Isso pode incluir a adaptação de materiais didáticos, a sugestão de recursos adicionais e a personalização de atividades de revisão para melhorar a compreensão e a retenção de conhecimento.
+>
+> - **Otimização de processos**: as ferramentas de IA podem ser utilizadas para automatizar e otimizar processos de negócios, da gestão de relações com clientes (CRM) a cadeias de suprimentos. Algoritmos de IA podem prever demandas de mercado, otimizar estoques e oferecer suporte à decisão baseado em análises profundas de grandes volumes de dados.
+>
+> - **Desenvolvimento sustentável**: ferramentas de IA podem ser aplicadas na gestão de recursos naturais e na mitigação de impactos ambientais, o
+>
+> que inclui a otimização do uso de água e energia em processos industriais, monitoramento da qualidade do ar e da água e até mesmo na previsão e no gerenciamento de desastres naturais, contribuindo para esforços de sustentabilidade e conservação.
+>
+> - **Inovação e entretenimento**: a IA está transformando as indústrias criativas, possibilitando novas formas de criação artística e de entretenimento. Isso inclui a geração de música, textos e artes visuais por meio de algoritmos, bem como a criação de experiências de entretenimento imersivas e personalizadas, desde jogos eletrônicos até recomendações personalizadas de filmes e música.
 
 #### Chatclass
 
@@ -831,17 +831,17 @@ _Site_: <https://www.chatclass.com.br>
 
 Licença: gratuita e paga
 
-##### Possibilidades de uso
-
-- **Prática de conversação**: a plataforma possibilita que os alunos pratiquem conversação em inglês de forma interativa, recebendo respostas instantâneas e correções automáticas, o que é crucial para a fluência no aprendizado de um novo idioma.
-
-- **Automatização de tarefas**: professores podem usar a ferramenta para automatizar tarefas repetitivas, como avaliações de vocabulário e testes de compreensão auditiva, permitindo que se concentrem mais no desenvolvimento individual dos alunos.
-
-- **Feedback personalizado**: a inteligência artificial analisa as respostas dos alunos e fornece feedback personalizado, ajudando-os a identificar áreas de melhoria e a reforçar o aprendizado onde necessário.
-
-- **Integração curricular**: pode ser integrado ao currículo escolar, oferecendo uma forma de ensino complementar que reforça o aprendizado em sala de aula com atividades práticas e interativas.
-
-- **Engajamento dos alunos**: a o utilizar uma plataforma baseada em mensagens, que é um meio de comunicação familiar para muitos estudantes, aumenta o engajamento e a motivação dos alunos, especialmente entre os mais jovens, que são nativos digitais.
+> [!info] Possibilidades de uso
+>
+> - **Prática de conversação**: a plataforma possibilita que os alunos pratiquem conversação em inglês de forma interativa, recebendo respostas instantâneas e correções automáticas, o que é crucial para a fluência no aprendizado de um novo idioma.
+>
+> - **Automatização de tarefas**: professores podem usar a ferramenta para automatizar tarefas repetitivas, como avaliações de vocabulário e testes de compreensão auditiva, permitindo que se concentrem mais no desenvolvimento individual dos alunos.
+>
+> - **Feedback personalizado**: a inteligência artificial analisa as respostas dos alunos e fornece feedback personalizado, ajudando-os a identificar áreas de melhoria e a reforçar o aprendizado onde necessário.
+>
+> - **Integração curricular**: pode ser integrado ao currículo escolar, oferecendo uma forma de ensino complementar que reforça o aprendizado em sala de aula com atividades práticas e interativas.
+>
+> - **Engajamento dos alunos**: a o utilizar uma plataforma baseada em mensagens, que é um meio de comunicação familiar para muitos estudantes, aumenta o engajamento e a motivação dos alunos, especialmente entre os mais jovens, que são nativos digitais.
 
 #### GitHub Copilot
 
@@ -849,17 +849,17 @@ Licença: gratuita e paga
 
 _Site_: <https://github.com> Licença: gratuita e paga
 
-##### Possibilidades de uso
-
-- **Aprendizado colaborativo de programação**: oferece um ambiente em que os alunos podem trabalhar em projetos de programação em grupo, permitindo que aprendam uns com os outros e desenvolvam habilidades de trabalho em equipe, essenciais para o mercado de trabalho moderno.
-
-- **Portfólios**: estudantes podem usar a ferramenta para construir e manter portfólios de seus trabalhos de programação, o que é valioso para a avaliação acadêmica e futuras oportunidades de emprego.
-
-- **Apoio à pesquisa acadêmica em computação**: professores e estudantes podem colaborar em projetos de pesquisa, facilitando a gestão do código-fonte e a documentação associada.
-
-- **Integração com GitHub Copilot**: pode ser utilizado como uma ferramenta educacional para ajudar estudantes de programação a entenderem padrões de código e solucionar problemas de programação de forma mais eficiente. O assistente oferece sugestões baseadas em vastos repositórios de código, permitindo que os alunos vejam exemplos práticos de implementação de conceitos.
-
-- **Avaliação e** **_feedback_** **contínuos**: permite que professores revisem e deem _feedback_ sobre o código dos alunos diretamente nos repositórios, facilitando uma avaliação contínua e detalhada do progresso do aluno.
+> [!info] Possibilidades de uso
+>
+> - **Aprendizado colaborativo de programação**: oferece um ambiente em que os alunos podem trabalhar em projetos de programação em grupo, permitindo que aprendam uns com os outros e desenvolvam habilidades de trabalho em equipe, essenciais para o mercado de trabalho moderno.
+>
+> - **Portfólios**: estudantes podem usar a ferramenta para construir e manter portfólios de seus trabalhos de programação, o que é valioso para a avaliação acadêmica e futuras oportunidades de emprego.
+>
+> - **Apoio à pesquisa acadêmica em computação**: professores e estudantes podem colaborar em projetos de pesquisa, facilitando a gestão do código-fonte e a documentação associada.
+>
+> - **Integração com GitHub Copilot**: pode ser utilizado como uma ferramenta educacional para ajudar estudantes de programação a entenderem padrões de código e solucionar problemas de programação de forma mais eficiente. O assistente oferece sugestões baseadas em vastos repositórios de código, permitindo que os alunos vejam exemplos práticos de implementação de conceitos.
+>
+> - **Avaliação e** **_feedback_** **contínuos**: permite que professores revisem e deem _feedback_ sobre o código dos alunos diretamente nos repositórios, facilitando uma avaliação contínua e detalhada do progresso do aluno.
 
 #### Gliglish
 
@@ -867,17 +867,17 @@ _Site_: <https://github.com> Licença: gratuita e paga
 
 _Site_: <https://www.gliglish.com> Licença: gratuita e paga
 
-##### Possibilidades de uso
-
-- **Prática de conversação realista**: simula conversas do dia a dia, permitindo que os estudantes pratiquem línguas estrangeiras em um contexto prático e realista, o que é crucial para o desenvolvimento da fluência.
-
-- **_Feedback_** **instantâneo e personalizado**: oferece correções automáticas e sugestões sobre pronúncia, gramática e vocabulário, permitindo que os alunos identifiquem e corrijam erros em tempo real.
-
-- **Acessibilidade e conveniência**: permite que os estudantes pratiquem a qualquer hora e em qualquer lugar, facilitando a aprendizagem contínua.
-
-- **Engajamento e motivação**: a interatividade e sua natureza imersiva incentivam os alunos a se engajarem mais ativamente no aprendizado de idiomas, tornando o processo mais dinâmico e menos monótono.
-
-- **Integração curricular**: professores podem integrar Gliglish como parte do currículo de idiomas, utilizando a ferramenta para complementar o ensino em sala de aula e oferecer aos alunos uma prática adicional supervisionada.
+> [!info] Possibilidades de uso
+>
+> - **Prática de conversação realista**: simula conversas do dia a dia, permitindo que os estudantes pratiquem línguas estrangeiras em um contexto prático e realista, o que é crucial para o desenvolvimento da fluência.
+>
+> - **_Feedback_** **instantâneo e personalizado**: oferece correções automáticas e sugestões sobre pronúncia, gramática e vocabulário, permitindo que os alunos identifiquem e corrijam erros em tempo real.
+>
+> - **Acessibilidade e conveniência**: permite que os estudantes pratiquem a qualquer hora e em qualquer lugar, facilitando a aprendizagem contínua.
+>
+> - **Engajamento e motivação**: a interatividade e sua natureza imersiva incentivam os alunos a se engajarem mais ativamente no aprendizado de idiomas, tornando o processo mais dinâmico e menos monótono.
+>
+> - **Integração curricular**: professores podem integrar Gliglish como parte do currículo de idiomas, utilizando a ferramenta para complementar o ensino em sala de aula e oferecer aos alunos uma prática adicional supervisionada.
 
 ### 3.2 Ambientes virtuais imersivos
 
@@ -899,17 +899,17 @@ Plataforma inovadora que permite a criação e colaboração em ambientes virtua
 
 _Site_: <https://learn.framevr.io/>
 
-##### Possibilidades de uso
-
-- **Ambientes de aprendizado imersivos**: pode ser usado para criar salas de aula virtuais onde professores e alunos interagem em um espaço 3D, melhorando o envolvimento e a imersão no aprendizado.
-
-- **Ferramentas de colaboração**: a plataforma oferece _chat_ de voz, quadros brancos compartilhados e a capacidade de edição colaborativa, tornando as sessões mais interativas e produtivas.
-
-- **Customização sem código**: usuários podem personalizar seus ambientes com facilidade, adicionando modelos 3D, vídeos, imagens e documentos, o que permite adaptar o espaço às necessidades específicas de cada aula ou projeto.
-
-- **Acessibilidade ampliada**: com suporte para _desktop_, móveis e _headsets_ VR, é acessível a uma ampla gama de usuários, independentemente de sua tecnologia.
-
-- **Integração de IA**: integra funcionalidades de inteligência artificial, como geração de imagens e NPCs guiados por IA, que podem enriquecer as interações dentro dos ambientes virtuais.
+> [!info] Possibilidades de uso
+>
+> - **Ambientes de aprendizado imersivos**: pode ser usado para criar salas de aula virtuais onde professores e alunos interagem em um espaço 3D, melhorando o envolvimento e a imersão no aprendizado.
+>
+> - **Ferramentas de colaboração**: a plataforma oferece _chat_ de voz, quadros brancos compartilhados e a capacidade de edição colaborativa, tornando as sessões mais interativas e produtivas.
+>
+> - **Customização sem código**: usuários podem personalizar seus ambientes com facilidade, adicionando modelos 3D, vídeos, imagens e documentos, o que permite adaptar o espaço às necessidades específicas de cada aula ou projeto.
+>
+> - **Acessibilidade ampliada**: com suporte para _desktop_, móveis e _headsets_ VR, é acessível a uma ampla gama de usuários, independentemente de sua tecnologia.
+>
+> - **Integração de IA**: integra funcionalidades de inteligência artificial, como geração de imagens e NPCs guiados por IA, que podem enriquecer as interações dentro dos ambientes virtuais.
 
 ##### 3.2.2 Portal Interlab USP
 
@@ -979,19 +979,19 @@ Plataforma de desenvolvimento em tempo real que permite a criação de jogos e e
 
 _Site_: <https://unity.com/> Canal: <https://www.youtube.com/user/Unity3D> Licença: gratuita para estudantes e educadores, paga para os demais.
 
-##### Possibilidades de uso
-
-- **Desenvolvimento de jogos**: criação de jogos interativos para plataformas móveis, _desktop_ e consoles.
-
-- **Educação e treinamento**: desenvolvimento de aplicações educacionais e simuladores para treinamento profissional.
-
-- **Realidade virtual e aumentada**: criação de experiências imersivas em RV e RA para educação, entretenimento e treinamento.
-
-- **Visualização arquitetônica**: utilização para visualizar projetos de arquitetura e _design_ de interiores de forma interativa.
-
-- **Simulações**: desenvolvimento de simulações para indústrias como saúde, engenharia e defesa, facilitando o aprendizado e o treinamento em ambientes controlados.
-
-- **Animações e fi** **lmes**: uso da plataforma para criar animações e curtasmetragens, aproveitando suas ferramentas de renderização e animação.
+> [!info] Possibilidades de uso
+>
+> - **Desenvolvimento de jogos**: criação de jogos interativos para plataformas móveis, _desktop_ e consoles.
+>
+> - **Educação e treinamento**: desenvolvimento de aplicações educacionais e simuladores para treinamento profissional.
+>
+> - **Realidade virtual e aumentada**: criação de experiências imersivas em RV e RA para educação, entretenimento e treinamento.
+>
+> - **Visualização arquitetônica**: utilização para visualizar projetos de arquitetura e _design_ de interiores de forma interativa.
+>
+> - **Simulações**: desenvolvimento de simulações para indústrias como saúde, engenharia e defesa, facilitando o aprendizado e o treinamento em ambientes controlados.
+>
+> - **Animações e fi** **lmes**: uso da plataforma para criar animações e curtasmetragens, aproveitando suas ferramentas de renderização e animação.
 
 #### Scratch
 
@@ -999,17 +999,17 @@ Plataforma educacional interativa desenvolvida pelo MIT Media Lab, destinada ao 
 
 _Site_: <https://scratch.mit.edu/> Canal: <https://www.youtube.com/@ScratchTeam> Licença: gratuita
 
-##### Possibilidades de uso
-
-- **Desenvolvimento de competências de resolução de problemas**: facilita o aprendizado de conceitos fundamentais de programação e matemática, melhorando a capacidade de resolver problemas complexos de forma lúdica e interativa.
-
-- **Suporte à aprendizagem personalizada**: proporciona uma abordagem adaptável ao ensino de programação e permite que os estudantes progridam no seu próprio ritmo e de acordo com seus interesses.
-
-- **_Feedback_** **imediato e sensível ao contexto**: oferece um ambiente de teste seguro, onde os alunos podem experimentar, errar e aprender, recebendo _feedback_ instantâneo sobre suas criações.
-
-- **Facilitação da pesquisa em educação**: serve como recurso para pesquisadores avaliarem a eficácia de diferentes métodos pedagógicos em programação, permitindo estudos detalhados sobre o engajamento e a aprendizagem dos alunos.
-
-- **Treinamento e desenvolvimento profi** **ssional**: utilizado em _workshops_ e cursos de formação continuada para educadores, disponibiliza ferramentas para integrar a programação ao currículo escolar de maneira eficaz e inovadora.
+> [!info] Possibilidades de uso
+>
+> - **Desenvolvimento de competências de resolução de problemas**: facilita o aprendizado de conceitos fundamentais de programação e matemática, melhorando a capacidade de resolver problemas complexos de forma lúdica e interativa.
+>
+> - **Suporte à aprendizagem personalizada**: proporciona uma abordagem adaptável ao ensino de programação e permite que os estudantes progridam no seu próprio ritmo e de acordo com seus interesses.
+>
+> - **_Feedback_** **imediato e sensível ao contexto**: oferece um ambiente de teste seguro, onde os alunos podem experimentar, errar e aprender, recebendo _feedback_ instantâneo sobre suas criações.
+>
+> - **Facilitação da pesquisa em educação**: serve como recurso para pesquisadores avaliarem a eficácia de diferentes métodos pedagógicos em programação, permitindo estudos detalhados sobre o engajamento e a aprendizagem dos alunos.
+>
+> - **Treinamento e desenvolvimento profi** **ssional**: utilizado em _workshops_ e cursos de formação continuada para educadores, disponibiliza ferramentas para integrar a programação ao currículo escolar de maneira eficaz e inovadora.
 
 ##### 3.3.2 Ferramentas educativas gamificadas
 
@@ -1023,19 +1023,19 @@ Plataforma digital que emprega _flashcards_ digitais, jogos educativos e diverso
 
 _Site_: <https://quizlet.com/latestCanal>: <https://www.youtube.com/@quizlet> Licença: gratuita e paga
 
-##### Possibilidades de uso
-
-- **Desenvolvimento de vocabulário**: ideal para estudantes de idiomas, permite a criação de _flashcards_ para memorização de palavras e frases.
-
-- **Preparação para exames**: utilização de modos de teste e jogos para revisar conteúdos específicos de exames, como TOEFL e GRE.
-
-- **Apoio ao ensino presencial e a distância**: professores podem criar conjuntos de estudo para complementar as aulas, facilitando o acesso ao material didático.
-
-- **Formação continuada**: profissionais podem usar a plataforma para se manterem atualizados em suas áreas por meio da memorização de conceitos e terminologias específicas.
-
-- **Estudo colaborativo**: incentiva a aprendizagem em grupo com o _quizlet live_, promovendo interação e competição saudável entre estudantes.
-
-- **Memorização de fórmulas e conceitos técnicos**: útil para áreas como matemática, ciência e engenharia, facilita a compreensão e retenção de informações complexas.
+> [!info] Possibilidades de uso
+>
+> - **Desenvolvimento de vocabulário**: ideal para estudantes de idiomas, permite a criação de _flashcards_ para memorização de palavras e frases.
+>
+> - **Preparação para exames**: utilização de modos de teste e jogos para revisar conteúdos específicos de exames, como TOEFL e GRE.
+>
+> - **Apoio ao ensino presencial e a distância**: professores podem criar conjuntos de estudo para complementar as aulas, facilitando o acesso ao material didático.
+>
+> - **Formação continuada**: profissionais podem usar a plataforma para se manterem atualizados em suas áreas por meio da memorização de conceitos e terminologias específicas.
+>
+> - **Estudo colaborativo**: incentiva a aprendizagem em grupo com o _quizlet live_, promovendo interação e competição saudável entre estudantes.
+>
+> - **Memorização de fórmulas e conceitos técnicos**: útil para áreas como matemática, ciência e engenharia, facilita a compreensão e retenção de informações complexas.
 
 #### Anki
 
@@ -1043,17 +1043,17 @@ Plataforma de estudo assistido baseada na técnica de repetição espaçada, pro
 
 _Site_: <https://apps.ankiweb.net/> Licença: gratuita
 
-##### Possibilidades de uso
-
-- **Educação e tutoria**: pode servir como um assistente de estudo virtual, ajudando alunos com a revisão de conteúdos em diversas disciplinas por meio de _flashcards_ personalizados.
-
-- **Preparação para provas**: amplamente utilizado por estudantes que estão se preparando para exames, como vestibulares, concursos públicos e certificações profissionais, devido à sua eficácia na memorização de informações.
-
-- **Aprendizado de idiomas**: ferramenta popular para o aprendizado de idiomas, permitindo aos usuários estudarem vocabulário, gramática e frases em um novo idioma de forma eficiente.
-
-- **Desenvolvimento profi** **ssional**: serve para aprender e reter informações importantes em suas áreas de atuação, como conceitos técnicos, fórmulas e padrões de código.
-
-- **_Hobby_** **e interesses pessoais**: pode ser usado para aprender sobre qualquer assunto de interesse, seja história da arte, astronomia, culinária ou qualquer outro tópico que o usuário deseje explorar.
+> [!info] Possibilidades de uso
+>
+> - **Educação e tutoria**: pode servir como um assistente de estudo virtual, ajudando alunos com a revisão de conteúdos em diversas disciplinas por meio de _flashcards_ personalizados.
+>
+> - **Preparação para provas**: amplamente utilizado por estudantes que estão se preparando para exames, como vestibulares, concursos públicos e certificações profissionais, devido à sua eficácia na memorização de informações.
+>
+> - **Aprendizado de idiomas**: ferramenta popular para o aprendizado de idiomas, permitindo aos usuários estudarem vocabulário, gramática e frases em um novo idioma de forma eficiente.
+>
+> - **Desenvolvimento profi** **ssional**: serve para aprender e reter informações importantes em suas áreas de atuação, como conceitos técnicos, fórmulas e padrões de código.
+>
+> - **_Hobby_** **e interesses pessoais**: pode ser usado para aprender sobre qualquer assunto de interesse, seja história da arte, astronomia, culinária ou qualquer outro tópico que o usuário deseje explorar.
 
 #### Socrative
 
@@ -1061,37 +1061,37 @@ Plataforma _on-line_ projetada para dinamizar a avaliação formativa em ambient
 
 _Site_: <https://www.socrative.com/#loginCanal>: <https://www.youtube.com/c/SocrativeApp> Licença: gratuita e paga
 
-##### Possibilidades de uso
+> [!info] Possibilidades de uso
+>
+> - **Gamifi** **cação da aprendizagem**: introduz elementos de jogo para tornar o aprendizado mais envolvente e motivador.
+>
+> - **_Feedback_** **personalizado**: fornece aos alunos _feedback_ imediato, identificando rapidamente áreas para melhoria.
+>
+> - **Interatividade em aula**: usa enquetes e _quizzes_ para promover a participação ativa dos alunos e incentivar o pensamento crítico.
+>
+> - **Refl** **exão e autoavaliação**: e ncoraja os alunos a refletirem sobre seus aprendizados e objetivos com exit tickets ao final de cada aula.
+>
+> - **Avaliação instantânea**: faz avaliações rápidas para entender a compreensão dos alunos, adaptando a didática conforme necessário.
 
-- **Gamifi** **cação da aprendizagem**: introduz elementos de jogo para tornar o aprendizado mais envolvente e motivador.
-
-- **_Feedback_** **personalizado**: fornece aos alunos _feedback_ imediato, identificando rapidamente áreas para melhoria.
-
-- **Interatividade em aula**: usa enquetes e _quizzes_ para promover a participação ativa dos alunos e incentivar o pensamento crítico.
-
-- **Refl** **exão e autoavaliação**: e ncoraja os alunos a refletirem sobre seus aprendizados e objetivos com exit tickets ao final de cada aula.
-
-- **Avaliação instantânea**: faz avaliações rápidas para entender a compreensão dos alunos, adaptando a didática conforme necessário.
-
-#### Kahoot!
+#### Kahoot
 
 Plataforma interativa que possibilita a criação e execução de _quizzes_ e jogos educativos com vistas a aumentar o engajamento e a participação em diversos ambientes de aprendizado. A ferramenta facilita a realização de avaliações formativas de maneira divertida e dinâmica, permitindo que os educadores recebam _feedback_ instantâneo sobre o progresso dos alunos. Com sua aplicabilidade estendendo-se do ambiente educacional para o corporativo, promove uma abordagem inovadora ao ensino e à revisão de conteúdos, apoiando a interatividade e a colaboração.
 
 _Site_: <https://kahoot.com/> Canal: <https://www.linkedin.com/company/kahoot/> Licença: gratuita e paga
 
-##### Possibilidades de uso
-
-- **Sala de aula**: engaja alunos em atividades interativas, com participação via dispositivos móveis em _quizzes_ educativos.
-
-- **Avaliação formativa**: facilita o acompanhamento do entendimento dos alunos, com uma plataforma para _feedback_ imediato e ajuste de estratégias pedagógicas.
-
-- **Treinamento e desenvolvimento profi** **ssional**: utilizado em ambientes corporativos para dinamizar treinamentos e atividades de _team building_.
-
-- **Apresentações e eventos**: serve como uma ferramenta interativa em _workshops_, conferências e outros eventos, aumentando o envolvimento do público.
-
-- **Estudo individual**: oferece modos de estudo autônomo e ajuda os alunos a revisarem conteúdos de forma independente.
-
-- **Criação de conteúdo**: permite a personalização de atividades, incluindo recursos multimídia, para atender a objetivos educacionais específicos.
+> [!info] Possibilidades de uso
+>
+> - **Sala de aula**: engaja alunos em atividades interativas, com participação via dispositivos móveis em _quizzes_ educativos.
+>
+> - **Avaliação formativa**: facilita o acompanhamento do entendimento dos alunos, com uma plataforma para _feedback_ imediato e ajuste de estratégias pedagógicas.
+>
+> - **Treinamento e desenvolvimento profi** **ssional**: utilizado em ambientes corporativos para dinamizar treinamentos e atividades de _team building_.
+>
+> - **Apresentações e eventos**: serve como uma ferramenta interativa em _workshops_, conferências e outros eventos, aumentando o envolvimento do público.
+>
+> - **Estudo individual**: oferece modos de estudo autônomo e ajuda os alunos a revisarem conteúdos de forma independente.
+>
+> - **Criação de conteúdo**: permite a personalização de atividades, incluindo recursos multimídia, para atender a objetivos educacionais específicos.
 
 #### Educaplay
 
@@ -1099,17 +1099,17 @@ _Site_: <https://kahoot.com/> Canal: <https://www.linkedin.com/company/kahoot/> 
 
 _Site_: <https://www.educaplay.com/>
 
-##### Possibilidades de uso
-
-- **Reforço de conceitos**: reforçar conceitos ensinados em sala de aula através de jogos que exigem que os alunos apliquem o que aprenderam de maneira prática e memorizáveis.
-
-- **Avaliação interativa**: professores podem usar a plataforma para criar avaliações interativas, que são mais envolventes do que testes tradicionais, proporcionando tanto avaliação quanto aprendizado simultâneos.
-
-- **Aprendizado de idiomas**: com jogos que incorporam áudio, os estudantes podem praticar a pronúncia e o entendimento auditivo de um novo idioma, além de reforçar o vocabulário e a gramática.
-
-- **Colaboração e competição**: permite que os alunos participem de desafios em grupos, promovendo tanto a colaboração quanto a competição saudável dentro da sala de aula.
-
-- **Flexibilidade e acessibilidade**: as atividades podem ser compartilhadas e acessadas facilmente, tornando possível o uso em salas de aula presenciais e no ensino a distância.
+> [!info] Possibilidades de uso
+>
+> - **Reforço de conceitos**: reforçar conceitos ensinados em sala de aula através de jogos que exigem que os alunos apliquem o que aprenderam de maneira prática e memorizáveis.
+>
+> - **Avaliação interativa**: professores podem usar a plataforma para criar avaliações interativas, que são mais envolventes do que testes tradicionais, proporcionando tanto avaliação quanto aprendizado simultâneos.
+>
+> - **Aprendizado de idiomas**: com jogos que incorporam áudio, os estudantes podem praticar a pronúncia e o entendimento auditivo de um novo idioma, além de reforçar o vocabulário e a gramática.
+>
+> - **Colaboração e competição**: permite que os alunos participem de desafios em grupos, promovendo tanto a colaboração quanto a competição saudável dentro da sala de aula.
+>
+> - **Flexibilidade e acessibilidade**: as atividades podem ser compartilhadas e acessadas facilmente, tornando possível o uso em salas de aula presenciais e no ensino a distância.
 
 #### Spinthewheel
 
@@ -1133,33 +1133,33 @@ Graças a uma interface intuitiva e à funcionalidade de _zoom_ , a ferramenta �
 
 _Site_: <https://prezi.com/> Canal: <https://www.linkedin.com/company/prezi/> Licença: gratuita e paga
 
-##### Possibilidades de uso
-
-- **Apresentações dinâmicas e interativas**: permite criar apresentações marcadas pela fluidez e dinamismo, utilizando capacidades de _zoom_ e transições suaves para explorar conceitos complexos de maneira eficaz.
-
-- **Narrativas visuais**: ideal para desenvolver histórias visuais que facilitam o entendimento e a memorização, a plataforma é eficaz para contar histórias, explicar processos e demonstrar relações entre conceitos.
-
-- **Mapas mentais e diagramas**: com estrutura não linear, é possível criar mapas mentais e diagramas interativos, explorando ideias e suas conexões e promovendo uma compreensão aprofundada de temas complexos.
-
-- **Portfólios e apresentações pessoais**: a ferramenta possibilita a construção de portfólios digitais ou apresentações pessoais que realçam habilidades, experiências e conquistas de maneira criativa e impactante.
-
-- **Projetos colaborativos**: a plataforma permite trabalho colaborativo, tornando-se uma escolha ideal para projetos em grupo, em que estudantes e profissionais podem cocriar e compartilhar ideias em um ambiente virtual interativo.
+> [!info] Possibilidades de uso
+>
+> - **Apresentações dinâmicas e interativas**: permite criar apresentações marcadas pela fluidez e dinamismo, utilizando capacidades de _zoom_ e transições suaves para explorar conceitos complexos de maneira eficaz.
+>
+> - **Narrativas visuais**: ideal para desenvolver histórias visuais que facilitam o entendimento e a memorização, a plataforma é eficaz para contar histórias, explicar processos e demonstrar relações entre conceitos.
+>
+> - **Mapas mentais e diagramas**: com estrutura não linear, é possível criar mapas mentais e diagramas interativos, explorando ideias e suas conexões e promovendo uma compreensão aprofundada de temas complexos.
+>
+> - **Portfólios e apresentações pessoais**: a ferramenta possibilita a construção de portfólios digitais ou apresentações pessoais que realçam habilidades, experiências e conquistas de maneira criativa e impactante.
+>
+> - **Projetos colaborativos**: a plataforma permite trabalho colaborativo, tornando-se uma escolha ideal para projetos em grupo, em que estudantes e profissionais podem cocriar e compartilhar ideias em um ambiente virtual interativo.
 
 #### Canva
 
 Plataforma _on-line_ de _design_ gráfico caracterizada por sua interface intuitiva e acessível, projetada para facilitar a criação de conteúdo visual diversificado, mesmo para usuários sem experiência prévia em _design_. Com uma vasta seleção de modelos pré-definidos e elementos de _design_, como imagens, ícones, fontes e _layouts_, permite personalizações detalhadas para atender às necessidades específicas dos usuários. _Site_: <https://www.canva.com/pt_brCanal>: <https://www.youtube.com/@canva> Licença: gratuita e pago
 
-##### Possibilidades de uso
-
-- **_Design_** **de apresentações**: criação de _slides_ atraentes para aulas, conferências ou reuniões de negócios, com a opção de personalizar cada elemento para transmitir sua mensagem de maneira eficaz.
-
-- **Infográfi** **cos**: simplifique informações complexas em formatos visuais claros e atraentes, perfeitos para uso educacional ou profissional.
-
-- **_Design_** **de** **_websites_** **e** **_blogs_**: _templates_ para cabeçalhos de _sites_ e _blogs_, permitindo personalizar o visual das suas páginas _on-line_.
-
-- **Criação de** **_e-books_** **e documentos**: produza _e-books_, revistas, relatórios e outros documentos com aparência profissional, adequados para uma variedade de propósitos.
-
-- **_Storyboards_** **e** **_mockups_**: e laboração de _storyboards_ e _mockups_, auxilia na visualização de projetos como desenvolvimento de _sites_ ou animações.
+> [!info] Possibilidades de uso
+>
+> - **_Design_** **de apresentações**: criação de _slides_ atraentes para aulas, conferências ou reuniões de negócios, com a opção de personalizar cada elemento para transmitir sua mensagem de maneira eficaz.
+>
+> - **Infográfi** **cos**: simplifique informações complexas em formatos visuais claros e atraentes, perfeitos para uso educacional ou profissional.
+>
+> - **_Design_** **de** **_websites_** **e** **_blogs_**: _templates_ para cabeçalhos de _sites_ e _blogs_, permitindo personalizar o visual das suas páginas _on-line_.
+>
+> - **Criação de** **_e-books_** **e documentos**: produza _e-books_, revistas, relatórios e outros documentos com aparência profissional, adequados para uma variedade de propósitos.
+>
+> - **_Storyboards_** **e** **_mockups_**: e laboração de _storyboards_ e _mockups_, auxilia na visualização de projetos como desenvolvimento de _sites_ ou animações.
 
 #### Genially
 
@@ -1167,17 +1167,17 @@ Plataforma _on-line_ que permite a criação de conteúdo interativo e visual, c
 
 _Site_: <https://www.genial.ly/> Canal: <https://www.youtube.com/channel/UCtq6w3zpUc5tQYEC6Q8pImg> Licença: gratuita e paga
 
-##### Possibilidades de uso
-
-- **Criação de** **_fl_** **_ashcards_**: utilizando a interatividade, pode-se criar cartões de memorização para estudar termos, definições ou fórmulas.
-
-- **Infográfi** **cos interativos**: transformar informações em infográficos visuais e interativos pode ajudar na retenção de informações complexas ou numerosas.
-
-- **_Timeline_** **interativa**: para memorizar eventos históricos ou passos de um processo, uma linha do tempo interativa pode ser uma ferramenta valiosa.
-
-- **_Quizzes_** **e jogos**: criar _quizzes_ ou jogos educativos para testar e reforçar a memorização de conteúdos específicos.
-
-- **Apresentações enriquecidas**: as apresentações podem ser tornadas mais memoráveis com a adição de elementos interativos, gráficos animados e multimídia.
+> [!info] Possibilidades de uso
+>
+> - **Criação de** **_fl_** **_ashcards_**: utilizando a interatividade, pode-se criar cartões de memorização para estudar termos, definições ou fórmulas.
+>
+> - **Infográfi** **cos interativos**: transformar informações em infográficos visuais e interativos pode ajudar na retenção de informações complexas ou numerosas.
+>
+> - **_Timeline_** **interativa**: para memorizar eventos históricos ou passos de um processo, uma linha do tempo interativa pode ser uma ferramenta valiosa.
+>
+> - **_Quizzes_** **e jogos**: criar _quizzes_ ou jogos educativos para testar e reforçar a memorização de conteúdos específicos.
+>
+> - **Apresentações enriquecidas**: as apresentações podem ser tornadas mais memoráveis com a adição de elementos interativos, gráficos animados e multimídia.
 
 #### Wordwall
 
@@ -1187,31 +1187,31 @@ _Site_: <https://wordwall.net/pt>
 
 Licença: gratuita e paga
 
-##### Possibilidades de uso
-
-- **Educação e tutoria**: pode servir como um recurso educacional virtual, ajudando professores a criar atividades interativas que aumentam o envolvimento dos alunos e melhoram a retenção de informações.
-
-- **Preparação para exames**: ferramenta útil para estudantes que estão se preparando para exames, pois permite a criação de quizzes personalizados para revisão de conteúdo.
-
-- **Aprendizado de idiomas**: ferramenta para o ensino de idiomas, permitindo aos professores criar atividades interativas focadas em vocabulário, gramática e compreensão auditiva.
-
-- **Desenvolvimento profi** **ssional**: profissionais de treinamento e desenvolvimento podem usar o Wordwall para criar atividades interativas, que facilitam o aprendizado de novas habilidades e conceitos.
+> [!info] Possibilidades de uso
+>
+> - **Educação e tutoria**: pode servir como um recurso educacional virtual, ajudando professores a criar atividades interativas que aumentam o envolvimento dos alunos e melhoram a retenção de informações.
+>
+> - **Preparação para exames**: ferramenta útil para estudantes que estão se preparando para exames, pois permite a criação de quizzes personalizados para revisão de conteúdo.
+>
+> - **Aprendizado de idiomas**: ferramenta para o ensino de idiomas, permitindo aos professores criar atividades interativas focadas em vocabulário, gramática e compreensão auditiva.
+>
+> - **Desenvolvimento profi** **ssional**: profissionais de treinamento e desenvolvimento podem usar o Wordwall para criar atividades interativas, que facilitam o aprendizado de novas habilidades e conceitos.
 
 #### Mentimeter
 
 Plataforma de apresentações interativas que permite aos educadores e formadores profissionais interagir com os alunos em tempo real. Ferramenta perfeita para preparar, apresentar e analisar apresentações com interatividade dos participantes. _Site_: <https://www.mentimeter.com/pt-BR> Licença: paga e gratuita
 
-##### Possibilidades de uso
-
-- **Educação profi** **ssional e técnica**: pode ser usado por instrutores para criar apresentações interativas.
-
-- **Reuniões de negócios**: ferramenta para reuniões de negócios, permitindo que os apresentadores coletem _feedback_ em tempo real e promovam a participação ativa dos participantes.
-
-- **Conferências e eventos**: pode ser usado para envolver o público em conferências e eventos, tornando as sessões mais interativas e memorizáveis.
-
-- **Treinamento e desenvolvimento**: ferramenta eficaz para treinamento e desenvolvimento, permitindo aos treinadores criar sessões interativas que facilitam o aprendizado.
-
-- **Pesquisa de opinião**: permite a realização de pesquisas de opinião em tempo real, facilitando a coleta e análise de dados.
+> [!info] Possibilidades de uso
+>
+> - **Educação profi** **ssional e técnica**: pode ser usado por instrutores para criar apresentações interativas.
+>
+> - **Reuniões de negócios**: ferramenta para reuniões de negócios, permitindo que os apresentadores coletem _feedback_ em tempo real e promovam a participação ativa dos participantes.
+>
+> - **Conferências e eventos**: pode ser usado para envolver o público em conferências e eventos, tornando as sessões mais interativas e memorizáveis.
+>
+> - **Treinamento e desenvolvimento**: ferramenta eficaz para treinamento e desenvolvimento, permitindo aos treinadores criar sessões interativas que facilitam o aprendizado.
+>
+> - **Pesquisa de opinião**: permite a realização de pesquisas de opinião em tempo real, facilitando a coleta e análise de dados.
 
 ##### 3.4.2 Ferramentas de experimentação
 
@@ -1225,17 +1225,17 @@ Plataforma _web_ gratuita que democratiza o _design_ 3D, a eletrônica e a codif
 
 _Site_: [www.tinkercad.comCanal](https://www.tinkercad.comCanal): [www.youtube.com/user/Tinkercad/featured](https://www.youtube.com/user/Tinkercad/featured) Licença: gratuita
 
-##### Possibilidades de uso
-
-- **Educação STEM**: a plataforma é perfeita para introduzir os estudantes aos fundamentos de ciência, tecnologia, engenharia e matemática (STEM, no acrônimo em inglês), utilizando o _design_ 3D e a eletrônica de forma prática.
-
-- **Prototipagem rápida**: permite a criação rápida e econômica de protótipos, facilitando o teste e o desenvolvimento de ideias.
-
-- **Simulação de circuitos**: oferece uma maneira segura e interativa de ensinar e aprender conceitos de eletrônica, sem a necessidade de componentes físicos.
-
-- **Programação criativa**: com interface baseada em blocos, introduz noções de programação, tornando a compreensão de lógicas de programação mais acessível.
-
-- **Colaboração e compartilhamento**: promove o trabalho colaborativo, permitindo que usuários compartilhem e discutam projetos dentro de uma comunidade global.
+> [!info] Possibilidades de uso
+>
+> - **Educação STEM**: a plataforma é perfeita para introduzir os estudantes aos fundamentos de ciência, tecnologia, engenharia e matemática (STEM, no acrônimo em inglês), utilizando o _design_ 3D e a eletrônica de forma prática.
+>
+> - **Prototipagem rápida**: permite a criação rápida e econômica de protótipos, facilitando o teste e o desenvolvimento de ideias.
+>
+> - **Simulação de circuitos**: oferece uma maneira segura e interativa de ensinar e aprender conceitos de eletrônica, sem a necessidade de componentes físicos.
+>
+> - **Programação criativa**: com interface baseada em blocos, introduz noções de programação, tornando a compreensão de lógicas de programação mais acessível.
+>
+> - **Colaboração e compartilhamento**: promove o trabalho colaborativo, permitindo que usuários compartilhem e discutam projetos dentro de uma comunidade global.
 
 #### Mit App Inventor
 
@@ -1243,17 +1243,17 @@ Plataforma inovadora desenvolvida pelo Massachusetts Institute of Technology (MI
 
 _Site_: <https://appinventor.mit.edu/> Canal: <https://www.youtube.com/@MITAppInventor> Licença: gratuita
 
-##### Possibilidades de uso
-
-- **Prototipagem de aplicativos**: facilita a criação rápida de protótipos, permitindo que alunos e desenvolvedores testem e aprimorem suas ideias com agilidade.
-
-- **Educação em programação**: com interface amigável e blocos de código que se encaixam, introduz conceitos fundamentais de programação, promovendo o desenvolvimento de habilidades em lógica e pensamento computacional.
-
-- **Ambiente de desenvolvimento multiplataforma**: compatível com diversos sistemas operacionais e dispositivos, o App Inventor estende sua acessibilidade e permite que mais usuários participem, independentemente de sua configuração tecnológica.
-
-- **Teste em tempo real**: a funcionalidade de teste em tempo real reforça o ciclo de aprendizagem, possibilitando ajustes imediatos e entendimento direto do impacto das alterações no código.
-
-- **Comunidade e suporte**: a vasta comunidade _on-line_ e os recursos educacionais disponíveis apoiam tanto o aprendizado autônomo quanto o ensino estruturado, o que facilita a troca de conhecimentos e experiências.
+> [!info] Possibilidades de uso
+>
+> - **Prototipagem de aplicativos**: facilita a criação rápida de protótipos, permitindo que alunos e desenvolvedores testem e aprimorem suas ideias com agilidade.
+>
+> - **Educação em programação**: com interface amigável e blocos de código que se encaixam, introduz conceitos fundamentais de programação, promovendo o desenvolvimento de habilidades em lógica e pensamento computacional.
+>
+> - **Ambiente de desenvolvimento multiplataforma**: compatível com diversos sistemas operacionais e dispositivos, o App Inventor estende sua acessibilidade e permite que mais usuários participem, independentemente de sua configuração tecnológica.
+>
+> - **Teste em tempo real**: a funcionalidade de teste em tempo real reforça o ciclo de aprendizagem, possibilitando ajustes imediatos e entendimento direto do impacto das alterações no código.
+>
+> - **Comunidade e suporte**: a vasta comunidade _on-line_ e os recursos educacionais disponíveis apoiam tanto o aprendizado autônomo quanto o ensino estruturado, o que facilita a troca de conhecimentos e experiências.
 
 ##### 3.4.3 Ferramentas de organização
 
@@ -1267,19 +1267,19 @@ Plataforma de colaboração visual que se tornou uma escolha popular entre educa
 
 _Site_: <https://trello.comCanal>: <https://www.youtube.com/channel/UCRcOkXoOrU6sN1yCz20VmQw> Licença: Gratuita e paga
 
-##### Possibilidades de uso
-
-- **Treinamento de equipes**: planejar e executar programas de treinamento para novos funcionários ou atualização de conhecimentos.
-
-- **Gestão de projetos acadêmicos**: acompanhar projetos de pesquisa ou colaborativos entre instituições de ensino e empresas.
-
-- **Organização de eventos e** **_workshops_**: coordenar as etapas de preparação e execução de eventos educacionais ou corporativos.
-
-- **Planejamento estratégico**: auxiliar na definição de metas e objetivos educacionais ou empresariais, distribuindo tarefas e monitorando a execução.
-
-- **Planejamento curricular**: facilita a organização do currículo por parte dos educadores e ajuda na distribuição de conteúdo ao longo do semestre.
-
-- **Organização de recursos educacionais**: organizar, compilar e compartilhar materiais de estudo, _links_ importantes e referências bibliográficas.
+> [!info] Possibilidades de uso
+>
+> - **Treinamento de equipes**: planejar e executar programas de treinamento para novos funcionários ou atualização de conhecimentos.
+>
+> - **Gestão de projetos acadêmicos**: acompanhar projetos de pesquisa ou colaborativos entre instituições de ensino e empresas.
+>
+> - **Organização de eventos e** **_workshops_**: coordenar as etapas de preparação e execução de eventos educacionais ou corporativos.
+>
+> - **Planejamento estratégico**: auxiliar na definição de metas e objetivos educacionais ou empresariais, distribuindo tarefas e monitorando a execução.
+>
+> - **Planejamento curricular**: facilita a organização do currículo por parte dos educadores e ajuda na distribuição de conteúdo ao longo do semestre.
+>
+> - **Organização de recursos educacionais**: organizar, compilar e compartilhar materiais de estudo, _links_ importantes e referências bibliográficas.
 
 #### Miro
 
@@ -1289,17 +1289,17 @@ _Site_: <https://miro.com/app/dashboard/> Canal: <https://www.youtube.com/user/R
 
 Licença: gratuita e paga
 
-##### Possibilidades de uso
-
-- **Organização de projetos integradores**: facilita o acompanhamento de projetos integradores, permitindo que docentes monitorem o progresso e forneçam _feedback_ em tempo real.
-
-- **Desenvolvimento de competências em gestão de projetos**: ideal para educar competências relacionadas à gestão de projetos, como planejamento, execução e monitoramento.
-
-- **Colaboração** **_on-line_**: utilização de modelos adaptáveis para trabalhar temas variados, como Canvas Business Model e mapa mental, entre outros.
-
-- **Apoio à educação remota**: ferramenta essencial para a educação a distância, possibilitando a interação em tempo real entre professores e alunos.
-
-- **Planejamento estratégico**: espaço infinito para inovar, visualizar prioridades e dependências e acompanhar o sucesso de projetos estratégicos.
+> [!info] Possibilidades de uso
+>
+> - **Organização de projetos integradores**: facilita o acompanhamento de projetos integradores, permitindo que docentes monitorem o progresso e forneçam _feedback_ em tempo real.
+>
+> - **Desenvolvimento de competências em gestão de projetos**: ideal para educar competências relacionadas à gestão de projetos, como planejamento, execução e monitoramento.
+>
+> - **Colaboração** **_on-line_**: utilização de modelos adaptáveis para trabalhar temas variados, como Canvas Business Model e mapa mental, entre outros.
+>
+> - **Apoio à educação remota**: ferramenta essencial para a educação a distância, possibilitando a interação em tempo real entre professores e alunos.
+>
+> - **Planejamento estratégico**: espaço infinito para inovar, visualizar prioridades e dependências e acompanhar o sucesso de projetos estratégicos.
 
 #### Mindmeister
 
@@ -1307,17 +1307,17 @@ Plataforma _on-line_ para criação de mapas mentais, oferecendo uma forma visua
 
 _Site_: <https://www.mindmeister.com/> Canal: <https://www.youtube.com/user/MindMeister> Licença: gratuita e paga
 
-##### Possibilidades de uso
-
-- **Organização de ideias e planejamento de projetos**: utilize para _brainstorming_, desenvolvimento de projetos e organização de tarefas, de modo a melhorar a colaboração e a eficiência da equipe.
-
-- **Estudo e aprendizado**: facilita a tomada de notas, a revisão de conteúdo e a preparação para apresentações, ajudando na retenção de informações e estimulando a criatividade.
-
-- **Gestão de projetos**: a uxilia na criação de planos de projeto detalhados, na atribuição de tarefas e no acompanhamento do progresso, o que contribui para uma gestão eficiente.
-
-- **Colaboração em tempo real**: possibilita a colaboração simultânea em mapas mentais, com troca de ideias e _feedback_ instantâneo entre membros da equipe ou estudantes.
-
-- **Desenvolvimento de apresentações visuais**: transforma mapas mentais em apresentações dinâmicas e visualmente atrativas, facilitando a comunicação de ideias complexas.
+> [!info] Possibilidades de uso
+>
+> - **Organização de ideias e planejamento de projetos**: utilize para _brainstorming_, desenvolvimento de projetos e organização de tarefas, de modo a melhorar a colaboração e a eficiência da equipe.
+>
+> - **Estudo e aprendizado**: facilita a tomada de notas, a revisão de conteúdo e a preparação para apresentações, ajudando na retenção de informações e estimulando a criatividade.
+>
+> - **Gestão de projetos**: a uxilia na criação de planos de projeto detalhados, na atribuição de tarefas e no acompanhamento do progresso, o que contribui para uma gestão eficiente.
+>
+> - **Colaboração em tempo real**: possibilita a colaboração simultânea em mapas mentais, com troca de ideias e _feedback_ instantâneo entre membros da equipe ou estudantes.
+>
+> - **Desenvolvimento de apresentações visuais**: transforma mapas mentais em apresentações dinâmicas e visualmente atrativas, facilitando a comunicação de ideias complexas.
 
 #### Notion
 
@@ -1327,17 +1327,17 @@ _Site_: <https://www.notion.so/pt-br>
 
 Licença: paga e gratuita
 
-##### Possibilidades de uso
-
-- **Educação profi** **ssional e técnica**: pode ser usado para organizar e acompanhar o progresso de projetos, atribuir tarefas e gerenciar prazos.
-
-- **Organização pessoal**: ferramenta para gerenciar suas tarefas diárias, anotar ideias, planejar viagens e organizar eventos.
-
-- **Colaboração em equipe**: permite que as equipes colaborem em tempo real, compartilhem documentos e gerenciem projetos juntos.
-
-- **Gestão de conhecimento**: ferramenta eficaz para criar e gerenciar uma base de conhecimento, tornando fácil para as equipes acessar e compartilhar informações.
-
-- **Planejamento de eventos**: pode ser usado para planejar e gerenciar eventos, rastreando tarefas, gerenciando convidados e organizando detalhes do evento.
+> [!info] Possibilidades de uso
+>
+> - **Educação profi** **ssional e técnica**: pode ser usado para organizar e acompanhar o progresso de projetos, atribuir tarefas e gerenciar prazos.
+>
+> - **Organização pessoal**: ferramenta para gerenciar suas tarefas diárias, anotar ideias, planejar viagens e organizar eventos.
+>
+> - **Colaboração em equipe**: permite que as equipes colaborem em tempo real, compartilhem documentos e gerenciem projetos juntos.
+>
+> - **Gestão de conhecimento**: ferramenta eficaz para criar e gerenciar uma base de conhecimento, tornando fácil para as equipes acessar e compartilhar informações.
+>
+> - **Planejamento de eventos**: pode ser usado para planejar e gerenciar eventos, rastreando tarefas, gerenciando convidados e organizando detalhes do evento.
 
 #### Padlet
 
@@ -1345,19 +1345,19 @@ Ferramenta digital versátil que funciona como um mural virtual onde você pode 
 
 _Site_: <https://padlet.comCanal>: <https://www.youtube.com/@padlet> Licença: gratuita e paga
 
-##### Possibilidades de uso
-
-- **Repositório de recursos**: criação de um espaço para coletar e organizar informações sobre um tópico específico, a fim de facilitar o acesso rápido a dados importantes e promover um ambiente de aprendizagem mais eficiente.
-
-- **Linha do tempo**: desenvolvimento de linhas do tempo interativas para explorar processos históricos ou sequências de eventos, onde os participantes podem adicionar e revisar informações, o que melhora o entendimento e a memorização da ordem e dos detalhes dos acontecimentos.
-
-- **Murais de discussão**: espaços dedicados a permitir que participantes façam perguntas, respondam e comentem postagens relacionadas a um tópico de estudo, estimulando a interação, o debate e o reforço do conhecimento adquirido.
-
-- **Portfólios digitais**: utilização como ferramenta para que os estudantes criem portfólios de seu trabalho, permitindo-lhes refletir sobre sua jornada de aprendizado e avaliar suas conquistas de forma organizada e visual.
-
-- **Mapas mentais**: ferramenta para a criação de mapas mentais que auxiliam na organização e retenção de informações sobre um tópico específico, a fim de promover uma melhor compreensão de conceitos e suas interconexões.
-
-- **_Flashcards_**: aplicação na criação de _flashcards_ digitais, que podem ser utilizados para a revisão e memorização de fatos, definições ou qualquer outro conteúdo que necessite ser lembrado, o que facilita o processo de estudo e aprendizado.
+> [!info] Possibilidades de uso
+>
+> - **Repositório de recursos**: criação de um espaço para coletar e organizar informações sobre um tópico específico, a fim de facilitar o acesso rápido a dados importantes e promover um ambiente de aprendizagem mais eficiente.
+>
+> - **Linha do tempo**: desenvolvimento de linhas do tempo interativas para explorar processos históricos ou sequências de eventos, onde os participantes podem adicionar e revisar informações, o que melhora o entendimento e a memorização da ordem e dos detalhes dos acontecimentos.
+>
+> - **Murais de discussão**: espaços dedicados a permitir que participantes façam perguntas, respondam e comentem postagens relacionadas a um tópico de estudo, estimulando a interação, o debate e o reforço do conhecimento adquirido.
+>
+> - **Portfólios digitais**: utilização como ferramenta para que os estudantes criem portfólios de seu trabalho, permitindo-lhes refletir sobre sua jornada de aprendizado e avaliar suas conquistas de forma organizada e visual.
+>
+> - **Mapas mentais**: ferramenta para a criação de mapas mentais que auxiliam na organização e retenção de informações sobre um tópico específico, a fim de promover uma melhor compreensão de conceitos e suas interconexões.
+>
+> - **_Flashcards_**: aplicação na criação de _flashcards_ digitais, que podem ser utilizados para a revisão e memorização de fatos, definições ou qualquer outro conteúdo que necessite ser lembrado, o que facilita o processo de estudo e aprendizado.
 
 ### 3.5 Armazenamento em nuvem
 
@@ -1369,23 +1369,23 @@ Confira a lista de ferramentas no _site_
 
 O Google Drive é uma plataforma de armazenamento e sincronização de arquivos baseada na nuvem, oferece uma solução versátil para gerenciar e acessar documentos, planilhas, apresentações, fotos e outros tipos de arquivos. _Site_: <https://www.google.com/drive/> Canal: <https://www.youtube.com/user/GoogleDrive> Licença: gratuita e paga
 
-##### Possibilidades de uso
-
-- **Armazenamento centralizado de informações**: como um repositório digital, permite que estudantes e profissionais armazenem e organizem todos os seus materiais de estudo ou trabalho em um único local, acessível de qualquer dispositivo conectado à internet.
-
-- **Facilidade de acesso e revisão**: a o centralizar documentos e recursos, o Google Drive facilita o acesso rápido e a revisão de informações, o que é essencial para reforçar a memória e a aprendizagem.
-
-- **Colaboração em tempo real**: a plataforma possibilita a colaboração simultânea em documentos, planilhas e apresentações. Esse recurso colaborativo pode ser extremamente útil para trabalhos em grupo, discussões e aprendizado coletivo, reforçando a memória por meio da interação e de discussão.
-
-- **Histórico de documentos**: o recurso de histórico de versões permite que os usuários visualizem e revertam para versões anteriores de um documento. Isso pode ser útil para acompanhar o progresso do aprendizado ou revisar alterações em um trabalho colaborativo.
-
-- **Integração com outras ferramentas**: o Google Drive se integra perfeitamente com outras ferramentas do google, como Docs, Sheets e _Slides_, além de aplicativos de terceiros, ampliando as possibilidades de uso para criação, edição e apresentação de conteúdo.
-
-- **Organização efi** **ciente**: a capacidade de criar pastas e subpastas, além de usar recursos de marcação e busca, ajuda na organização eficiente dos materiais, facilitando a memorização e o acesso rápido a informações específicas.
-
-- **_Backup_** **e segurança**: a o armazenar arquivos na nuvem, o Google Drive oferece um nível de segurança e _backup_ que minimiza o risco de perda de dados, de forma que os materiais de aprendizado estão sempre disponíveis.
-
-- **Recursos multimídia e** **_links_** **externos**: permite armazenar e compartilhar não apenas documentos de texto, mas recursos multimídia e _links_ para recursos externos, o que enriquece o material de estudo e facilita o acesso a uma ampla gama de informações.
+> [!info] Possibilidades de uso
+>
+> - **Armazenamento centralizado de informações**: como um repositório digital, permite que estudantes e profissionais armazenem e organizem todos os seus materiais de estudo ou trabalho em um único local, acessível de qualquer dispositivo conectado à internet.
+>
+> - **Facilidade de acesso e revisão**: a o centralizar documentos e recursos, o Google Drive facilita o acesso rápido e a revisão de informações, o que é essencial para reforçar a memória e a aprendizagem.
+>
+> - **Colaboração em tempo real**: a plataforma possibilita a colaboração simultânea em documentos, planilhas e apresentações. Esse recurso colaborativo pode ser extremamente útil para trabalhos em grupo, discussões e aprendizado coletivo, reforçando a memória por meio da interação e de discussão.
+>
+> - **Histórico de documentos**: o recurso de histórico de versões permite que os usuários visualizem e revertam para versões anteriores de um documento. Isso pode ser útil para acompanhar o progresso do aprendizado ou revisar alterações em um trabalho colaborativo.
+>
+> - **Integração com outras ferramentas**: o Google Drive se integra perfeitamente com outras ferramentas do google, como Docs, Sheets e _Slides_, além de aplicativos de terceiros, ampliando as possibilidades de uso para criação, edição e apresentação de conteúdo.
+>
+> - **Organização efi** **ciente**: a capacidade de criar pastas e subpastas, além de usar recursos de marcação e busca, ajuda na organização eficiente dos materiais, facilitando a memorização e o acesso rápido a informações específicas.
+>
+> - **_Backup_** **e segurança**: a o armazenar arquivos na nuvem, o Google Drive oferece um nível de segurança e _backup_ que minimiza o risco de perda de dados, de forma que os materiais de aprendizado estão sempre disponíveis.
+>
+> - **Recursos multimídia e** **_links_** **externos**: permite armazenar e compartilhar não apenas documentos de texto, mas recursos multimídia e _links_ para recursos externos, o que enriquece o material de estudo e facilita o acesso a uma ampla gama de informações.
 
 #### Microsoft Onedrive
 
@@ -1393,21 +1393,21 @@ Serviço de armazenamento em nuvem integrado ao ecossistema Microsoft, possibili
 
 _Site_: <https://onedrive.live.comCanal>: <https://www.youtube.com/user/OneDrive> Licença: gratuita e paga
 
-##### Possibilidades de uso
-
-- **Armazenamento e acesso remoto**: facilita o armazenamento seguro de documentos, fotos e vídeos, acessíveis de qualquer dispositivo conectado à internet.
-
-- **Colaboração em documentos**: permite a edição conjunta de documentos do Office em tempo real, aumentando a produtividade e colaboração entre equipes.
-
-- **Integração com Microsoft Offi** **ce**: oferece uma experiência de trabalho contínua com aplicativos do Office, sem a necessidade de sair da plataforma.
-
-- **_Backup_** **automático**: configura _backups_ automáticos de dispositivos para a nuvem, assegurando a segurança dos dados.
-
-- **Compartilhamento fácil**: compartilhe arquivos e pastas facilmente, com controle sobre quem pode visualizar ou editar.
-
-- **Recursos de segurança**: inclui funcionalidades avançadas de segurança, como a detecção de _ransomware_ e ferramentas de recuperação de arquivos.
-
-- **Fototeca** **_on-line_**: organiza e compartilha fotos e vídeos, com opções para criação de álbuns e memórias compartilhadas.
+> [!info] Possibilidades de uso
+>
+> - **Armazenamento e acesso remoto**: facilita o armazenamento seguro de documentos, fotos e vídeos, acessíveis de qualquer dispositivo conectado à internet.
+>
+> - **Colaboração em documentos**: permite a edição conjunta de documentos do Office em tempo real, aumentando a produtividade e colaboração entre equipes.
+>
+> - **Integração com Microsoft Offi** **ce**: oferece uma experiência de trabalho contínua com aplicativos do Office, sem a necessidade de sair da plataforma.
+>
+> - **_Backup_** **automático**: configura _backups_ automáticos de dispositivos para a nuvem, assegurando a segurança dos dados.
+>
+> - **Compartilhamento fácil**: compartilhe arquivos e pastas facilmente, com controle sobre quem pode visualizar ou editar.
+>
+> - **Recursos de segurança**: inclui funcionalidades avançadas de segurança, como a detecção de _ransomware_ e ferramentas de recuperação de arquivos.
+>
+> - **Fototeca** **_on-line_**: organiza e compartilha fotos e vídeos, com opções para criação de álbuns e memórias compartilhadas.
 
 #### iCloud
 
@@ -1415,21 +1415,21 @@ Serviço de nuvem da Apple que oferece integração e sincronização perfeita e
 
 _Site_: <https://www.apple.com/br/icloud/> Canal: <https://www.youtube.com/user/Apple> Licença: gratuita e paga
 
-##### Possibilidade de uso
-
-- **_Backup_** **automático de dispositivos**: para manter uma cópia segura de dispositivos ASpple, facilitando a recuperação de dados.
-
-- **Sincronização de fotos**: para armazenar e acessar suas fotos e vídeos em qualquer dispositivo, mantendo suas memórias seguras e acessíveis.
-
-- **Acesso a documentos em qualquer lugar**: utilize o iCloud Drive para manter documentos sincronizados e acessíveis em todos os seus dispositivos.
-
-- **Localizar dispositivos perdidos**: utilize o “buscar” para localizar dispositivos Apple perdidos ou roubados.
-
-- **Sincronização de contatos, calendários e lembretes**: mantenha informações pessoais sincronizadas em todos os dispositivos Apple.
-
-- **Compartilhamento familiar**: compartilhe compras, espaço de armazenamento e assinaturas com sua família.
-
-- **Colaboração em documentos**: colabore em documentos do Pages, Numbers e Keynote em tempo real com outros usuários.
+> [!info] Possibilidade de uso
+>
+> - **_Backup_** **automático de dispositivos**: para manter uma cópia segura de dispositivos ASpple, facilitando a recuperação de dados.
+>
+> - **Sincronização de fotos**: para armazenar e acessar suas fotos e vídeos em qualquer dispositivo, mantendo suas memórias seguras e acessíveis.
+>
+> - **Acesso a documentos em qualquer lugar**: utilize o iCloud Drive para manter documentos sincronizados e acessíveis em todos os seus dispositivos.
+>
+> - **Localizar dispositivos perdidos**: utilize o “buscar” para localizar dispositivos Apple perdidos ou roubados.
+>
+> - **Sincronização de contatos, calendários e lembretes**: mantenha informações pessoais sincronizadas em todos os dispositivos Apple.
+>
+> - **Compartilhamento familiar**: compartilhe compras, espaço de armazenamento e assinaturas com sua família.
+>
+> - **Colaboração em documentos**: colabore em documentos do Pages, Numbers e Keynote em tempo real com outros usuários.
 
 ##### 3.5.1 Ferramentas de vídeo
 
@@ -1443,19 +1443,19 @@ Plataforma de comunicação integrada que permite a realização de videoconfer�
 
 _Site_: <https://zoom.us/ptCanal>: <https://www.youtube.com/zoommeetings> Licença: gratuita e paga
 
-##### Possibilidades de uso
-
-- **Ensino a distância**: o Zoom permite que professores e alunos se conectem para aulas ao vivo, facilitando a interação e o engajamento em um ambiente virtual.
-
-- **Trabalho remoto**: empresas utilizam o Zoom para realizar reuniões, gerenciar equipes remotamente e promover a colaboração entre funcionários de diferentes localizações.
-
-- **_Webinars_**: o rganizadores de eventos podem hospedar _webinars_ interativos, atingindo um público amplo com facilidade e eficiência.
-
-- **Consultas virtuais**: profissionais oferecem consultas _on-line_, o que proporciona conveniência e acessibilidade a pacientes e/ou clientes.
-
-- **_Networking_** **virtual**: plataforma ideal para eventos de _networking on-line_, permitindo a conexão entre profissionais de diversas áreas.
-
-- **Treinamentos e desenvolvimento**: instituições e empresas oferecem cursos e treinamentos _on-line_ aproveitando as ferramentas de interação do Zoom para uma aprendizagem efetiva.
+> [!info] Possibilidades de uso
+>
+> - **Ensino a distância**: o Zoom permite que professores e alunos se conectem para aulas ao vivo, facilitando a interação e o engajamento em um ambiente virtual.
+>
+> - **Trabalho remoto**: empresas utilizam o Zoom para realizar reuniões, gerenciar equipes remotamente e promover a colaboração entre funcionários de diferentes localizações.
+>
+> - **_Webinars_**: o rganizadores de eventos podem hospedar _webinars_ interativos, atingindo um público amplo com facilidade e eficiência.
+>
+> - **Consultas virtuais**: profissionais oferecem consultas _on-line_, o que proporciona conveniência e acessibilidade a pacientes e/ou clientes.
+>
+> - **_Networking_** **virtual**: plataforma ideal para eventos de _networking on-line_, permitindo a conexão entre profissionais de diversas áreas.
+>
+> - **Treinamentos e desenvolvimento**: instituições e empresas oferecem cursos e treinamentos _on-line_ aproveitando as ferramentas de interação do Zoom para uma aprendizagem efetiva.
 
 #### Animaker
 
@@ -1463,17 +1463,17 @@ Plataforma _on-line_ que permite a criação intuitiva de vídeos animados educa
 
 _Site_: <https://www.animaker.com/> Canal: <https://www.animaker.com/blog/> Licença: paga
 
-##### Possibilidade de uso
-
-- **Criação de vídeos educativos**: facilita a produção de vídeos animados para tornar o aprendizado mais atraente, simplificando conceitos complexos com recursos visuais e auditivos.
-
-- **_Onboarding_** **e orientação**: recurso ideal para o RH criar vídeos de integração e orientação de forma rápida e atraente.
-
-- **Marketing e vendas**: produção de conteúdo em vídeo impactante para atrair seguidores e clientes, tanto para campanhas internas quanto externas.
-
-- **Comunicações internas**: desenvolvimento de vídeos animados para promover uma cultura empresarial
-
-- **Personalização**: permite a criação de vídeos personalizados para qualquer necessidade.
+> [!info] Possibilidade de uso
+>
+> - **Criação de vídeos educativos**: facilita a produção de vídeos animados para tornar o aprendizado mais atraente, simplificando conceitos complexos com recursos visuais e auditivos.
+>
+> - **_Onboarding_** **e orientação**: recurso ideal para o RH criar vídeos de integração e orientação de forma rápida e atraente.
+>
+> - **Marketing e vendas**: produção de conteúdo em vídeo impactante para atrair seguidores e clientes, tanto para campanhas internas quanto externas.
+>
+> - **Comunicações internas**: desenvolvimento de vídeos animados para promover uma cultura empresarial
+>
+> - **Personalização**: permite a criação de vídeos personalizados para qualquer necessidade.
 
 #### Capcut
 
@@ -1481,19 +1481,19 @@ Aplicativo de edição de vídeo que oferece uma ampla gama de funcionalidades p
 
 _Site_: <https://www.capcut.com/pt-br/> Canal: <https://www.youtube.com/c/capcutofficial> Licença: gratuito e paga
 
-##### Possibilidade de uso
-
-- **Produção de conteúdo**: com vídeos interativos, torna aulas visuais mais atraentes, ideais para disciplinas como história e ciências.
-
-- **Ensino híbrido e a distância**: facilita a criação de conteúdo educacional _on-line_, incluindo tutoriais e leituras, com edição simples.
-
-- **Portfólios e projetos estudantis**: motiva estudantes a exibir habilidades e criatividade em portfólios digitais e projetos.
-
-- **Desenvolvimento profi** **ssional**: a uxilia educadores a disseminar conhecimento profissional e pedagógico por meio de vídeos.
-
-- **Projetos de intervenção social**: permite criar vídeos impactantes para promover causas sociais e documentários.
-
-- **Engajamento comunitário e cultural**: apoio a organizações na promoção de eventos culturais e comunitários através de conteúdo visual.
+> [!info] Possibilidade de uso
+>
+> - **Produção de conteúdo**: com vídeos interativos, torna aulas visuais mais atraentes, ideais para disciplinas como história e ciências.
+>
+> - **Ensino híbrido e a distância**: facilita a criação de conteúdo educacional _on-line_, incluindo tutoriais e leituras, com edição simples.
+>
+> - **Portfólios e projetos estudantis**: motiva estudantes a exibir habilidades e criatividade em portfólios digitais e projetos.
+>
+> - **Desenvolvimento profi** **ssional**: a uxilia educadores a disseminar conhecimento profissional e pedagógico por meio de vídeos.
+>
+> - **Projetos de intervenção social**: permite criar vídeos impactantes para promover causas sociais e documentários.
+>
+> - **Engajamento comunitário e cultural**: apoio a organizações na promoção de eventos culturais e comunitários através de conteúdo visual.
 
 ### 3.6 Plataformas digitais
 
@@ -1569,11 +1569,10 @@ Serviço _on-line_ para criação, edição e compartilhamento de documentos de 
 
 _Site_: <https://docs.google.com>
 
-#### Google Drive
-
-Serviço de armazenamento e sincronização de arquivos que permite salvar arquivos na nuvem e acessá-los de qualquer dispositivo.
-
-_Site_: <https://drive.google.com>
+> [!info] Google Drive
+> Serviço de armazenamento e sincronização de arquivos que permite salvar arquivos na nuvem e acessá-los de qualquer dispositivo.
+>
+> _Site_: <https://drive.google.com>
 
 #### Google Earth
 
@@ -1681,15 +1680,15 @@ A plataforma Cubus é um espaço de compartilhamento de processos pedagógicos, 
 
 _Site_: <https://cinterfor.vulpecomunicacao.com.br/> Licença: gratuita
 
-##### Possibilidades de uso
-
-- **Acesso**: de fácil acesso e intuitiva, a plataforma apresenta uma série de recursos para que os professores possam planejar aulas mais dinâmicas e atraentes para uma aprendizagem significativa.
-
-- **Recursos educativos**: a plataforma constitui um repositório _on-line_ de métodos, práticas, recursos e estratégias didáticas para facilitação da aprendizagem, assim como apresenta opções de dinâmicas presenciais e _online_. Em ambos os casos, detalha uma opção de desenvolvimento para cada tipo de recurso. Os recursos favorecem a adoção de práticas pedagógicas mais inovadoras. As práticas _on-line_ contribuem e colaboram para a inclusão digital de professores e alunos.
-
-- **Tecnologia e ferramentas digitais**: a plataforma é aberta e acessível, sem necessidade de autenticação. A interface é de fácil acesso, com um sistema de buscas descomplicado e organizado para auxiliar o professor a encontrar os recursos disponíveis de acordo com seus parâmetros e planejamento.
-
-- **Estratégias pedagógicas**: os recursos disponíveis estão classificados por finalidade pedagógica, auxiliando o processo de organização das aulas conforme o planejamento docente.
+> [!info] Possibilidades de uso
+>
+> - **Acesso**: de fácil acesso e intuitiva, a plataforma apresenta uma série de recursos para que os professores possam planejar aulas mais dinâmicas e atraentes para uma aprendizagem significativa.
+>
+> - **Recursos educativos**: a plataforma constitui um repositório _on-line_ de métodos, práticas, recursos e estratégias didáticas para facilitação da aprendizagem, assim como apresenta opções de dinâmicas presenciais e _online_. Em ambos os casos, detalha uma opção de desenvolvimento para cada tipo de recurso. Os recursos favorecem a adoção de práticas pedagógicas mais inovadoras. As práticas _on-line_ contribuem e colaboram para a inclusão digital de professores e alunos.
+>
+> - **Tecnologia e ferramentas digitais**: a plataforma é aberta e acessível, sem necessidade de autenticação. A interface é de fácil acesso, com um sistema de buscas descomplicado e organizado para auxiliar o professor a encontrar os recursos disponíveis de acordo com seus parâmetros e planejamento.
+>
+> - **Estratégias pedagógicas**: os recursos disponíveis estão classificados por finalidade pedagógica, auxiliando o processo de organização das aulas conforme o planejamento docente.
 
 ##### 3.7.2 Cachola
 
@@ -1697,15 +1696,15 @@ Nova plataforma de Conteúdos Educacionais Digitais do Senac, a Cachola reúne e
 
 _Site_: cachola.senac.br (a partir de agosto de 2024) Licença: gratuito para estudantes e professores do Senac
 
-##### Possibilidades de uso
-
-- Seleção de conteúdos digitais para serem utilizados nas situações de aprendizagem.
-
-- Criação de clubes do livro e experiências de aprendizagem digitais.
-
-- Gamificação dos conteúdos digitais.
-
-- Recurso didático de apoio para favorecer o desenvolvimento de competências.
+> [!info] Possibilidades de uso
+>
+> - Seleção de conteúdos digitais para serem utilizados nas situações de aprendizagem.
+>
+> - Criação de clubes do livro e experiências de aprendizagem digitais.
+>
+> - Gamificação dos conteúdos digitais.
+>
+> - Recurso didático de apoio para favorecer o desenvolvimento de competências.
 
 ##### 3.7.3 Acervo TE & TI Partners
 
@@ -1713,27 +1712,27 @@ Essa coleção engloba uma gama de recursos educacionais, programas e _sites_ cu
 
 _Site_: <https://sites.google.com/view/tetipartners/home?authuser=0> Licença: gratuita
 
-##### Possibilidade de uso
-
-- **Tecnologia e ferramentas digitais**: a brange ferramentas da Apple e do Google, além de _software_ de desenvolvimento de apps, editores e ferramentas de captura de tela, promovendo a inclusão digital e facilitando o acesso a tecnologias educacionais.
-
-- **Educação e alfabetização**: engloba recursos para alfabetização, educação infantil, financeira e continuada, apoiando o desenvolvimento de competências e habilidades em diferentes níveis educacionais.
-
-- **Artes e humanidades**: reúne recursos de arte, cultura, história e línguas, com vistas a incentivar o estudo e a apreciação das humanidades por meio de diferentes mídias.
-
-- **Ciências e matemática**: inclui ciências exatas, da natureza, humanas e laboratórios virtuais, apresenta uma abordagem prática e interativa.
-
-- **Tecnologia da informação**: contempla programação, robótica, inteligência artificial e segurança digital, preparando os estudantes para novos desafios e oportunidades.
-
-- **Recursos educativos**: cobre bibliotecas virtuais, bancos de imagens e áudios, _e-books_ e REAs (recursos educacionais abertos), proporcionando acesso a uma vasta gama de materiais de aprendizagem.
-
-- **Comunicação e colaboração**: oferece plataformas de comunicação, fóruns, _sites_ e videoconferência, promovendo a interação e o trabalho colaborativo.
-
-- **Métodos de avaliação**: a brange ferramentas antiplágio, avaliações e banco de questões, auxiliando educadores na criação de avaliações justas e eficazes.
-
-- **Interatividade e gamifi** **cação**: inclui realidade aumentada, jogos educativos, gamificação e esportes eletrônicos, com vistas a tornar o aprendizado mais envolvente e divertido.
-
-- **Gestão e organização educacional**: se relaciona com ferramentas de gestão, organizadores de eventos e estratégias pedagógicas, contribui na administração de recursos educacionais e na implementação de práticas inovadoras.
+> [!info] Possibilidade de uso
+>
+> - **Tecnologia e ferramentas digitais**: a brange ferramentas da Apple e do Google, além de _software_ de desenvolvimento de apps, editores e ferramentas de captura de tela, promovendo a inclusão digital e facilitando o acesso a tecnologias educacionais.
+>
+> - **Educação e alfabetização**: engloba recursos para alfabetização, educação infantil, financeira e continuada, apoiando o desenvolvimento de competências e habilidades em diferentes níveis educacionais.
+>
+> - **Artes e humanidades**: reúne recursos de arte, cultura, história e línguas, com vistas a incentivar o estudo e a apreciação das humanidades por meio de diferentes mídias.
+>
+> - **Ciências e matemática**: inclui ciências exatas, da natureza, humanas e laboratórios virtuais, apresenta uma abordagem prática e interativa.
+>
+> - **Tecnologia da informação**: contempla programação, robótica, inteligência artificial e segurança digital, preparando os estudantes para novos desafios e oportunidades.
+>
+> - **Recursos educativos**: cobre bibliotecas virtuais, bancos de imagens e áudios, _e-books_ e REAs (recursos educacionais abertos), proporcionando acesso a uma vasta gama de materiais de aprendizagem.
+>
+> - **Comunicação e colaboração**: oferece plataformas de comunicação, fóruns, _sites_ e videoconferência, promovendo a interação e o trabalho colaborativo.
+>
+> - **Métodos de avaliação**: a brange ferramentas antiplágio, avaliações e banco de questões, auxiliando educadores na criação de avaliações justas e eficazes.
+>
+> - **Interatividade e gamifi** **cação**: inclui realidade aumentada, jogos educativos, gamificação e esportes eletrônicos, com vistas a tornar o aprendizado mais envolvente e divertido.
+>
+> - **Gestão e organização educacional**: se relaciona com ferramentas de gestão, organizadores de eventos e estratégias pedagógicas, contribui na administração de recursos educacionais e na implementação de práticas inovadoras.
 
 ### 3.8 Ambientes virtuais de aprendizagem
 
@@ -1749,19 +1748,19 @@ _Links_: <https://moodle.org/> <https://www.moodlecloud.com/> Canal: <https://ww
 
 Licença: gratuita
 
-##### Possibilidades de uso
-
-- **Recursos para leitura e conteúdo multimídia**: você pode usar o Moodle para disponibilizar material de leitura, vídeos, _slides_ e outros recursos. Isso ajuda os alunos a lembrarem informações ao revisarem o material em seu próprio tempo.
-
-- **Fóruns de discussão**: os fóruns permitem que os alunos discutam o conteúdo do curso e façam perguntas, o que pode ajudar a reforçar a memória e a compreensão do material.
-
-- **Questionários e testes**: criar questionários regulares sobre o material do curso ajuda a avaliar a capacidade dos alunos de lembrar das informações. O _feedback_ imediato também pode ajudá-los a entender melhor o que precisam revisar.
-
-- **Glossários e bancos de dados**: essas ferramentas permitem que os alunos criem e compartilhem suas próprias definições ou informações relacionadas ao curso, reforçando suas memórias por meio da colaboração e do ensino entre pares.
-
-- **Lições e atividades interativas**: utilizando lições que incorporam elementos interativos, como arrastar e soltar ou correspondência, os alunos podem reforçar a memória ao aplicar o que aprenderam.
-
-- **Rastreamento de progresso**: o Moodle pode rastrear o progresso dos alunos em testes e tarefas, o que ajuda tanto os alunos quanto os professores a entenderem quais áreas precisam de mais revisão e prática para reforçar a memória.
+> [!info] Possibilidades de uso
+>
+> - **Recursos para leitura e conteúdo multimídia**: você pode usar o Moodle para disponibilizar material de leitura, vídeos, _slides_ e outros recursos. Isso ajuda os alunos a lembrarem informações ao revisarem o material em seu próprio tempo.
+>
+> - **Fóruns de discussão**: os fóruns permitem que os alunos discutam o conteúdo do curso e façam perguntas, o que pode ajudar a reforçar a memória e a compreensão do material.
+>
+> - **Questionários e testes**: criar questionários regulares sobre o material do curso ajuda a avaliar a capacidade dos alunos de lembrar das informações. O _feedback_ imediato também pode ajudá-los a entender melhor o que precisam revisar.
+>
+> - **Glossários e bancos de dados**: essas ferramentas permitem que os alunos criem e compartilhem suas próprias definições ou informações relacionadas ao curso, reforçando suas memórias por meio da colaboração e do ensino entre pares.
+>
+> - **Lições e atividades interativas**: utilizando lições que incorporam elementos interativos, como arrastar e soltar ou correspondência, os alunos podem reforçar a memória ao aplicar o que aprenderam.
+>
+> - **Rastreamento de progresso**: o Moodle pode rastrear o progresso dos alunos em testes e tarefas, o que ajuda tanto os alunos quanto os professores a entenderem quais áreas precisam de mais revisão e prática para reforçar a memória.
 
 ### 3.9 Outras ferramentas
 
@@ -1771,21 +1770,21 @@ Confira a lista de ferramentas no _site_
 
 Plataforma educacional que integra geometria, álgebra, estatísticas e cálculo num ambiente dinâmico e interativo. Com interface intuitiva, promove a compreensão matemática por meio de manipulação visual e explorando conceitos, tornando-a uma ferramenta valiosa para o ensino e a aprendizagem de matemática em todos os níveis educacionais. Sua natureza de código aberto e gratuita facilita o acesso a recursos educativos avançados para estudantes e educadores ao redor do mundo. _Site_: <https://www.geogebra.org/?lang=ptCanal>: <https://www.youtube.com/user/GeoGebraChannel> Licença: gratuita
 
-##### Possibilidades de uso
-
-- **Ensino de matemática**: facilita a visualização e interação com conceitos matemáticos, melhorando a compreensão dos alunos.
-
-- **Explorar conceitos científi** **cos**: a plica-se no ensino de física e outras ciências, simulando experimentos e visualizando dados.
-
-- **Desenvolvimento de habilidades de resolução de problemas**: estimula que os alunos explorem e resolvam problemas matemáticos, fomentando o pensamento crítico.
-
-- **Criação de material didático interativo**: educadores podem desenvolver recursos personalizados para enriquecer o processo de aprendizagem.
-
-- **Pesquisa em educação matemática**: serve como ferramenta para investigar a eficácia de abordagens pedagógicas e o papel da tecnologia na educação.
-
-- **Preparação para exames**: a uxilia estudantes na revisão de conteúdos matemáticos para exames e competições acadêmicas.
-
-- **Colaboração e compartilhamento** **_on-line_**: promove a troca de materiais e ideias entre a comunidade educativa, incentivando a aprendizagem colaborativa.
+> [!info] Possibilidades de uso
+>
+> - **Ensino de matemática**: facilita a visualização e interação com conceitos matemáticos, melhorando a compreensão dos alunos.
+>
+> - **Explorar conceitos científi** **cos**: a plica-se no ensino de física e outras ciências, simulando experimentos e visualizando dados.
+>
+> - **Desenvolvimento de habilidades de resolução de problemas**: estimula que os alunos explorem e resolvam problemas matemáticos, fomentando o pensamento crítico.
+>
+> - **Criação de material didático interativo**: educadores podem desenvolver recursos personalizados para enriquecer o processo de aprendizagem.
+>
+> - **Pesquisa em educação matemática**: serve como ferramenta para investigar a eficácia de abordagens pedagógicas e o papel da tecnologia na educação.
+>
+> - **Preparação para exames**: a uxilia estudantes na revisão de conteúdos matemáticos para exames e competições acadêmicas.
+>
+> - **Colaboração e compartilhamento** **_on-line_**: promove a troca de materiais e ideias entre a comunidade educativa, incentivando a aprendizagem colaborativa.
 
 ##### 3.9.2 Visual Studio Code
 
@@ -1793,13 +1792,13 @@ Editor de código-fonte gratuito e de código aberto da Microsoft. Suporta vári
 
 _Site_: <https://code.visualstudio.com/> Canal: <https://www.youtube.com/visualstudio> Licença: gratuita, com suporte a extensões pagas
 
-##### Possibilidades de uso
-
-- **Suporte a múltiplas linguagens**: esse editor é notável por seu suporte abrangente a uma variedade de linguagens de programação, permitindo que equipes trabalhem em projetos poliglotas, desde o desenvolvimento _web_ até aplicações de alta performance.
-
-- **Ferramentas para ciência de dados**: oferece integração com _notebooks_ interativos e suporte para bibliotecas de ciência de dados e aprendizado de máquina, simplificando a análise de dados e a construção de modelos.
-
-- **Desenvolvimento** **_web_** **completo**: proporciona um ambiente rico para o desenvolvimento _web_, com ferramentas para edição, teste, _debugging_ e _deployment_ de aplicações _web_ modernas.
+> [!info] Possibilidades de uso
+>
+> - **Suporte a múltiplas linguagens**: esse editor é notável por seu suporte abrangente a uma variedade de linguagens de programação, permitindo que equipes trabalhem em projetos poliglotas, desde o desenvolvimento _web_ até aplicações de alta performance.
+>
+> - **Ferramentas para ciência de dados**: oferece integração com _notebooks_ interativos e suporte para bibliotecas de ciência de dados e aprendizado de máquina, simplificando a análise de dados e a construção de modelos.
+>
+> - **Desenvolvimento** **_web_** **completo**: proporciona um ambiente rico para o desenvolvimento _web_, com ferramentas para edição, teste, _debugging_ e _deployment_ de aplicações _web_ modernas.
 
 ##### 3.9.3 Cognitive Tutor Authoring Tools (CTAT)
 
@@ -1807,19 +1806,19 @@ Ferramenta que permite a educadores e pesquisadores criarem tutores cognitivos s
 
 _Links_: <https://github.com/CMUCTAT/CTAT/wiki> <https://cdn.ctat.cs.cmu.edu/html-editor/editor.html> Licença: gratuita e paga
 
-##### Possibilidades de uso
-
-- **Desenvolvimento de competências de resolução de problemas**: tutores criados com o CTAT podem ser aplicados em diferentes áreas do conhecimento, visando o desenvolvimento de habilidades de resolução de problemas em campos como matemática, ciência e engenharia.
-
-- **Suporte à aprendizagem personalizada**: o CTAT permite a criação de tutores que se adaptam às necessidades individuais dos alunos, promovendo uma aprendizagem mais alinhada às suas necessidades específicas.
-
-- **_Feedback_** **imediato e sensível ao contexto:** os tutores criados oferecem _feedback_ direto e relevante aos alunos, o que facilita a aprendizagem ativa e a correção de erros de maneira oportuna.
-
-- **Facilitação da pesquisa em educação**: o CTAT serve como ferramenta para pesquisadores em educação explorarem a eficácia de diferentes abordagens pedagógicas, possibilitando estudos experimentais e coleta de dados sobre desempenho dos alunos.
-
-- **Treinamento e desenvolvimento profi** **ssional**: fora do ambiente educacional formal, o CTAT pode ser usado em programas de treinamento profissional, apoiando o desenvolvimento de habilidades específicas e o aprimoramento contínuo.
-
-- **Suporte a múltiplas estratégias de aprendizagem**: a capacidade do CTAT de suportar variadas formas de solução estimula os alunos a explorarem diferentes estratégias que se ajustem às suas preferências e ritmo de aprendizagem.
+> [!info] Possibilidades de uso
+>
+> - **Desenvolvimento de competências de resolução de problemas**: tutores criados com o CTAT podem ser aplicados em diferentes áreas do conhecimento, visando o desenvolvimento de habilidades de resolução de problemas em campos como matemática, ciência e engenharia.
+>
+> - **Suporte à aprendizagem personalizada**: o CTAT permite a criação de tutores que se adaptam às necessidades individuais dos alunos, promovendo uma aprendizagem mais alinhada às suas necessidades específicas.
+>
+> - **_Feedback_** **imediato e sensível ao contexto:** os tutores criados oferecem _feedback_ direto e relevante aos alunos, o que facilita a aprendizagem ativa e a correção de erros de maneira oportuna.
+>
+> - **Facilitação da pesquisa em educação**: o CTAT serve como ferramenta para pesquisadores em educação explorarem a eficácia de diferentes abordagens pedagógicas, possibilitando estudos experimentais e coleta de dados sobre desempenho dos alunos.
+>
+> - **Treinamento e desenvolvimento profi** **ssional**: fora do ambiente educacional formal, o CTAT pode ser usado em programas de treinamento profissional, apoiando o desenvolvimento de habilidades específicas e o aprimoramento contínuo.
+>
+> - **Suporte a múltiplas estratégias de aprendizagem**: a capacidade do CTAT de suportar variadas formas de solução estimula os alunos a explorarem diferentes estratégias que se ajustem às suas preferências e ritmo de aprendizagem.
 
 #### Code Combat
 
@@ -1829,17 +1828,17 @@ _Site_: <https://codecombat.com/>
 
 Licença: gratuita e paga
 
-##### Possibilidades de uso
-
-- **Aprendizado baseado em jogos**: utiliza a gamificação para ensinar programação, o que pode aumentar significativamente o engajamento e a retenção de conhecimento dos alunos. A natureza interativa do jogo incentiva os estudantes a resolverem problemas de programação de forma criativa.
-
-- **Desenvolvimento de habilidades de pensamento crítico e resolução de problemas**: a o jogar, os alunos são desafiados a pensar logicamente e a desenvolver soluções eficazes para problemas complexos, habilidades essenciais para bons programadores.
-
-- **Ensino de programação para todos os níveis**: é adequado para estudantes iniciantes e avançados, pois oferece níveis diferenciados de dificuldade e uma curva de aprendizado gradual, permitindo que os alunos progridam no seu próprio ritmo.
-
-- **Colaboração e competição saudável**: permite que os alunos colaborem ou compitam com colegas, promovendo um ambiente de aprendizado social que pode aumentar a motivação e o entusiasmo pelo estudo da programação.
-
-- **Acesso prático a várias linguagens de programação**: além de ensinar lógica de programação, dá aos alunos a oportunidade de aprender e praticar várias linguagens de programação, preparando-os para futuras carreiras em tecnologia.
+> [!info] Possibilidades de uso
+>
+> - **Aprendizado baseado em jogos**: utiliza a gamificação para ensinar programação, o que pode aumentar significativamente o engajamento e a retenção de conhecimento dos alunos. A natureza interativa do jogo incentiva os estudantes a resolverem problemas de programação de forma criativa.
+>
+> - **Desenvolvimento de habilidades de pensamento crítico e resolução de problemas**: a o jogar, os alunos são desafiados a pensar logicamente e a desenvolver soluções eficazes para problemas complexos, habilidades essenciais para bons programadores.
+>
+> - **Ensino de programação para todos os níveis**: é adequado para estudantes iniciantes e avançados, pois oferece níveis diferenciados de dificuldade e uma curva de aprendizado gradual, permitindo que os alunos progridam no seu próprio ritmo.
+>
+> - **Colaboração e competição saudável**: permite que os alunos colaborem ou compitam com colegas, promovendo um ambiente de aprendizado social que pode aumentar a motivação e o entusiasmo pelo estudo da programação.
+>
+> - **Acesso prático a várias linguagens de programação**: além de ensinar lógica de programação, dá aos alunos a oportunidade de aprender e praticar várias linguagens de programação, preparando-os para futuras carreiras em tecnologia.
 
 ## 4. Referências
 

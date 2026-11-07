@@ -411,7 +411,56 @@ def repair_style_splits(markdown: str) -> str:
     )
 
 
-def clean_markdown(markdown: str) -> str:
+def duplicate_headings_to_callouts(markdown: str, callout: str = "info") -> str:
+    """Troca títulos repetidos por callouts, evitando o aviso MD024 do markdownlint.
+
+    Só títulos "folha" (sem subtítulos) são convertidos. O conteúdo até o próximo
+    título passa a ser o corpo do callout (cada linha prefixada com "> ").
+    Exemplo: dezenas de "##### Possibilidades de uso" viram
+    "> [!info] Possibilidades de uso" com a lista dentro.
+    """
+    lines = markdown.split("\n")
+    headings: list[tuple[int, int, str]] = []  # (linha, nível, texto)
+    in_fence = False
+    for index, line in enumerate(lines):
+        if FENCE.match(line):
+            in_fence = not in_fence
+        elif not in_fence and (match := HEADING_LINE.match(line)):
+            headings.append((index, len(match.group(1)), match.group(2).strip()))
+
+    counts = Counter(text.lower() for _, _, text in headings)
+    ranges: dict[int, tuple[int, str]] = {}  # início -> (fim, título)
+    for position, (index, level, text) in enumerate(headings):
+        if counts[text.lower()] < 2:
+            continue
+        following = headings[position + 1] if position + 1 < len(headings) else None
+        if following and following[1] > level:
+            continue  # tem subtítulos: continua como título
+        ranges[index] = (following[0] if following else len(lines), text)
+
+    result: list[str] = []
+    index = 0
+    while index < len(lines):
+        if index not in ranges:
+            result.append(lines[index])
+            index += 1
+            continue
+        end, title = ranges[index]
+        body = lines[index + 1 : end]
+        while body and not body[-1].strip():
+            body.pop()
+        while body and not body[0].strip():
+            body.pop(0)
+        result.append(f"> [!{callout}] {title}")
+        if body and re.match(r"\s*(?:[-*+]|\d+[.)])\s", body[0]):
+            result.append(">")  # linha em branco antes da lista (MD032)
+        result.extend(f"> {line}" if line.strip() else ">" for line in body)
+        result.append("")
+        index = end
+    return "\n".join(result)
+
+
+def clean_markdown(markdown: str, duplicate_headings: str = "callout") -> str:
     """Limpa ruídos típicos de PDF e deixa o Markdown "linter-friendly"."""
     markdown = markdown.replace("\r\n", "\n").replace("\r", "\n")
     markdown = re.sub(r"[ \t]+\n", "\n", markdown)  # espaços no fim da linha
@@ -431,6 +480,9 @@ def clean_markdown(markdown: str) -> str:
     markdown = fix_and_wrap_urls(markdown)
     markdown = re.sub(r"[ \t]+\n", "\n", markdown)
     markdown = EXTRA_BLANKS.sub("\n\n", markdown).strip()
+    if duplicate_headings == "callout":
+        markdown = EXTRA_BLANKS.sub("\n\n", duplicate_headings_to_callouts(markdown))
+        markdown = markdown.strip()
     return merge_split_paragraphs(markdown)
 
 
@@ -473,6 +525,7 @@ def convert_pdf(
     title_override: str | None = None,
     description_override: str | None = None,
     skip_pages: str | None = None,
+    duplicate_headings: str = "callout",
 ) -> Path:
     """Converte um PDF em uma nota Markdown.
 
@@ -487,6 +540,8 @@ def convert_pdf(
         title_override: Título fixo (ignora a detecção automática).
         description_override: Descrição fixa (ignora a detecção automática).
         skip_pages: Páginas a ignorar (base 1), ex.: "1-4,10".
+        duplicate_headings: "callout" troca títulos repetidos por callouts;
+            "keep" os mantém como títulos.
 
     Returns:
         Caminho da nota .md criada.
@@ -524,7 +579,7 @@ def convert_pdf(
             f"{pdf_path.name}: sem texto extraível (PDF escaneado? use OCR)."
         )
 
-    markdown = clean_markdown(markdown)
+    markdown = clean_markdown(markdown, duplicate_headings)
     markdown = convert_images_to_wikilinks(markdown)
 
     title = title_override or extract_title(markdown, metadata, pdf_path.stem)
@@ -562,6 +617,12 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--skip-pages",
         help='Páginas a ignorar, base 1 (ex.: "1-4" ou "1-4,60-" para até o fim)',
+    )
+    parser.add_argument(
+        "--duplicate-headings",
+        choices=("callout", "keep"),
+        default="callout",
+        help="Títulos repetidos viram callouts (padrão) ou ficam como títulos",
     )
     parser.add_argument("--title", help="Título fixo (use com um único PDF)")
     parser.add_argument("--description", help="Descrição fixa (um único PDF)")
@@ -602,6 +663,7 @@ def main() -> int:
                 with_ocr=args.ocr,
                 title_override=args.title,
                 skip_pages=args.skip_pages,
+                duplicate_headings=args.duplicate_headings,
                 description_override=args.description,
             )
             logger.info("OK  %s -> %s", pdf.name, note)
