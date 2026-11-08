@@ -20,6 +20,12 @@ O script lê um PDF (ou uma pasta inteira), extrai o texto como Markdown, limpa 
   - [Exemplo de saída](#exemplo-de-saída)
   - [Solução de problemas](#solução-de-problemas)
   - [Limitações](#limitações)
+  - [senac2obsidian](#senac2obsidian)
+    - [Requisitos e uso](#requisitos-e-uso)
+    - [Saída](#saída)
+    - [Dados de alunos](#dados-de-alunos)
+    - [Avisos do markdownlint](#avisos-do-markdownlint)
+    - [Limitações do layout](#limitações-do-layout)
 
 ## Requisitos
 
@@ -166,3 +172,65 @@ PDFs institucionais costumam ter capa, ficha catalográfica e metadados ruins. C
 - **URLs quebradas:** a reconexão também é heurística. Confira as URLs da bibliografia.
 - **Revisão manual:** títulos e tabelas de PDFs mal estruturados costumam precisar de um ajuste. Use `--draft` para revisar antes de publicar.
 - **Escopo:** converte o conteúdo, não o layout. Colunas, caixas de texto e figuras complexas podem sair na ordem errada.
+
+---
+
+## senac2obsidian
+
+Segundo script do projeto, específico para os PDFs que o sistema acadêmico do Senac exporta: o **Diário de Classe** e o **PTD** (Plano de Trabalho do Docente). Diferente do `pdf2obsidian.py`, ele não faz extração genérica: lê o PDF por posição na página, entende as seções de cada relatório e monta a nota no padrão do vault.
+
+### Requisitos e uso
+
+- Python 3.10 ou superior e `pip install pymupdf`.
+
+```bash
+python senac2obsidian.py PTD_2026_12_331.pdf -o vault/docs
+python senac2obsidian.py pasta_pdfs/ -o vault/docs --draft
+```
+
+O tipo de relatório é reconhecido pelo título da primeira página. Um PDF de outro tipo falha com a sugestão de usar o `pdf2obsidian.py`.
+
+| Opção            | Padrão    | Descrição                                                       |
+| :--------------- | :-------- | :-------------------------------------------------------------- |
+| `source`         | —         | PDF ou pasta com PDFs (busca recursiva).                        |
+| `-o`, `--output` | `notas`   | Pasta de saída.                                                 |
+| `-t`, `--tags`   | nenhuma   | Tags extras (além de `ptd`/`diario`, `senac`, `ucN` e o curso). |
+| `--draft`        | desligado | Grava `draft: true`.                                            |
+| `--full-cha`     | desligado | Repete Conhecimentos, Habilidades e Atitudes em todas as aulas. |
+
+### Saída
+
+O nome do arquivo vem da identificação: `PTD-2026.12.331-UC1-Programador-de-Sistemas.md` e `Diario-2026.12.331-UC1-Programador-de-Sistemas.md`.
+
+**PTD**, no modelo do vault:
+
+- `# Plano de Trabalho do Docente - UC1` e o callout `[!info] Identificação`.
+- `## Situações de Aprendizagem` → `### SAx - nome` (callout `[!abstract]`, com planejamento, descrição, recursos, indicadores e CHA) → `#### Aula N - tema` (callout `[!tip]`).
+- As aulas ficam na SA indicada pelo próprio PDF, não pela ordem do calendário (por exemplo, SA1 com as aulas 6 a 17 e SA2 com as aulas 1 a 5 e 18).
+- `## Avaliações` (callouts `[!warning]`) e `## Contribuição da Unidade Curricular para o Projeto Integrador`.
+
+**Diário de Classe:**
+
+- `## Avaliações` e uma seção com os Conhecimentos, Habilidades e Atitudes da UC.
+- `## Aulas` com um `### dd/mm/aaaa - tema` por dia letivo e o conteúdo da aula dentro de um callout `[!tip]`.
+- O texto livre do conteúdo mantém as quebras de linha e as listas, e protege `*args`, `**kwargs` e `__init__` para não virarem formatação.
+
+Nas aulas, Conhecimentos, Habilidades e Atitudes só aparecem quando são um subconjunto da lista completa da UC. Se forem iguais, ficam só na lista completa. Use `--full-cha` para repetir em todas.
+
+### Dados de alunos
+
+As seções **Feedbacks**, **Observações** e **Histórico de Revisões** do Diário são **ignoradas de propósito**: trazem nomes, menções, desistências e justificativas de alunos. Se a pasta `vault/docs` é publicada (Quartz, GitHub Pages ou repositório público), esses dados não devem ir junto. O script informa no terminal quais seções foram puladas.
+
+### Avisos do markdownlint
+
+As notas saem sem avisos, exceto MD013 (linha longa), MD025 e MD028. O MD025 vem do `title` no frontmatter somado ao `#` do corpo, que é o padrão do modelo do vault. O MD028 aparece quando dois callouts de avaliação ficam em sequência. Se incomodar, no `.markdownlint.json`:
+
+```json
+{ "MD013": false, "MD025": { "front_matter_title": "" }, "MD028": false }
+```
+
+### Limitações do layout
+
+- O script depende do layout do relatório do sistema (posições das colunas e fontes). Se o sistema mudar o layout do PDF, as seções podem sair vazias ou trocadas.
+- O texto é preservado como está no PDF, inclusive erros de digitação do sistema (por exemplo, `busca0se`).
+- A junção de linhas quebradas usa a margem direita da página e a pontuação final dos itens, então um item de lista sem ponto final pode ser unido ao seguinte.
