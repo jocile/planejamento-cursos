@@ -23,6 +23,7 @@ O script lê um PDF (ou uma pasta inteira), extrai o texto como Markdown, limpa 
   - [senac2obsidian](#senac2obsidian)
     - [Requisitos e uso](#requisitos-e-uso)
     - [Saída](#saída)
+    - [Propriedades que se repetem](#propriedades-que-se-repetem)
     - [Dados de alunos](#dados-de-alunos)
     - [Avisos do markdownlint](#avisos-do-markdownlint)
     - [Limitações do layout](#limitações-do-layout)
@@ -190,13 +191,14 @@ python senac2obsidian.py pasta_pdfs/ -o vault/docs --draft
 
 O tipo de relatório é reconhecido pelo título da primeira página. Um PDF de outro tipo falha com a sugestão de usar o `pdf2obsidian.py`.
 
-| Opção            | Padrão    | Descrição                                                       |
-| :--------------- | :-------- | :-------------------------------------------------------------- |
-| `source`         | —         | PDF ou pasta com PDFs (busca recursiva).                        |
-| `-o`, `--output` | `notas`   | Pasta de saída.                                                 |
-| `-t`, `--tags`   | nenhuma   | Tags extras (além de `ptd`/`diario`, `senac`, `ucN` e o curso). |
-| `--draft`        | desligado | Grava `draft: true`.                                            |
-| `--full-cha`     | desligado | Repete Conhecimentos, Habilidades e Atitudes em todas as aulas. |
+| Opção            | Padrão     | Descrição                                                                                                                      |
+| :--------------- | :--------- | :----------------------------------------------------------------------------------------------------------------------------- |
+| `source`         | —          | PDF ou pasta com PDFs (busca recursiva).                                                                                       |
+| `-o`, `--output` | `notas`    | Pasta de saída.                                                                                                                |
+| `-t`, `--tags`   | nenhuma    | Tags extras (além de `ptd`/`diario`, `senac`, `ucN` e o curso).                                                                |
+| `--draft`        | desligado  | Grava `draft: true`.                                                                                                           |
+| `--ptd`          | automático | PDF do PTD usado para numerar aulas e SAs do Diário. Sem ele, o script procura, na pasta do Diário, o PTD da mesma turma e UC. |
+| `--full-cha`     | desligado  | Repete Conhecimentos, Habilidades e Atitudes em todas as aulas.                                                                |
 
 ### Saída
 
@@ -208,14 +210,17 @@ O nome do arquivo vem da identificação: `PTD-2026.12.331-UC1-Programador-de-Si
 - `## Situações de Aprendizagem` → `### SAx - nome` (callout `[!abstract]`, com planejamento, descrição, recursos, indicadores e CHA) → `#### Aula N - tema` (callout `[!tip]`).
 - As aulas ficam na SA indicada pelo próprio PDF, não pela ordem do calendário (por exemplo, SA1 com as aulas 6 a 17 e SA2 com as aulas 1 a 5 e 18).
 - `## Avaliações` (callouts `[!warning]`) e `## Contribuição da Unidade Curricular para o Projeto Integrador`.
-
-**Diário de Classe:**
+**Diário de Classe**, com a mesma organização do PTD:
 
 - `## Avaliações` e uma seção com os Conhecimentos, Habilidades e Atitudes da UC.
-- `## Aulas` com um `### dd/mm/aaaa - tema` por dia letivo e o conteúdo da aula dentro de um callout `[!tip]`.
+- `## Aulas` → `### SAx - nome` → `#### Aula N - tema`, com o callout `[!tip] Aula N - dd/mm/aaaa`.
+- O número da aula e a SA vêm do PTD da mesma turma e UC, ligados pela data. Sem PTD, as aulas são numeradas pela ordem dos dias e as SAs ficam sem número.
 - O texto livre do conteúdo mantém as quebras de linha e as listas, e protege `*args`, `**kwargs` e `__init__` para não virarem formatação.
-
 Nas aulas, Conhecimentos, Habilidades e Atitudes só aparecem quando são um subconjunto da lista completa da UC. Se forem iguais, ficam só na lista completa. Use `--full-cha` para repetir em todas.
+
+### Propriedades que se repetem
+
+Horário, Ambiente Pedagógico, Docente(s), Forma de Execução e Recursos Didáticos costumam ser iguais em todas as aulas. O script mostra o valor mais comum uma única vez, em **Padrão das aulas**, no callout de Identificação. Em cada aula aparecem só os valores diferentes do padrão, e o Docente(s) igual ao da identificação não se repete.
 
 ### Dados de alunos
 

@@ -31,6 +31,7 @@ import logging
 import os
 import re
 import sys
+from collections import Counter
 from dataclasses import dataclass, field
 from datetime import date
 from pathlib import Path
@@ -90,10 +91,12 @@ class Row:
         return self.cells[0]
 
 
-def extract_rows(doc: pymupdf.Document) -> list[Row]:
+def extract_rows(doc: pymupdf.Document, max_pages: int | None = None) -> list[Row]:
     """Lê todas as páginas e devolve as linhas na ordem visual de leitura."""
     rows: list[Row] = []
     for page_number, page in enumerate(doc):
+        if max_pages is not None and page_number >= max_pages:
+            break
         matrix = page.rotation_matrix
         cells: list[Cell] = []
         for block in page.get_text("dict")["blocks"]:
@@ -207,6 +210,8 @@ def yaml_quote(text: str) -> str:
 def callout(kind: str, title: str, lines: list[str]) -> list[str]:
     """Monta um callout; linhas vazias viram ">" para o bloco não quebrar."""
     out = [f"> [!{kind}] {title}"]
+    if lines and LIST_ITEM_RE.match(lines[0]):
+        lines = [""] + lines  # lista logo após o título precisa de linha em branco
     for index, line in enumerate(lines):
         following = lines[index + 1] if index + 1 < len(lines) else ""
         # Campos seguidos precisam de quebra forçada (dois espaços), senão o Quartz
@@ -422,6 +427,7 @@ class Aula:
             else:
                 fields["forma"] = cell.text
         fields["sa"] = " ".join(c.text for c in sorted(sa_cells, key=lambda c: c.y))
+        fields["date"] = fields["data"]
         return fields
 
 
@@ -740,13 +746,15 @@ def frontmatter(
     ]
 
 
-def ident_callout(ident: dict[str, str], kind: str) -> list[str]:
+def ident_callout(
+    ident: dict[str, str], kind: str, extra: list[str] | None = None
+) -> list[str]:
     lines = [
         field_line(label, ident[label])
         for label in IDENT_ORDER[kind]
         if ident.get(label)
     ]
-    return callout("info", "Identificação", lines)
+    return callout("info", "Identificação", lines + (extra or []))
 
 
 def clean_title(text: str, limit: int = 100) -> str:
@@ -754,13 +762,20 @@ def clean_title(text: str, limit: int = 100) -> str:
     return text if len(text) <= limit else text[: limit - 1].rstrip() + "…"
 
 
-def day_title(first_line: str, limit: int = 70) -> str:
-    """Título curto do dia a partir da primeira linha do conteúdo da aula."""
-    text = re.sub(r"^(Conhecimentos|Objetivo|Conteúdo)\s*:\s*", "", first_line.strip())
+def day_title(first_line: str, limit: int = 70) -> tuple[str, bool]:
+    """Título curto da aula a partir da primeira linha do conteúdo.
+
+    Returns:
+        O título e se ele já contém a linha inteira (então a linha sai do corpo).
+    """
+    line = first_line.strip()
+    label = re.match(r"^(Conhecimentos|Objetivo|Conteúdo)\s*:\s*", line)
+    text = re.sub(r"^(Conhecimentos|Objetivo|Conteúdo|Aula\s*\d+)\s*:\s*", "", line)
     text = clean_title(text, 400)
     if len(text) > limit:
         text = re.split(r"\s*[:.]\s", text, maxsplit=1)[0]
-    return clean_title(text, limit)
+        return clean_title(text, limit), False
+    return text, label is None
 
 
 MOBILIZED = {
@@ -787,21 +802,108 @@ def cha_blocks(
     return lines
 
 
+AULA_KEYS = [
+    "Horário",
+    "Ambiente Pedagógico",
+    "Docente(s)",
+    "Forma de Execução",
+    "Recursos Didáticos",
+]
+
+
+def norm_name(name: str) -> str:
+    return re.sub(r"\W+", "", name).lower()
+
+
+def same_sa(first: str, second: str) -> bool:
+    """Compara nomes de SA ignorando pontuação, caixa e quebras de linha."""
+    a, b = norm_name(first), norm_name(second)
+    return bool(a and b) and (a == b or a.startswith(b) or b.startswith(a))
+
+
+def split_common(
+    props: list[dict[str, str]],
+) -> tuple[dict[str, str], list[dict[str, str]]]:
+    """Separa o que se repete em todas as aulas (valor mais comum) do que difere.
+
+    Returns:
+        O valor comum de cada propriedade e, para cada aula, só as propriedades
+        cujo valor é diferente do comum.
+    """
+    common: dict[str, str] = {}
+    for key in AULA_KEYS:
+        values = [p[key] for p in props if p.get(key)]
+        if values:
+            top = Counter(v.casefold() for v in values).most_common(1)[0][0]
+            common[key] = next(v for v in values if v.casefold() == top)
+    overrides = [
+        {
+            k: p[k]
+            for k in AULA_KEYS
+            if p.get(k) and k in common and p[k].casefold() != common[k].casefold()
+        }
+        for p in props
+    ]
+    return common, overrides
+
+
+def common_block(common: dict[str, str], ident: dict[str, str]) -> list[str]:
+    """Bloco "Padrão das aulas" com o que se repete (sem repetir a identificação)."""
+    lines = []
+    for key in AULA_KEYS:
+        value = common.get(key, "")
+        if not value:
+            continue
+        if (
+            key == "Docente(s)"
+            and value.casefold() == ident.get("Docente(s)", "").casefold()
+        ):
+            continue
+        lines.append(field_line(key, value))
+    return ["", "**Padrão das aulas**"] + lines if lines else []
+
+
+@dataclass
+class PtdRef:
+    """O que o Diário aproveita do PTD da mesma turma/UC."""
+
+    sa_names: list[str]
+    aulas: dict[str, tuple[int, str]]  # data -> (número da aula, nome da SA)
+
+
+def make_ref(ptd: PTD) -> PtdRef:
+    aulas: dict[str, tuple[int, str]] = {}
+    for aula in ptd.aulas:
+        data = aula.info()
+        sa_name = next(
+            (sa.name for sa in ptd.sas if same_sa(sa.name, data["sa"])), data["sa"]
+        )
+        aulas[data["date"]] = (aula.numero, sa_name)
+    return PtdRef([sa.name for sa in ptd.sas], aulas)
+
+
 def render_ptd(
     ptd: PTD, ident: dict[str, str], margin: float, full_cha: bool
 ) -> list[str]:
     info = ident_info(ident)
-    out = [f"# Plano de Trabalho do Docente - UC{info['uc_num']}", ""]
-    out += ident_callout(ident, "ptd") + [
-        "",
-        "---",
-        "",
-        "## Situações de Aprendizagem",
-        "",
-    ]
+    props = []
+    for aula in ptd.aulas:
+        data = aula.info()
+        props.append(
+            {
+                "Horário": data["horario"],
+                "Ambiente Pedagógico": data["ambiente"],
+                "Docente(s)": data["docente"],
+                "Forma de Execução": data["forma"],
+                "Recursos Didáticos": " ".join(wrap_join(aula.recursos, margin)),
+            }
+        )
+    common, overrides = split_common(props)
+    override_of = {aula.numero: extra for aula, extra in zip(ptd.aulas, overrides)}
 
-    def norm(name: str) -> str:
-        return re.sub(r"\W+", "", name).lower()
+    out = [f"# Plano de Trabalho do Docente - UC{info['uc_num']}", ""]
+    out += ident_callout(ident, "ptd", common_block(common, ident))
+    out += ["", "---", "", "## Situações de Aprendizagem", ""]
 
     for number, sa in enumerate(ptd.sas, 1):
         out += [f"### SA{number} - {sa.name.rstrip('.')}", ""]
@@ -829,43 +931,22 @@ def render_ptd(
 
         for aula in sorted(ptd.aulas, key=lambda a: a.numero):
             data = aula.info()
-            sa_norm, aula_sa = norm(sa.name), norm(data["sa"])
-            if not (
-                aula_sa == sa_norm
-                or sa_norm.startswith(aula_sa)
-                or aula_sa.startswith(sa_norm)
-            ):
+            if not same_sa(sa.name, data["sa"]):
                 continue
             plan = wrap_join(aula.plano, margin)
             title = ""
             if plan and not LABEL_START.match(plan[0]):
                 title = clean_title(re.sub(r"^Aula\s*\d+\s*:\s*", "", plan.pop(0)))
             out += [f"#### Aula {aula.numero}" + (f" - {title}" if title else ""), ""]
-            lines = []
-            if title:
-                lines.append(field_line("Tema", title))
-            lines += [
-                field_line("Horário", data["horario"]) if data["horario"] else "",
-                field_line("Ambiente Pedagógico", data["ambiente"])
-                if data["ambiente"]
-                else "",
-                field_line("Docente(s)", data["docente"]) if data["docente"] else "",
-                field_line("Forma de Execução", data["forma"]) if data["forma"] else "",
-            ]
-            lines = [line for line in lines if line]
-            if aula.recursos:
-                lines.append(
-                    field_line(
-                        "Recursos Didáticos", " ".join(wrap_join(aula.recursos, margin))
-                    )
-                )
+            lines = [field_line("Tema", title)] if title else []
+            lines += [field_line(k, v) for k, v in override_of[aula.numero].items()]
             body = render_lines(plan)
             if body:
-                lines += [""] + body
+                lines += [""] + body if lines else body
             lines += cha_blocks(
                 aula.cha, None if full_cha else sa.cha.data, mobilized=True
             )
-            out += callout("tip", f"Aula {aula.numero} - {data['data']}", lines) + [""]
+            out += callout("tip", f"Aula {aula.numero} - {data['date']}", lines) + [""]
 
     out += ["---", "", "## Avaliações", ""]
     for number, aval in enumerate(ptd.avaliacoes, 1):
@@ -903,11 +984,36 @@ def render_ptd(
 
 
 def render_diario(
-    diario: Diario, ident: dict[str, str], margin: float, full_cha: bool
+    diario: Diario,
+    ident: dict[str, str],
+    margin: float,
+    full_cha: bool,
+    ref: PtdRef | None,
 ) -> list[str]:
     info = ident_info(ident)
+
+    # Número da aula e SA: do PTD (pela data) ou, sem PTD, pela ordem dos dias.
+    entries: list[tuple[int, str, Dia]] = []
+    for position, dia in enumerate(diario.dias, 1):
+        number, sa_name = position, dia.sa
+        if ref and dia.data in ref.aulas:
+            number, sa_name = ref.aulas[dia.data]
+        entries.append((number, sa_name or dia.sa, dia))
+
+    props = [
+        {
+            "Horário": dia.horario,
+            "Ambiente Pedagógico": dia.ambiente,
+            "Docente(s)": dia.docente,
+            "Recursos Didáticos": " ".join(wrap_join(dia.recursos, margin)),
+        }
+        for _, _, dia in entries
+    ]
+    common, overrides = split_common(props)
+    override_of = {id(dia): extra for (_, _, dia), extra in zip(entries, overrides)}
+
     out = [f"# Diário de Classe - UC{info['uc_num']}", ""]
-    out += ident_callout(ident, "diario") + [""]
+    out += ident_callout(ident, "diario", common_block(common, ident)) + [""]
 
     # A lista completa de CHA da UC é a mais longa vista entre os dias.
     baseline: dict[str, list[str]] = {label: [] for label in CHA_LABELS}
@@ -941,34 +1047,46 @@ def render_diario(
             "## Conhecimentos, Habilidades e Atitudes e Valores da UC",
             "",
         ]
-        lines: list[str] = []
+        lines = []
         for label in CHA_LABELS:
             lines += bullet_block(label, baseline[label])
         out += callout("abstract", "Elementos de competência da UC", lines[1:]) + [""]
 
+    # Grupos por SA, na ordem e com a numeração do PTD quando ele existe.
+    groups: list[tuple[str, str, list[tuple[int, str, Dia]]]] = []
+    if ref and ref.sa_names:
+        for number, name in enumerate(ref.sa_names, 1):
+            items = [e for e in entries if same_sa(e[1], name)]
+            if items:
+                groups.append((f"SA{number} - ", name, items))
+        used = {id(e[2]) for _, _, items in groups for e in items}
+        rest = [e for e in entries if id(e[2]) not in used]
+        if rest:
+            groups.append(("", "Aulas sem SA correspondente no PTD", rest))
+    else:
+        for entry in entries:
+            for _, name, items in groups:
+                if same_sa(name, entry[1]):
+                    items.append(entry)
+                    break
+            else:
+                groups.append(("", entry[1], [entry]))
+
     out += ["---", "", "## Aulas", ""]
-    for dia in diario.dias:
-        content = wrap_join(dia.conteudo, margin)
-        heading = day_title(content[0]) if content else "Aula"
-        out += [f"### {dia.data} - {heading}", ""]
-        lines = [
-            field_line("Horário", dia.horario) if dia.horario else "",
-            field_line("Ambiente Pedagógico", dia.ambiente) if dia.ambiente else "",
-            field_line("Docente(s)", dia.docente) if dia.docente else "",
-            field_line("Situação de Aprendizagem", dia.sa) if dia.sa else "",
-        ]
-        lines = [line for line in lines if line]
-        if dia.recursos:
-            lines.append(
-                field_line(
-                    "Recursos Didáticos", " ".join(wrap_join(dia.recursos, margin))
-                )
-            )
-        body = render_lines(content)
-        if body:
-            lines += ["", "**Conteúdo da Aula**", ""] + body
-        lines += cha_blocks(dia.cha, None if full_cha else baseline, mobilized=True)
-        out += callout("tip", f"Aula - {dia.data}", lines) + [""]
+    for prefix, name, items in groups:
+        out += [f"### {prefix}{name.rstrip('.')}", ""]
+        for number, _, dia in sorted(items, key=lambda e: e[0]):
+            content = wrap_join(dia.conteudo, margin)
+            title, consumed = day_title(content[0]) if content else ("", False)
+            if consumed:
+                content = content[1:]
+            out += [f"#### Aula {number}" + (f" - {title}" if title else ""), ""]
+            lines = [field_line(k, v) for k, v in override_of[id(dia)].items()]
+            body = render_lines(content)
+            if body:
+                lines += [""] + body if lines else body
+            lines += cha_blocks(dia.cha, None if full_cha else baseline, mobilized=True)
+            out += callout("tip", f"Aula {number} - {dia.data}", lines) + [""]
     return out
 
 
@@ -977,16 +1095,25 @@ def render_diario(
 # --------------------------------------------------------------------------
 
 
-def convert_pdf(
-    pdf_path: Path, output_dir: Path, extra_tags: list[str], draft: bool, full_cha: bool
-) -> Path:
-    """Converte um PDF do Diário ou do PTD e grava a nota .md."""
+@dataclass
+class Parsed:
+    """PDF já lido: tipo, identificação e dados estruturados."""
+
+    kind: str
+    ident: dict[str, str]
+    info: dict[str, str]
+    margin: float
+    printed: str | None
+    data: PTD | Diario | None
+
+
+def parse_pdf(pdf_path: Path, first_page_only: bool = False) -> Parsed:
+    """Lê um PDF do Senac. Com first_page_only lê só o necessário para identificá-lo."""
     try:
         with pymupdf.open(pdf_path) as doc:
-            rows = extract_rows(doc)
+            rows = extract_rows(doc, 1 if first_page_only else None)
     except Exception as exc:
         raise ConversionError(f"{pdf_path.name}: {exc}") from exc
-
     kind = detect_kind(rows)
     if kind is None:
         raise ConversionError(
@@ -995,24 +1122,72 @@ def convert_pdf(
         )
     header, body, printed = split_rows(rows, kind)
     ident = parse_identification(header)
-    info = ident_info(ident)
     long_lines = [
         c.x1 for r in body for c in r.cells if c.size < 8 and len(c.text) > 120
     ]
     margin = max(long_lines) if long_lines else 800.0
+    data = None
+    if not first_page_only:
+        data = parse_ptd(body) if kind == "ptd" else parse_diario(body)
+    return Parsed(kind, ident, ident_info(ident), margin, printed, data)
 
-    if kind == "ptd":
-        content = render_ptd(parse_ptd(body), ident, margin, full_cha)
+
+def find_ptd(
+    pdf_path: Path, info: dict[str, str], explicit: Path | None
+) -> PtdRef | None:
+    """Procura o PTD da mesma turma e UC (informado ou na mesma pasta do Diário)."""
+    candidates = [explicit] if explicit else sorted(pdf_path.parent.glob("*.pdf"))
+    for candidate in candidates:
+        if candidate is None or candidate.resolve() == pdf_path.resolve():
+            continue
+        try:
+            peek = parse_pdf(candidate, first_page_only=True)
+        except ConversionError:
+            if explicit:
+                raise
+            continue
+        same = (peek.info["turma"], peek.info["uc_num"]) == (
+            info["turma"],
+            info["uc_num"],
+        )
+        if peek.kind == "ptd" and (same or explicit):
+            full = parse_pdf(candidate)
+            assert isinstance(full.data, PTD)
+            return make_ref(full.data)
+    return None
+
+
+def convert_pdf(
+    pdf_path: Path,
+    output_dir: Path,
+    extra_tags: list[str],
+    draft: bool,
+    full_cha: bool,
+    ptd_pdf: Path | None = None,
+) -> Path:
+    """Converte um PDF do Diário ou do PTD e grava a nota .md."""
+    parsed = parse_pdf(pdf_path)
+    info, ident = parsed.info, parsed.ident
+    if parsed.kind == "ptd":
+        assert isinstance(parsed.data, PTD)
+        content = render_ptd(parsed.data, ident, parsed.margin, full_cha)
         prefix, title_kind, label = "PTD", "PTD", "Plano de Trabalho do Docente"
     else:
-        parsed = parse_diario(body)
-        content = render_diario(parsed, ident, margin, full_cha)
+        assert isinstance(parsed.data, Diario)
+        ref = find_ptd(pdf_path, info, ptd_pdf)
+        if ref is None:
+            logger.warning(
+                "%s: PTD da mesma turma/UC não encontrado; aulas numeradas pela ordem dos dias "
+                "e SAs sem número (use --ptd para indicar o PDF do PTD).",
+                pdf_path.name,
+            )
+        content = render_diario(parsed.data, ident, parsed.margin, full_cha, ref)
         prefix, title_kind, label = "Diario", "Diário de Classe", "Diário de Classe"
-        if parsed.ignorado:
+        if parsed.data.ignorado:
             logger.info(
                 "%s: seções com dados de alunos ignoradas: %s",
                 pdf_path.name,
-                ", ".join(parsed.ignorado),
+                ", ".join(parsed.data.ignorado),
             )
 
     title = f"{title_kind} - {info['turma']} UC{info['uc_num']} - {info['curso']}"
@@ -1029,16 +1204,17 @@ def convert_pdf(
     tags = [tag for tag in dict.fromkeys(tags) if tag]
     lines = (
         frontmatter(
-            title, description, tags, printed or date.today().isoformat(), draft
+            title, description, tags, parsed.printed or date.today().isoformat(), draft
         )
         + content
     )
-    text = "\n".join(lines).rstrip() + "\n"
-    text = re.sub(r"\n{3,}", "\n\n", text)
+    text = re.sub(r"\n{3,}", "\n\n", "\n".join(lines).rstrip() + "\n")
 
     output_dir.mkdir(parents=True, exist_ok=True)
-    name = f"{prefix}-{info['turma']}-UC{info['uc_num']}-{file_words(info['curso'])}.md"
-    note_path = output_dir / name
+    note_path = (
+        output_dir
+        / f"{prefix}-{info['turma']}-UC{info['uc_num']}-{file_words(info['curso'])}.md"
+    )
     with note_path.open("w", encoding="utf-8", newline="\n") as handle:
         handle.write(text)
     return note_path
@@ -1052,6 +1228,12 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("-o", "--output", type=Path, default=Path("notas"))
     parser.add_argument("-t", "--tags", nargs="*", default=[], help="Tags extras")
     parser.add_argument("--draft", action="store_true", help="Marca draft: true")
+    parser.add_argument(
+        "--ptd",
+        type=Path,
+        default=None,
+        help="PDF do PTD usado para numerar aulas e SAs do Diário (padrão: procura na pasta do Diário)",
+    )
     parser.add_argument(
         "--full-cha",
         action="store_true",
@@ -1075,7 +1257,9 @@ def main() -> int:
     failures = 0
     for pdf in pdfs:
         try:
-            note = convert_pdf(pdf, args.output, args.tags, args.draft, args.full_cha)
+            note = convert_pdf(
+                pdf, args.output, args.tags, args.draft, args.full_cha, args.ptd
+            )
             logger.info("OK  %s -> %s", pdf.name, note)
         except ConversionError as exc:
             failures += 1
