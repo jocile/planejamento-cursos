@@ -34,6 +34,7 @@ from collections import Counter
 from dataclasses import dataclass, field
 from datetime import date
 from difflib import SequenceMatcher
+from itertools import pairwise
 from pathlib import Path
 
 import pymupdf
@@ -318,13 +319,13 @@ def load_layout(doc: pymupdf.Document) -> Layout:
             flow.append(ln)
         page_end[page_no] = len(flow)
 
-    solid = [ln for ln in flow if len(ln.text.strip()) >= 40]
+    solid = [ln for ln in flow if len(ln.text.strip()) >= 40] or flow
     margin = Counter(round(ln.x0) for ln in solid).most_common(1)[0][0] if solid else 0
     xs = sorted(ln.x1 for ln in solid)
     right = xs[int(0.9 * (len(xs) - 1))] if xs else 0
     gaps = [
         b.y0 - a.y0
-        for a, b in zip(flow, flow[1:])
+        for a, b in pairwise(flow)
         if a.page == b.page and 8 < b.y0 - a.y0 < 40
     ]
     leading = sorted(gaps)[len(gaps) // 2] if gaps else 14.0
@@ -449,8 +450,8 @@ def locate_entries(layout: Layout, entries: list[TocEntry]) -> None:
             if 0 <= p < layout.n_pages
         ]
 
-        def candidates(page_no: int):
-            first = max(layout.page_first[page_no], previous + 1)
+        def candidates(page_no: int, after: int = previous):
+            first = max(layout.page_first[page_no], after + 1)
             for k in range(first, layout.page_end[page_no]):
                 for span in (1, 2, 3):
                     chunk = lines[k : k + span]
@@ -541,10 +542,12 @@ def resolve_selection(tokens: list[str], entries: list[TocEntry]) -> list[TocEnt
                 matches = [e for e in entries if low <= e.n <= high]
             elif token.isdigit():
                 matches = [e for e in entries if e.n == int(token)]
-            elif m := re.fullmatch(r"(?:level|nivel|nível):(\d+)", token, re.I):
+            elif m := re.fullmatch(
+                r"(?:level|nivel|nível):(\d+)", token, re.IGNORECASE
+            ):
                 matches = [e for e in entries if e.level == int(m.group(1))]
             elif token.lower().startswith("re:"):
-                pattern = re.compile(token[3:], re.I)
+                pattern = re.compile(token[3:], re.IGNORECASE)
                 matches = [e for e in entries if pattern.search(e.title)]
             else:
                 wanted = norm(token)
@@ -934,21 +937,72 @@ def verify(markdown: str, reference: str) -> str | None:
 # --------------------------------------------------------------------------- #
 
 
+def normalize_tag(tag: str) -> str:
+    """Tag no padrão do Quartz: minúsculas, sem acento, hífen no lugar de espaço."""
+    plain = "".join(
+        c for c in unicodedata.normalize("NFKD", tag) if not unicodedata.combining(c)
+    )
+    return re.sub(r"[^a-z0-9/-]+", "-", plain.casefold().lstrip("#")).strip("-")
+
+
+def tidy_book(book: str) -> str:
+    """``MARCOS (William Barclay)`` -> ``Marcos (William Barclay)``."""
+    return " ".join(
+        w.capitalize() if len(w) > 1 and w.isupper() else w for w in book.split()
+    )
+
+
+def make_description(body: str, limit: int = 160) -> str:
+    """Primeiro parágrafo de texto do corpo, sem Markdown, cortado em ``limit``.
+
+    É um trecho do original (nada é reescrito). Pula títulos, referências em
+    negrito, callouts e notas.
+    """
+    for block in body.split("\n\n"):
+        block = block.strip()
+        if not block or block.startswith(("#", ">", "---", "[^", "**")):
+            continue
+        text = re.sub(r"\[\^\d+\]", "", block)
+        text = re.sub(r"\[\[[^\]|]*\|([^\]]*)\]\]", r"\1", text)
+        text = re.sub(r"\\(.)", r"\1", text).replace("*", "")
+        text = re.sub(r"\s+", " ", text).strip()
+        if len(text) < 40:
+            continue
+        if len(text) <= limit:
+            return text
+        cut = text[:limit].rsplit(" ", 1)[0].rstrip(",;:- ")
+        return cut + "…"
+    return ""
+
+
 def build_frontmatter(
-    title: str, style: str, tags: list[str], draft: bool, description: str
+    title: str,
+    style: str,
+    tags: list[str],
+    draft: bool,
+    description: str,
+    aliases: list[str],
+    with_dates: bool = True,
 ) -> str:
-    """Frontmatter no estilo do Digital Garden, do Quartz ou nenhum."""
+    """Frontmatter do Quartz v5 (padrão), do Digital Garden ou nenhum."""
     if style == "none":
         return ""
+    clean_tags = list(dict.fromkeys(t for t in map(normalize_tag, tags) if t))
     lines = ["---", f"title: {yaml_quote(title)}"]
     if style == "quartz":
-        lines += [
-            f"description: {yaml_quote(description)}",
-            f"date: '{date.today().isoformat()}'",
-            f"draft: {str(draft).lower()}",
-        ]
-    lines.append("tags:" if tags else "tags: []")
-    lines += [f"  - {tag}" for tag in tags]
+        if description:
+            lines.append(f"description: {yaml_quote(description)}")
+        if with_dates:
+            lines += [
+                f"date: {date.today().isoformat()}",
+                f"draft: {str(draft).lower()}",
+            ]
+        elif draft:
+            lines.append("draft: true")
+    if clean_tags:
+        lines += ["tags:", *[f"  - {tag}" for tag in clean_tags]]
+    if style == "quartz" and aliases:
+        lines += ["aliases:", *[f"  - {yaml_quote(a)}" for a in aliases]]
     if style == "dg":
         lines.append(f"dg-publish: {str(not draft).lower()}")
     lines += ["---", ""]
@@ -973,18 +1027,31 @@ def convert_entry(
 
 
 def title_for(entry: TocEntry, book: str, args: argparse.Namespace) -> str:
-    """Título da nota a partir do modelo (``{book}``, ``{title}``, ``{n}``)."""
-    number = re.search(r"(\d+)\s*$", core_title(entry.title))
-    return args.title_template.format(
-        book=book, title=core_title(entry.title), n=number.group(1) if number else ""
+    """Título da nota a partir do modelo (``{book}``, ``{title}``, ``{n}``).
+
+    Sem ``--title-template``: itens numerados (``Marcos 1``) viram
+    ``{book} - Capítulo 1`` e os demais ``{book} - {title}``.
+    """
+    core = core_title(entry.title)
+    number = re.search(r"(\d+)\s*$", core)
+    template = args.title_template
+    if template is None:
+        numbered = number and re.fullmatch(r"\D+\s+\d+", core)
+        template = (
+            f"{{book}} - {args.chapter_word} {{n}}" if numbered else "{book} - {title}"
+        )
+    return template.format(
+        book=book, title=core, n=number.group(1) if number else ""
     ).strip(" -")
 
 
 def write_note(
-    path: Path, front: str, title: str, panel: str | None, body: str
+    path: Path, front: str, title: str, panel: str | None, body: str, h1: bool
 ) -> None:
-    """Grava a nota: frontmatter, H1, link de volta opcional e o corpo."""
-    head = [front.rstrip("\n"), "", f"# {title}", ""] if front else [f"# {title}", ""]
+    """Grava a nota. No Quartz o título vem do frontmatter, então não há ``# H1``."""
+    head = [front.rstrip("\n"), ""] if front else []
+    if h1:
+        head += [f"# {title}", ""]
     if panel:
         head += [f"← [[{panel}|Voltar ao Painel Geral]]", "", "---", ""]
     path.parent.mkdir(parents=True, exist_ok=True)
@@ -1009,7 +1076,13 @@ def run(args: argparse.Namespace) -> int:
         return 1
     try:
         doc = pymupdf.open(args.pdf)
-    except Exception as exc:  # pymupdf lança vários tipos de erro
+    except (
+        pymupdf.FileDataError,
+        pymupdf.EmptyFileError,
+        RuntimeError,
+        ValueError,
+        OSError,
+    ) as exc:
         logger.error("Não foi possível abrir %s: %s", args.pdf, exc)
         return 1
     with doc:
@@ -1018,7 +1091,7 @@ def run(args: argparse.Namespace) -> int:
             logger.error("Sem texto extraível (PDF escaneado? rode um OCR antes).")
             return 1
         meta_title = (doc.metadata or {}).get("title", "") or ""
-        book = args.book or (
+        book = args.book or tidy_book(
             meta_title.strip() if len(meta_title.strip()) > 3 else args.pdf.stem
         )
         entries = [] if args.pages else build_toc(doc, layout, args)
@@ -1031,7 +1104,7 @@ def run(args: argparse.Namespace) -> int:
         entry.start = entry.hend = layout.page_first[first]
         selected = [entry]
         entries = [entry]
-        slice_end = layout.page_end[last]
+        slice_end = layout.page_end[last]  # exclusivo
     else:
         if not entries:
             logger.error(
@@ -1061,14 +1134,7 @@ def run(args: argparse.Namespace) -> int:
             ctx = RenderContext(
                 layout, link_refs=args.link_refs, callouts=not args.no_callouts
             )
-            body, used = render_slice(
-                ctx,
-                entries,
-                None,
-                entry.hend,
-                slice_end + 1 if False else layout.page_end[last],
-                [],
-            )
+            body, used = render_slice(ctx, entries, None, entry.hend, slice_end, [])
             issue = (
                 None
                 if args.no_verify
@@ -1084,19 +1150,27 @@ def run(args: argparse.Namespace) -> int:
             logger.info("Fiel ao PDF: %r (%d palavras)", entry.title, words)
         bodies.append((entry, body))
 
-    front_args = (args.fm, args.tags, args.draft)
     args.output.mkdir(parents=True, exist_ok=True)
+    h1 = args.fm != "quartz"
+
+    def save(note_title: str, body: str, aliases: list[str]) -> None:
+        description = args.description or make_description(body)
+        front = build_frontmatter(
+            note_title,
+            args.fm,
+            args.tags,
+            args.draft,
+            description,
+            aliases,
+            with_dates=not args.no_date_draft,
+        )
+        note = args.output / f"{sanitize_name(note_title)}.md"
+        write_note(note, front, note_title, args.panel, body, h1)
+        logger.info("OK -> %s", note)
+
     if args.merge:
         title = args.title or " + ".join(core_title(e.title) for e, _ in bodies)
-        note = args.output / f"{sanitize_name(title)}.md"
-        write_note(
-            note,
-            build_frontmatter(title, *front_args, args.description or ""),
-            title,
-            args.panel,
-            "\n\n---\n\n".join(b for _, b in bodies),
-        )
-        logger.info("OK -> %s", note)
+        save(title, "\n\n---\n\n".join(b for _, b in bodies), [])
     else:
         for entry, body in bodies:
             title = (
@@ -1104,15 +1178,12 @@ def run(args: argparse.Namespace) -> int:
                 if (args.title and len(bodies) == 1)
                 else title_for(entry, book, args)
             )
-            note = args.output / f"{sanitize_name(title)}.md"
-            write_note(
-                note,
-                build_frontmatter(title, *front_args, args.description or ""),
+            alias = core_title(entry.title)
+            save(
                 title,
-                args.panel,
                 body,
+                [alias] if norm(alias) != norm(title) and not args.pages else [],
             )
-            logger.info("OK -> %s", note)
     return 2 if failures else 0
 
 
@@ -1160,19 +1231,33 @@ def parse_args(argv: list[str] | None = None) -> argparse.Namespace:
     out.add_argument("--title", help="Título fixo da nota")
     out.add_argument(
         "--title-template",
-        default="{book} - {title}",
-        help="Modelo do título: {book}, {title}, {n}. Ex.: '{book} - Capítulo {n}'",
+        help="Modelo do título: {book}, {title}, {n}. Padrão: '{book} - Capítulo {n}' para itens numerados e '{book} - {title}' nos demais",
     )
-    out.add_argument("--description", help="Descrição (frontmatter quartz)")
+    out.add_argument(
+        "--chapter-word",
+        default="Capítulo",
+        help="Palavra usada no título dos itens numerados (padrão: Capítulo)",
+    )
+    out.add_argument(
+        "--description",
+        help="Descrição (padrão: início do primeiro parágrafo, até 160 caracteres)",
+    )
     out.add_argument("-t", "--tags", nargs="*", default=[], help="Tags do frontmatter")
     out.add_argument(
         "--fm",
-        choices=("dg", "quartz", "none"),
-        default="dg",
-        help="Estilo do frontmatter (padrão: dg = Digital Garden)",
+        choices=("quartz", "dg", "none"),
+        default="quartz",
+        help="Estilo do frontmatter (padrão: quartz; dg = Digital Garden)",
     )
     out.add_argument(
-        "--draft", action="store_true", help="draft: true (ou dg-publish: false)"
+        "--no-date-draft",
+        action="store_true",
+        help="Quartz: não grava date nem draft (draft só se --draft)",
+    )
+    out.add_argument(
+        "--draft",
+        action="store_true",
+        help="draft: true (no estilo dg, dg-publish: false)",
     )
     out.add_argument(
         "--panel", help="Nota a que o link 'Voltar ao Painel Geral' aponta"

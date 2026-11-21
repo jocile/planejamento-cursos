@@ -27,6 +27,14 @@ O script lê um PDF (ou uma pasta inteira), extrai o texto como Markdown, limpa 
     - [Dados de alunos](#dados-de-alunos)
     - [Avisos do markdownlint](#avisos-do-markdownlint)
     - [Limitações do layout](#limitações-do-layout)
+  - [pdfcap2obsidian](#pdfcap2obsidian)
+  - [Uso](#uso)
+  - [Opções pdfcap2obsidian](#opções-pdfcap2obsidian)
+  - [Cabeçalho (Quartz v5)](#cabeçalho-quartz-v5)
+  - [Como detecta o sumário](#como-detecta-o-sumário)
+  - [O que o script faz com o texto](#o-que-o-script-faz-com-o-texto)
+  - [Verificação](#verificação)
+  - [Limitações pdfcap2obsidian](#limitações-pdfcap2obsidian)
 
 ## Requisitos
 
@@ -239,3 +247,112 @@ As notas saem sem avisos, exceto MD013 (linha longa), MD025 e MD028. O MD025 vem
 - O script depende do layout do relatório do sistema (posições das colunas e fontes). Se o sistema mudar o layout do PDF, as seções podem sair vazias ou trocadas.
 - O texto é preservado como está no PDF, inclusive erros de digitação do sistema (por exemplo, `busca0se`).
 - A junção de linhas quebradas usa a margem direita da página e a pontuação final dos itens, então um item de lista sem ponto final pode ser unido ao seguinte.
+
+## pdfcap2obsidian
+
+Converte **capítulos ou seções** de um PDF em notas Markdown do Obsidian, mantendo o texto **palavra por palavra**. Só muda a forma (parágrafos, títulos, negrito/itálico, callouts, frontmatter).
+
+Requisitos: Python 3.10+ e `pip install pymupdf`. O script é um arquivo só.
+
+## Uso
+
+```bash
+# ver o sumário numerado
+python pdfcap2obsidian.py livro.pdf --list
+
+# sem -s, o script mostra o sumário e pergunta o que converter
+python pdfcap2obsidian.py livro.pdf -o vault/estudos
+
+# por parâmetro (número, intervalo, título, level:N, re:regex ou todos)
+python pdfcap2obsidian.py livro.pdf -s "Marcos 1" -o vault/estudos
+python pdfcap2obsidian.py livro.pdf -s level:3            # um arquivo por capítulo
+python pdfcap2obsidian.py livro.pdf -s 14 16-18 --merge --title "Trecho"
+
+# sem sumário: por páginas
+python pdfcap2obsidian.py livro.pdf --pages 14-49 --title "Trecho"
+```
+
+Comando usado para gerar o capítulo 1 de Marcos:
+
+```bash
+python pdfcap2obsidian.py Marcos__Barclay_.pdf -s "Marcos 1" -o vault/estudos \
+  -t Teologia Novo-Testamento Evangelho Comentário Estudo
+```
+
+## Opções pdfcap2obsidian
+
+| Opção                                   | Descrição                                                                                                                                                                                                                                                                        |
+| :-------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `-s`, `--sections`                      | O que converter. Número, intervalo (`14-16`), título (`"Marcos 1"`), `level:N`, `re:regex`, `todos`. Títulos: o exato vence a busca parcial.                                                                                                                                     |
+| `--list`, `--level N`                   | Só mostra o sumário (até o nível N).                                                                                                                                                                                                                                             |
+| `--pages 14-49`                         | Converte páginas (base 1), sem usar o sumário.                                                                                                                                                                                                                                   |
+| `--toc`                                 | `auto` (padrão), `outline`, `printed` ou `fonts`.                                                                                                                                                                                                                                |
+| `--book`, `--title`, `--title-template` | Nome do livro (padrão: metadado do PDF, em caixa de frase), título fixo ou modelo (`{book}`, `{title}`, `{n}`). Sem modelo, itens numerados viram `{book} - Capítulo 1` (troque a palavra com `--chapter-word`) e os demais `{book} - {title}`. O nome do arquivo vem do título. |
+| `--description`                         | Padrão: início do primeiro parágrafo do texto, até 160 caracteres.                                                                                                                                                                                                               |
+| `-t`, `--tags`                          | Tags. São normalizadas para o Quartz: minúsculas, sem acento, hífen no lugar de espaço.                                                                                                                                                                                          |
+| `--fm`                                  | `quartz` (padrão), `dg` (Digital Garden: `title`, `tags`, `dg-publish`) ou `none`.                                                                                                                                                                                               |
+| `--draft`, `--no-date-draft`            | `draft: true`. Com `--no-date-draft` o Quartz não recebe `date` nem `draft`.                                                                                                                                                                                                     |
+| `--panel`                               | Nota do link `← Voltar ao Painel Geral`.                                                                                                                                                                                                                                         |
+| `--merge`                               | Junta as seleções em uma nota.                                                                                                                                                                                                                                                   |
+| `--no-callouts`                         | Não transforma citações em itálico em callouts.                                                                                                                                                                                                                                  |
+| `--link-refs`                           | `**Marcos 1:1-4**` vira `**[[Marcos 1#1\|Marcos 1:1-4]]**` (texto visível idêntico).                                                                                                                                                                                             |
+| `--keep-index`                          | Mantém a lista de seções que abre cada capítulo.                                                                                                                                                                                                                                 |
+| `--no-verify`                           | Pula a verificação de fidelidade.                                                                                                                                                                                                                                                |
+
+Código de saída: `0` ok, `1` erro, `2` se o texto gerado diferir do PDF.
+
+## Cabeçalho (Quartz v5)
+
+```yaml
+---
+title: "Marcos (William Barclay) - Capítulo 1"
+description: "Marcos começa a história de Jesus desde muito atrás. A história de…"
+date: 2026-11-21
+draft: false
+tags:
+  - teologia
+  - novo-testamento
+aliases:
+  - "Marcos 1"
+---
+```
+
+- O título aparece só no frontmatter. O corpo não repete `# H1`, porque o Quartz já o renderiza.
+- `aliases` guarda o nome do item no sumário (`Marcos 1`), para que `[[Marcos 1]]` resolva para a nota.
+- A descrição é um trecho do próprio texto, cortado na última palavra inteira.
+
+## Como detecta o sumário
+
+1. **Marcadores embutidos** do PDF (o caso mais confiável).
+2. **Sumário impresso** (`Título ..... 12`) nas primeiras páginas, com a diferença entre página impressa e do PDF calculada sozinha (`--page-offset` para forçar).
+3. **Títulos por fonte** (linhas curtas, maiores que o corpo ou em negrito).
+
+Cada título é localizado na página pela linha exata, então várias seções que dividem a mesma página são cortadas no ponto certo. Se o título do marcador tiver erro de digitação em relação ao texto, usa busca aproximada e avisa.
+
+## O que o script faz com o texto
+
+| No PDF                                                                    | Na nota                                             |
+| :------------------------------------------------------------------------ | :-------------------------------------------------- |
+| Cabeçalho e número de página repetidos                                    | Removidos                                           |
+| Linhas quebradas                                                          | Parágrafos (por recuo, espaço e fim de linha curto) |
+| Parágrafo cortado pela troca de página                                    | Unido                                               |
+| `confessá-` / `lo` na quebra de linha                                     | `confessá-lo` (o hífen é mantido)                   |
+| Título em caixa alta                                                      | `###` em caixa de frase                             |
+| Negrito e itálico                                                         | `**` e `*`                                          |
+| Parágrafo todo em itálico, ou frase inicial em itálico com 50+ caracteres | Callout `> [!quote]`                                |
+| `*` de nota de rodapé                                                     | `[^1]` e definição no fim                           |
+| `*`, `_`, `<`, `[[` e outros do texto                                     | Escapados                                           |
+| Lista de seções que abre o capítulo                                       | Omitida (é só o índice)                             |
+
+Erros de digitação do original (`pelo. momento`, `séria`, `SUS AMIGOS`) são mantidos de propósito.
+
+## Verificação
+
+Depois de gerar cada nota, o script remove só a sintaxe que ele mesmo adicionou e compara, caractere a caractere (sem espaços e sem caixa), com o texto extraído do PDF para o mesmo trecho. Qualquer diferença é apontada com o contexto.
+
+## Limitações pdfcap2obsidian
+
+- PDF escaneado precisa de OCR antes. Imagens não são extraídas.
+- Só vira callout o que está em itálico no PDF. Rótulos e títulos de callout (`[!example] Título`) exigiriam texto novo, então não são criados.
+- A detecção de parágrafos é heurística. Texto sem recuo e sem linha final curta pode ser unido.
+- Colunas e tabelas complexas não são reconstruídas.
